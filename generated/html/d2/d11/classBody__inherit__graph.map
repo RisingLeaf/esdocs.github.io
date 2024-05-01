@@ -1,0 +1,11 @@
+<map id="Body" name="Body">
+<area shape="rect" id="node1" title=" " alt="" coords="441,5,496,32"/>
+<area shape="rect" id="node2" href="$d5/df8/classAsteroidField_1_1Asteroid.html" title=" " alt="" coords="5,80,175,107"/>
+<area shape="rect" id="node3" href="$d3/df0/classEffect.html" title=" " alt="" coords="199,80,258,107"/>
+<area shape="rect" id="node4" href="$d1/dca/classFlotsam.html" title=" " alt="" coords="282,80,357,107"/>
+<area shape="rect" id="node5" href="$d9/d43/classMinable.html" title=" " alt="" coords="381,80,455,107"/>
+<area shape="rect" id="node6" href="$d9/d4b/classProjectile.html" title=" " alt="" coords="479,80,562,107"/>
+<area shape="rect" id="node7" href="$d2/d32/classShip.html" title=" " alt="" coords="586,80,637,107"/>
+<area shape="rect" id="node8" href="$d7/d9c/classStellarObject.html" title=" " alt="" coords="661,80,767,107"/>
+<area shape="rect" id="node9" href="$db/dd9/classVisual.html" title=" " alt="" coords="792,80,855,107"/>
+</map>

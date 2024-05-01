@@ -1,0 +1,29 @@
+<map id="source/Interface.h" name="source/Interface.h">
+<area shape="rect" id="node1" title=" " alt="" coords="2109,5,2247,32"/>
+<area shape="rect" id="node2" href="$d6/d0c/BankPanel_8cpp.html" title=" " alt="" coords="5,80,169,107"/>
+<area shape="rect" id="node3" href="$d1/d91/BoardingPanel_8cpp.html" title=" " alt="" coords="194,80,383,107"/>
+<area shape="rect" id="node4" href="$d6/d0c/Engine_8cpp.html" title=" " alt="" coords="408,80,548,107"/>
+<area shape="rect" id="node5" href="$dd/d59/EscortDisplay_8cpp.html" title=" " alt="" coords="572,80,755,107"/>
+<area shape="rect" id="node6" href="$d1/d35/GameData_8cpp.html" title=" " alt="" coords="2551,155,2717,181"/>
+<area shape="rect" id="node7" href="$d5/da2/HailPanel_8cpp.html" title=" " alt="" coords="830,80,987,107"/>
+<area shape="rect" id="node8" href="$d9/d3c/HiringPanel_8cpp.html" title=" " alt="" coords="1011,80,1182,107"/>
+<area shape="rect" id="node9" href="$de/dbe/Interface_8cpp.html" title=" " alt="" coords="1206,80,1361,107"/>
+<area shape="rect" id="node10" href="$d9/d71/LoadPanel_8cpp.html" title=" " alt="" coords="1385,80,1547,107"/>
+<area shape="rect" id="node11" href="$db/d8c/MapDetailPanel_8cpp.html" title=" " alt="" coords="1572,80,1771,107"/>
+<area shape="rect" id="node12" href="$d4/da0/MapPanel_8cpp.html" title=" " alt="" coords="1795,80,1953,107"/>
+<area shape="rect" id="node13" href="$dc/d6e/MapPlanetCard_8cpp.html" title=" " alt="" coords="1978,80,2173,107"/>
+<area shape="rect" id="node14" href="$d7/d9f/MenuPanel_8cpp.html" title=" " alt="" coords="2197,80,2364,107"/>
+<area shape="rect" id="node15" href="$df/d4a/MessageLogPanel_8cpp.html" title=" " alt="" coords="2388,80,2600,107"/>
+<area shape="rect" id="node16" href="$dc/df9/MissionPanel_8cpp.html" title=" " alt="" coords="2625,80,2806,107"/>
+<area shape="rect" id="node17" href="$d8/d3a/PlanetPanel_8cpp.html" title=" " alt="" coords="2831,80,3003,107"/>
+<area shape="rect" id="node18" href="$db/dbf/PlayerInfoPanel_8cpp.html" title=" " alt="" coords="3027,80,3225,107"/>
+<area shape="rect" id="node19" href="$d7/dde/Preferences_8cpp.html" title=" " alt="" coords="3249,80,3422,107"/>
+<area shape="rect" id="node20" href="$d9/d8e/PreferencesPanel_8cpp.html" title=" " alt="" coords="3446,80,3654,107"/>
+<area shape="rect" id="node21" href="$d9/dfa/ShipInfoPanel_8cpp.html" title=" " alt="" coords="3678,80,3862,107"/>
+<area shape="rect" id="node22" href="$d9/d3e/SpaceportPanel_8cpp.html" title=" " alt="" coords="3887,80,4083,107"/>
+<area shape="rect" id="node23" href="$dc/d45/StartConditionsPanel_8cpp.html" title=" " alt="" coords="4107,80,4337,107"/>
+<area shape="rect" id="node24" href="$d0/dc2/TradingPanel_8cpp.html" title=" " alt="" coords="4362,80,4541,107"/>
+<area shape="rect" id="node25" href="$d0/dbb/UniverseObjects_8h.html" title=" " alt="" coords="4565,80,4753,107"/>
+<area shape="rect" id="node26" href="$d6/d9e/TestData_8cpp.html" title=" " alt="" coords="4481,155,4635,181"/>
+<area shape="rect" id="node27" href="$de/dbb/UniverseObjects_8cpp.html" title=" " alt="" coords="4659,155,4862,181"/>
+</map>

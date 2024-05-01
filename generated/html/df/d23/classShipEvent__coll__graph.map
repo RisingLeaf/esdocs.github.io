@@ -1,0 +1,14 @@
+<map id="ShipEvent" name="ShipEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="421,347,507,373"/>
+<area shape="rect" id="node2" href="$d4/dad/classGovernment.html" title=" " alt="" coords="413,243,515,269"/>
+<area shape="rect" id="node6" href="$dd/d2d/classSystem.html" title=" " alt="" coords="246,347,317,373"/>
+<area shape="rect" id="node3" href="$db/d41/classExclusiveItem.html" title=" " alt="" coords="207,109,385,136"/>
+<area shape="rect" id="node4" href="$d2/d37/classColor.html" title=" " alt="" coords="268,5,324,32"/>
+<area shape="rect" id="node5" href="$d8/da4/classLocationFilter.html" title=" " alt="" coords="237,451,347,477"/>
+<area shape="rect" id="node7" href="$dc/d4f/classPoint.html" title=" " alt="" coords="35,243,90,269"/>
+<area shape="rect" id="node8" href="$d1/d6d/classSprite.html" title=" " alt="" coords="117,243,177,269"/>
+<area shape="rect" id="node9" href="$d5/d81/classWeightedList.html" title=" " alt="" coords="201,243,381,269"/>
+<area shape="rect" id="node10" href="$d0/dd5/classDistanceCalculationSettings.html" title=" " alt="" coords="5,347,211,373"/>
+<area shape="rect" id="node11" href="$d3/dbc/classConversation.html" title=" " alt="" coords="410,109,518,136"/>
+<area shape="rect" id="node12" href="$d7/d2f/classPhrase.html" title=" " alt="" coords="563,109,629,136"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="MapPanel" name="MapPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="171,80,257,107"/>
+<area shape="rect" id="node3" href="$d4/d25/classMapDetailPanel.html" title=" " alt="" coords="5,155,129,181"/>
+<area shape="rect" id="node4" href="$d8/de0/classMapSalesPanel.html" title=" " alt="" coords="154,155,274,181"/>
+<area shape="rect" id="node7" href="$d2/d80/classMissionPanel.html" title=" " alt="" coords="298,155,405,181"/>
+<area shape="rect" id="node2" href="$d8/d54/classPanel.html" title=" " alt="" coords="185,5,243,32"/>
+<area shape="rect" id="node5" href="$d6/db2/classMapOutfitterPanel.html" title=" " alt="" coords="62,229,201,256"/>
+<area shape="rect" id="node6" href="$dd/d14/classMapShipyardPanel.html" title=" " alt="" coords="225,229,368,256"/>
+</map>

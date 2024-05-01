@@ -1,5 +1,0 @@
-<map id="MissionPanel" name="MissionPanel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,112,181"/>
-<area shape="rect" id="node2" href="$classMapPanel.html" title=" " alt="" coords="16,80,101,107"/>
-<area shape="rect" id="node3" href="$classPanel.html" title=" " alt="" coords="30,5,87,32"/>
-</map>

@@ -1,0 +1,11 @@
+<map id="PreferencesPanel" name="PreferencesPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="99,288,233,315"/>
+<area shape="rect" id="node2" href="$d8/d54/classPanel.html" title=" " alt="" coords="5,184,63,211"/>
+<area shape="rect" id="node3" href="$d9/dcf/classUI.html" title=" " alt="" coords="15,95,53,121"/>
+<area shape="rect" id="node4" href="$dc/d4f/classPoint.html" title=" " alt="" coords="87,184,141,211"/>
+<area shape="rect" id="node5" href="$da/da2/classWrappedText.html" title=" " alt="" coords="166,184,273,211"/>
+<area shape="rect" id="node6" href="$d4/d42/classFont.html" title=" " alt="" coords="194,95,245,121"/>
+<area shape="rect" id="node7" href="$d9/d69/classShader.html" title=" " alt="" coords="186,5,253,32"/>
+<area shape="rect" id="node8" href="$d3/db9/classScrollVar.html" title=" " alt="" coords="297,184,451,211"/>
+<area shape="rect" id="node9" href="$d7/d54/classAnimate.html" title=" " alt="" coords="299,95,449,121"/>
+</map>

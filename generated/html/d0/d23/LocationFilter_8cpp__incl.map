@@ -1,0 +1,52 @@
+<map id="source/LocationFilter.cpp" name="source/LocationFilter.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="1946,5,2129,32"/>
+<area shape="rect" id="node2" href="$d7/da0/LocationFilter_8h.html" title=" " alt="" coords="2398,155,2519,181"/>
+<area shape="rect" id="node9" href="$db/d86/CategoryList_8h.html" title=" " alt="" coords="610,229,726,256"/>
+<area shape="rect" id="node14" href="$db/d52/CategoryTypes_8h.html" title=" " alt="" coords="511,155,641,181"/>
+<area shape="rect" id="node15" href="$d2/da2/DataNode_8h.html" title=" " alt="" coords="1920,229,2019,256"/>
+<area shape="rect" id="node16" href="$d8/d10/DataWriter_8h.html" title=" " alt="" coords="481,229,585,256"/>
+<area shape="rect" id="node17" title=" " alt="" coords="5,304,91,331"/>
+<area shape="rect" id="node19" href="$dc/d5c/DistanceMap_8h.html" title=" " alt="" coords="287,229,406,256"/>
+<area shape="rect" id="node21" href="$d9/d9f/GameData_8h.html" title=" " alt="" coords="1217,80,1321,107"/>
+<area shape="rect" id="node27" href="$d3/d04/Government_8h.html" title=" " alt="" coords="1521,80,1636,107"/>
+<area shape="rect" id="node32" href="$d3/d6c/Planet_8h.html" title=" " alt="" coords="2095,80,2169,107"/>
+<area shape="rect" id="node33" href="$db/d35/Port_8h.html" title=" " alt="" coords="2246,229,2306,256"/>
+<area shape="rect" id="node34" href="$dd/d6d/Random_8h.html" title=" " alt="" coords="2549,80,2637,107"/>
+<area shape="rect" id="node35" href="$d6/d03/Ship_8h.html" title=" " alt="" coords="2831,155,2894,181"/>
+<area shape="rect" id="node48" href="$d8/d47/StellarObject_8h.html" title=" " alt="" coords="3845,155,3963,181"/>
+<area shape="rect" id="node49" href="$db/d39/System_8h.html" title=" " alt="" coords="2193,80,2276,107"/>
+<area shape="rect" id="node50" title=" " alt="" coords="2661,80,2725,107"/>
+<area shape="rect" id="node3" href="$d9/d0c/DistanceCalculationSettings_8h.html" title=" " alt="" coords="46,229,263,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="3209,304,3252,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="3344,304,3387,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2097,304,2156,331"/>
+<area shape="rect" id="node4" href="$d9/dc3/WormholeStrategy_8h.html" title=" " alt="" coords="193,304,346,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="2913,379,2980,405"/>
+<area shape="rect" id="node10" title=" " alt="" coords="701,304,771,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1209,304,1260,331"/>
+<area shape="rect" id="node12" title=" " alt="" coords="617,304,677,331"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1533,304,1595,331"/>
+<area shape="rect" id="node18" title=" " alt="" coords="496,304,571,331"/>
+<area shape="rect" id="node20" title=" " alt="" coords="370,304,433,331"/>
+<area shape="rect" id="node22" href="$d2/d06/Sale_8h.html" title=" " alt="" coords="1955,155,2018,181"/>
+<area shape="rect" id="node23" href="$d4/d45/Set_8h.html" title=" " alt="" coords="1207,229,1262,256"/>
+<area shape="rect" id="node24" href="$dd/d8b/Trade_8h.html" title=" " alt="" coords="1624,229,1693,256"/>
+<area shape="rect" id="node25" title=" " alt="" coords="665,155,727,181"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2611,304,2688,331"/>
+<area shape="rect" id="node28" href="$dd/dac/Color_8h.html" title=" " alt="" coords="1459,155,1525,181"/>
+<area shape="rect" id="node29" href="$d9/dc0/ExclusiveItem_8h.html" title=" " alt="" coords="903,229,1030,256"/>
+<area shape="rect" id="node30" href="$d4/dcc/RaidFleet_8h.html" title=" " alt="" coords="1683,155,1779,181"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1549,155,1608,181"/>
+<area shape="rect" id="node36" href="$da/d95/Body_8h.html" title=" " alt="" coords="3845,229,3910,256"/>
+<area shape="rect" id="node37" href="$d0/d53/Angle_8h.html" title=" " alt="" coords="3842,304,3913,331"/>
+<area shape="rect" id="node38" href="$d4/de5/Point_8h.html" title=" " alt="" coords="4044,379,4111,405"/>
+<area shape="rect" id="node39" href="$d1/d20/Armament_8h.html" title=" " alt="" coords="2509,229,2611,256"/>
+<area shape="rect" id="node40" href="$d2/ddf/CargoHold_8h.html" title=" " alt="" coords="2382,229,2485,256"/>
+<area shape="rect" id="node41" href="$d1/d55/Command_8h.html" title=" " alt="" coords="3041,229,3143,256"/>
+<area shape="rect" id="node42" href="$dc/dc0/EsUuid_8h.html" title=" " alt="" coords="2887,229,2966,256"/>
+<area shape="rect" id="node43" href="$d2/def/FireCommand_8h.html" title=" " alt="" coords="2737,229,2863,256"/>
+<area shape="rect" id="node44" href="$de/d3d/Outfit_8h.html" title=" " alt="" coords="1529,229,1599,256"/>
+<area shape="rect" id="node45" href="$d9/d2b/Personality_8h.html" title=" " alt="" coords="3934,229,4039,256"/>
+<area shape="rect" id="node46" href="$db/d2d/ShipAICache_8h.html" title=" " alt="" coords="3420,229,3567,256"/>
+<area shape="rect" id="node47" href="$d2/dcc/ShipJumpNavigation_8h.html" title=" " alt="" coords="1286,229,1453,256"/>
+</map>

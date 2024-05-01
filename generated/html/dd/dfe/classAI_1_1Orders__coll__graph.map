@@ -1,0 +1,14 @@
+<map id="AI::Orders" name="AI::Orders">
+<area shape="rect" id="node1" title=" " alt="" coords="5,199,92,225"/>
+<area shape="rect" id="node2" href="$dc/d4f/classPoint.html" title=" " alt="" coords="12,5,67,32"/>
+<area shape="rect" id="node3" href="$dd/d2d/classSystem.html" title=" " alt="" coords="141,95,212,121"/>
+<area shape="rect" id="node7" href="$d8/da4/classLocationFilter.html" title=" " alt="" coords="292,199,403,225"/>
+<area shape="rect" id="node4" href="$d4/dad/classGovernment.html" title=" " alt="" coords="465,332,568,359"/>
+<area shape="rect" id="node5" href="$db/d41/classExclusiveItem.html" title=" " alt="" coords="427,199,606,225"/>
+<area shape="rect" id="node6" href="$d2/d37/classColor.html" title=" " alt="" coords="499,95,555,121"/>
+<area shape="rect" id="node8" href="$d0/dd5/classDistanceCalculationSettings.html" title=" " alt="" coords="241,95,446,121"/>
+<area shape="rect" id="node9" href="$d3/dbc/classConversation.html" title=" " alt="" coords="631,199,739,225"/>
+<area shape="rect" id="node10" href="$d7/d2f/classPhrase.html" title=" " alt="" coords="773,199,839,225"/>
+<area shape="rect" id="node11" href="$d1/d6d/classSprite.html" title=" " alt="" coords="144,5,204,32"/>
+<area shape="rect" id="node12" href="$d5/d81/classWeightedList.html" title=" " alt="" coords="228,5,408,32"/>
+</map>

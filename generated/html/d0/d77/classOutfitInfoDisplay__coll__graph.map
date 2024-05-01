@@ -1,0 +1,8 @@
+<map id="OutfitInfoDisplay" name="OutfitInfoDisplay">
+<area shape="rect" id="node1" title=" " alt="" coords="46,364,178,391"/>
+<area shape="rect" id="node2" href="$d6/df7/classItemInfoDisplay.html" title=" " alt="" coords="49,288,175,315"/>
+<area shape="rect" id="node3" href="$da/da2/classWrappedText.html" title=" " alt="" coords="5,184,112,211"/>
+<area shape="rect" id="node4" href="$d4/d42/classFont.html" title=" " alt="" coords="33,95,84,121"/>
+<area shape="rect" id="node5" href="$d9/d69/classShader.html" title=" " alt="" coords="25,5,92,32"/>
+<area shape="rect" id="node6" href="$dc/d4f/classPoint.html" title=" " alt="" coords="139,184,194,211"/>
+</map>

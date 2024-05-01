@@ -1,8 +1,0 @@
-<map id="source/SavedGame.h" name="source/SavedGame.h">
-<area shape="rect" id="node1" title=" " alt="" coords="280,5,440,32"/>
-<area shape="rect" id="node2" href="$LoadPanel_8h.html" title=" " alt="" coords="108,80,255,107"/>
-<area shape="rect" id="node5" href="$PlayerInfo_8cpp.html" title=" " alt="" coords="279,80,441,107"/>
-<area shape="rect" id="node6" href="$SavedGame_8cpp.html" title=" " alt="" coords="466,80,641,107"/>
-<area shape="rect" id="node3" href="$LoadPanel_8cpp.html" title=" " alt="" coords="5,155,168,181"/>
-<area shape="rect" id="node4" href="$MenuPanel_8cpp.html" title=" " alt="" coords="193,155,359,181"/>
-</map>
