@@ -143,7 +143,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abe8872c91445deee943c31c4599cee62"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/classRenderBuffer.html#abe8872c91445deee943c31c4599cee62">fadePadding</a> [4] = {}</td></tr>
 <tr class="separator:abe8872c91445deee943c31c4599cee62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class that can redirect all drawing commands to an internal texture. This buffer uses coordinates from (0, 0) in the top left, to (width, height) in the bottom right. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ada78e4d28c79aef0ee4071d10a82f3c3" name="ada78e4d28c79aef0ee4071d10a82f3c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada78e4d28c79aef0ee4071d10a82f3c3">&#9670;&nbsp;</a></span>RenderBuffer()</h2>
 
@@ -159,6 +161,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Create a texture of the given size that can be used as a render target. </p>
 
 </div>
 </div>
@@ -184,6 +187,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Destructor. Frees the texture and renderbuffers. </p>
 
 </div>
 </div>
@@ -227,6 +231,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Reset the render target and viewport to the original settings. </p>
 
 </div>
 </div>
@@ -262,6 +267,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw the contents of this buffer at the specified position. </p>
 
 </div>
 </div>
@@ -296,6 +302,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw the contents of this buffer at the specified position, clipping the contents.</p>
+<p >Draw the contents of this buffer at the specified position. </p>
 
 </div>
 </div>
@@ -338,6 +346,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Initialize the shaders used internally.</p>
+<p >Initialize the shaders. </p>
 
 </div>
 </div>
@@ -429,6 +439,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Turn this buffer on as a render target. The render target is restored if the Activation object goes out of scope. </p>
 
 </div>
 </div>

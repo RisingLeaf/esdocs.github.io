@@ -161,7 +161,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a71e2677a575d3144478ecf485778bc17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de1/classTest_1_1TestStep.html#a71e2677a575d3144478ecf485778bc17">clickRight</a> = false</td></tr>
 <tr class="separator:a71e2677a575d3144478ecf485778bc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a single step in a test </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac65c861db12e3b24574c8de8a6904ed6" name="ac65c861db12e3b24574c8de8a6904ed6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac65c861db12e3b24574c8de8a6904ed6">&#9670;&nbsp;</a></span>Type</h2>
 
@@ -181,15 +183,24 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The different types of teststeps. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a2919bace3a09a7700313ddaa94bfada9" name="ac65c861db12e3b24574c8de8a6904ed6a2919bace3a09a7700313ddaa94bfada9"></a>APPLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a1edce3bd99a335da00a27703a24f3dfc" name="ac65c861db12e3b24574c8de8a6904ed6a1edce3bd99a335da00a27703a24f3dfc"></a>ASSERT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a251d2fee497bff48dcf891d205ca7687" name="ac65c861db12e3b24574c8de8a6904ed6a251d2fee497bff48dcf891d205ca7687"></a>BRANCH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6aca3547acb9162b49fb4a6594ed9b3030" name="ac65c861db12e3b24574c8de8a6904ed6aca3547acb9162b49fb4a6594ed9b3030"></a>CALL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6ad0c94b5412e3494af1e7db042c59afa2" name="ac65c861db12e3b24574c8de8a6904ed6ad0c94b5412e3494af1e7db042c59afa2"></a>INJECT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6aa84cc046d48610b05c21fd3670d0c829" name="ac65c861db12e3b24574c8de8a6904ed6aa84cc046d48610b05c21fd3670d0c829"></a>INPUT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a6f434c508ad901b8667ed22f713e52bb" name="ac65c861db12e3b24574c8de8a6904ed6a6f434c508ad901b8667ed22f713e52bb"></a>LABEL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6ab51e586836039ac4aa10e0a78922291a" name="ac65c861db12e3b24574c8de8a6904ed6ab51e586836039ac4aa10e0a78922291a"></a>NAVIGATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a2919bace3a09a7700313ddaa94bfada9" name="ac65c861db12e3b24574c8de8a6904ed6a2919bace3a09a7700313ddaa94bfada9"></a>APPLY&#160;</td><td class="fielddoc"><p >Step that assigns a value to a condition. Does not cause the game to step. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a1edce3bd99a335da00a27703a24f3dfc" name="ac65c861db12e3b24574c8de8a6904ed6a1edce3bd99a335da00a27703a24f3dfc"></a>ASSERT&#160;</td><td class="fielddoc"><p >Step that verifies if a certain condition is true. Does not cause the game to step. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a251d2fee497bff48dcf891d205ca7687" name="ac65c861db12e3b24574c8de8a6904ed6a251d2fee497bff48dcf891d205ca7687"></a>BRANCH&#160;</td><td class="fielddoc"><p >Branch with a label to jump to when the condition in child is true. When a second label is given, then the second is to jump to on false. Does not cause the game to step, except when no step was done since last BRANCH or GOTO. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6aca3547acb9162b49fb4a6594ed9b3030" name="ac65c861db12e3b24574c8de8a6904ed6aca3547acb9162b49fb4a6594ed9b3030"></a>CALL&#160;</td><td class="fielddoc"><p >Step that calls another test to handle some generic common actions. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6ad0c94b5412e3494af1e7db042c59afa2" name="ac65c861db12e3b24574c8de8a6904ed6ad0c94b5412e3494af1e7db042c59afa2"></a>INJECT&#160;</td><td class="fielddoc"><p >Step that adds game-data, either in the config-directories or in the game directly. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6aa84cc046d48610b05c21fd3670d0c829" name="ac65c861db12e3b24574c8de8a6904ed6aa84cc046d48610b05c21fd3670d0c829"></a>INPUT&#160;</td><td class="fielddoc"><p >Step that performs input (key, mouse, command). Does cause the game to step (to process the inputs). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6a6f434c508ad901b8667ed22f713e52bb" name="ac65c861db12e3b24574c8de8a6904ed6a6f434c508ad901b8667ed22f713e52bb"></a>LABEL&#160;</td><td class="fielddoc"><p >Label to jump to (similar as is done in conversations). Does not cause the game to step. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac65c861db12e3b24574c8de8a6904ed6ab51e586836039ac4aa10e0a78922291a" name="ac65c861db12e3b24574c8de8a6904ed6ab51e586836039ac4aa10e0a78922291a"></a>NAVIGATE&#160;</td><td class="fielddoc"><p >Instructs the game to set navigation / travel plan to a target system </p>
+</td></tr>
 </table>
 
 </div>
@@ -294,6 +305,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Input variables. </p>
 
 </div>
 </div>
@@ -308,6 +320,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >For applying condition changes, branching based on conditions or checking asserts (similar to Conversations). </p>
 
 </div>
 </div>
@@ -350,6 +363,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Labels to jump to in case of branches. We could optimize during load to lookup the step numbers (and provide integer stepnumbers here), but we can also use the textual information during error/ debug printing, so keeping the strings for now. </p>
 
 </div>
 </div>
@@ -420,6 +434,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Variables for travelpan/navigate steps. </p>
 
 </div>
 </div>
@@ -434,6 +449,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mouse/Pointer input variables. </p>
 
 </div>
 </div>

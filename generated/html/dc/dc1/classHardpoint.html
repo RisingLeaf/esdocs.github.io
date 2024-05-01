@@ -184,7 +184,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a42a01beaa05eb9ce8db6f8c147196bbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc1/classHardpoint.html#a42a01beaa05eb9ce8db6f8c147196bbf">wasFiring</a> = false</td></tr>
 <tr class="separator:a42a01beaa05eb9ce8db6f8c147196bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A single weapon hardpoint on the ship (i.e. a gun port or turret mount), which may or may not have a weapon installed. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2b9c158a2bfbb6abe71025819b8c7004" name="a2b9c158a2bfbb6abe71025819b8c7004"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b9c158a2bfbb6abe71025819b8c7004">&#9670;&nbsp;</a></span>Hardpoint()</h2>
 
@@ -234,6 +236,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Constructor. Hardpoints may or may not specify what weapon is in them.</p>
+<p >Constructor. </p>
 
 </div>
 </div>
@@ -253,6 +257,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Adjust this weapon's aim by the given amount, relative to its maximum "turret turn" rate. </p>
 
 </div>
 </div>
@@ -270,6 +275,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If this is a burst weapon, get the number of shots left in the burst.</p>
+<p >Get the number of remaining burst shots before a full reload is required. </p>
 
 </div>
 </div>
@@ -329,6 +336,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Reset the reload counters and expend ammunition, if any.</p>
+<p >Update any counters that change when this projectile fires. </p>
 
 </div>
 </div>
@@ -363,6 +372,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire this weapon. If it is a turret, it automatically points toward the given ship's target. If the weapon requires ammunition, it will be subtracted from the given ship. </p>
 
 </div>
 </div>
@@ -397,6 +407,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire an anti-missile. Returns true if the missile should be killed. </p>
 
 </div>
 </div>
@@ -439,6 +450,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check whether a projectile or flotsam is within the range of the anti-missile or tractor beam system and create visuals if it is. </p>
 
 </div>
 </div>
@@ -473,6 +485,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire a tractor beam. Returns true if the flotsam was hit. </p>
 
 </div>
 </div>
@@ -490,6 +503,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the angle that this weapon is aimed at, relative to the ship.</p>
+<p >Get the convergence angle adjustment of this weapon (guns only, not turrets). </p>
 
 </div>
 </div>
@@ -507,6 +522,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the base angle that this weapon is aimed at (without harmonization/convergence), relative to the ship.</p>
+<p >Get the default facing direction for a gun </p>
 
 </div>
 </div>
@@ -524,6 +541,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the weapon installed in this hardpoint (or null if there is none).</p>
+<p >Get the weapon in this hardpoint. This returns null if there is none. </p>
 
 </div>
 </div>
@@ -541,6 +560,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the location, relative to the center of the ship, from which projectiles of this weapon should originate. This point must be rotated to take the ship's current facing direction into account.</p>
+<p >Get the location, relative to the center of the ship, from which projectiles of this weapon should originate. </p>
 
 </div>
 </div>
@@ -558,6 +579,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the angle this weapon ought to point at for ideal gun harmonization. </p>
 
 </div>
 </div>
@@ -576,6 +598,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Install a weapon here (assuming it is empty). This is only for <a class="el" href="../../de/dc3/classArmament.html">Armament</a> to call internally. </p>
 
 </div>
 </div>
@@ -593,6 +616,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out if this hardpoint has a homing weapon installed. </p>
 
 </div>
 </div>
@@ -627,6 +651,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this weapon is ready to fire. </p>
 
 </div>
 </div>
@@ -644,6 +669,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out if this hardpoint has a special weapon installed (e.g. anti-missile, tractor beam). </p>
 
 </div>
 </div>
@@ -661,6 +687,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Shortcuts for querying weapon characteristics.</p>
+<p >Find out if this is a turret hardpoint (whether or not it has a turret installed). </p>
 
 </div>
 </div>
@@ -695,6 +723,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This weapon jammed. Increase its reload counters, but don't fire. </p>
 
 </div>
 </div>
@@ -712,6 +741,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reload this weapon. </p>
 
 </div>
 </div>
@@ -729,6 +759,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Perform one step (i.e. decrement the reload count). </p>
 
 </div>
 </div>
@@ -746,6 +777,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Uninstall the outfit from this port (if it has one). </p>
 
 </div>
 </div>
@@ -763,6 +795,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this weapon was firing in the previous step.</p>
+<p >Check if this weapon fired the last time it was able to fire. This is to figure out if the stream spacing timer should be applied or not. </p>
 
 </div>
 </div>
@@ -786,6 +820,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d9/d80/classAngle.html">Angle</a> adjustment for convergence. </p>
 
 </div>
 </div>
@@ -808,6 +843,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d9/d80/classAngle.html">Angle</a> of firing direction (guns only). </p>
 
 </div>
 </div>
@@ -896,6 +932,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Indicates if this hardpoint disallows converging (guns only). </p>
 
 </div>
 </div>
@@ -918,6 +955,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This hardpoint is for a turret or a gun. </p>
 
 </div>
 </div>
@@ -940,6 +978,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Indicates whether the hardpoint sprite is drawn under the ship. </p>
 
 </div>
 </div>
@@ -962,6 +1001,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The weapon installed in this hardpoint. </p>
 
 </div>
 </div>
@@ -984,6 +1024,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../dc/dc1/classHardpoint.html">Hardpoint</a> location, in world coordinates relative to the ship's center. </p>
 
 </div>
 </div>
@@ -1006,6 +1047,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Reload timers and other attributes. </p>
 
 </div>
 </div>

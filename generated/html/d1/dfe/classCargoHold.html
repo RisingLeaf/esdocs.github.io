@@ -172,7 +172,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a4bb749a25224c9e41d05d9338c61c071"><td class="memItemLeft" align="right" valign="top">std::map&lt; const <a class="el" href="../../da/d97/classMission.html">Mission</a> *, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classCargoHold.html#a4bb749a25224c9e41d05d9338c61c071">passengers</a></td></tr>
 <tr class="separator:a4bb749a25224c9e41d05d9338c61c071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class represents the cargo and passengers that a ship can carry. That can include ordinary commodities, plundered outfits, and mission cargo. When you land on a planet, all your cargo is pooled into a single collection, not tied to any one ship, so you retain it even if you sell off all your ships. When you take off, cargo is distributed among your ships, and if some of it will not fit it must be sold off. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8aaf192fa8c762c8b8a5f7046677ad5b" name="a8aaf192fa8c762c8b8a5f7046677ad5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8aaf192fa8c762c8b8a5f7046677ad5b">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/2]</span></h2>
 
@@ -198,6 +200,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add the given number of copies of the given outfit. </p>
 
 </div>
 </div>
@@ -226,6 +229,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >These functions do the same thing as <a class="el" href="../../d1/dfe/classCargoHold.html#aaabc3c2941541a3d6d3cb8a407ba1b17">Transfer()</a> with no destination specified, but they have clearer names to make the code more readable. </p>
 
 </div>
 </div>
@@ -244,6 +248,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add or remove any cargo or passengers associated with the given mission.</p>
+<p >Add all the cargo and passengers associated with the given mission. </p>
 
 </div>
 </div>
@@ -261,6 +267,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check how many bunks are free. </p>
 
 </div>
 </div>
@@ -278,6 +285,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Remove any items in this cargo hold. </p>
 
 </div>
 </div>
@@ -295,6 +303,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the commodities map directly. </p>
 
 </div>
 </div>
@@ -312,6 +321,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total number of tons of commodities. </p>
 
 </div>
 </div>
@@ -329,6 +339,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the amount of free cargo space. </p>
 
 </div>
 </div>
@@ -364,6 +375,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../da/d97/classMission.html">Mission</a> cargo: </p>
 
 </div>
 </div>
@@ -382,6 +394,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Spare outfits:</p>
+<p >Spare outfits (including plunder and mined materials): </p>
 
 </div>
 </div>
@@ -400,6 +414,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Normal cargo: </p>
 
 </div>
 </div>
@@ -418,6 +433,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check how many passengers for the given mission are being carried. </p>
 
 </div>
 </div>
@@ -435,6 +451,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if any mission cargo is being carried. Some mission cargo has no mass, so this cannot be done by calling <a class="el" href="../../d1/dfe/classCargoHold.html#a7cc8a50cd1e01730385127143930d08c">MissionCargoSize()</a>. </p>
 
 </div>
 </div>
@@ -452,6 +469,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if any outfits are being carried. Note that some outfits may have mass zero, so this check cannot be done by calling <a class="el" href="../../d1/dfe/classCargoHold.html#a1abb6d5f13d333345bd6b96c1a524584">OutfitsSize()</a>. </p>
 
 </div>
 </div>
@@ -469,6 +487,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the amount tons of illegal cargo. </p>
 
 </div>
 </div>
@@ -487,6 +506,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If anything you are carrying is illegal, return the maximum fine you can be charged for any illegal outfits plus the sum of the fines for all missions. If the returned value is negative, you are carrying something so bad that it warrants a death sentence. </p>
 
 </div>
 </div>
@@ -504,6 +524,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if there is anything in this cargo hold (including passengers). </p>
 
 </div>
 </div>
@@ -522,6 +543,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load the cargo manifest from a <a class="el" href="../../d9/d29/classDataFile.html">DataFile</a>. This must be done after the <a class="el" href="../../d8/ddf/classGameData.html">GameData</a> is loaded, so that the sizes of any outfits are known. </p>
 
 </div>
 </div>
@@ -539,6 +561,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Note: some missions may have cargo that takes up 0 space, but should still show up on the cargo listing.</p>
+<p >Access the mission cargo map directly. </p>
 
 </div>
 </div>
@@ -556,6 +580,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total mass of mission cargo. </p>
 
 </div>
 </div>
@@ -573,6 +598,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the outfits map directly. </p>
 
 </div>
 </div>
@@ -590,6 +616,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total mass of outfit cargo, rounded up to the nearest ton. </p>
 
 </div>
 </div>
@@ -624,6 +651,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the mission passenger map directly. </p>
 
 </div>
 </div>
@@ -641,6 +669,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check how many bunks are occupied by passengers. </p>
 
 </div>
 </div>
@@ -669,6 +698,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Remove the given number of copies of the given outfit. </p>
 
 </div>
 </div>
@@ -715,6 +745,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Remove all the cargo and passengers (if any) associated with the given mission. </p>
 
 </div>
 </div>
@@ -733,6 +764,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Save the cargo manifest to a file. </p>
 
 </div>
 </div>
@@ -751,6 +783,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the number of free bunks for passengers. </p>
 
 </div>
 </div>
@@ -769,6 +802,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the capacity of this cargo hold. </p>
 
 </div>
 </div>
@@ -786,6 +820,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the capacity of this hold. </p>
 
 </div>
 </div>
@@ -820,6 +855,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Transfer mission cargo from one cargo hold to another. </p>
 
 </div>
 </div>
@@ -854,6 +890,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Transfer outfits from one cargo hold to another. </p>
 
 </div>
 </div>
@@ -888,6 +925,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >For all the transfer functions, the "other" can be null if you simply want the commodity to "disappear" or, if the "amount" is negative, to have an unlimited supply. The return value is the actual number transferred. </p>
 
 </div>
 </div>
@@ -916,6 +954,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Transfer as much as the given cargo hold has capacity for. The priority is first mission cargo, then spare outfits, then ordinary commodities. </p>
 
 </div>
 </div>
@@ -950,6 +989,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Transfer mission passengers from one cargo hold to another. </p>
 
 </div>
 </div>
@@ -967,6 +1007,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total amount of cargo space used, rounded up to the nearest ton. (Some outfits may have non-integral masses.) </p>
 
 </div>
 </div>
@@ -1002,6 +1043,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total value of all this cargo, in the given system. </p>
 
 </div>
 </div>
@@ -1047,6 +1089,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Track how many objects of each type are being carried: </p>
 
 </div>
 </div>
@@ -1135,6 +1178,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Use -1 to indicate unlimited capacity. </p>
 
 </div>
 </div>

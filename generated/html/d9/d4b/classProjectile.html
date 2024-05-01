@@ -291,7 +291,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d80/classBody.html#ab5d1367968ab9eb36708eef8155f3133">government</a> = nullptr</td></tr>
 <tr class="separator:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a projectile (a moving object which can hit ships or asteroids and can potentially be hit by anti-missile systems). A projectile may either move at a constant heading and velocity, or may accelerate or change course to track its target. Also, when they hit their target or reach the end of their lifetime, some projectiles split into "sub-munitions," new projectiles that may look different or travel in a new direction. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a37a1a81a5aae648f085c2c0ac92c1450" name="a37a1a81a5aae648f085c2c0ac92c1450"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37a1a81a5aae648f085c2c0ac92c1450">&#9670;&nbsp;</a></span>Projectile() <span class="overload">[1/3]</span></h2>
 
@@ -397,6 +399,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d2/d32/classShip.html">Ship</a> explosion. </p>
 
 </div>
 </div>
@@ -415,6 +418,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear the targeting information on this projectile. </p>
 
 </div>
 </div>
@@ -441,6 +445,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >TODO: add more conditions in the future. For example maybe proximity to stars and their brightness could could cause IR missiles to lose their locks more often, and dense asteroid fields could do the same for radar and optically guided missiles. </p>
 
 </div>
 </div>
@@ -458,6 +463,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the amount of clipping that should be applied when drawing this projectile. </p>
 
 </div>
 </div>
@@ -475,6 +481,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the distance that this projectile has traveled. </p>
 
 </div>
 </div>
@@ -509,6 +516,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This projectile hit something. Create the explosion, if any. This also marks the projectile as needing deletion if it has run out of penetrations.</p>
+<p >This projectile hit something. Create the explosion, if any. This also marks the projectile as needing deletion if it has run out of hits. </p>
 
 </div>
 </div>
@@ -527,6 +536,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get information on how this projectile impacted a ship. </p>
 
 </div>
 </div>
@@ -544,6 +554,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get information on the weapon that fired this projectile. </p>
 
 </div>
 </div>
@@ -561,6 +572,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the number of objects this projectile can still collide with. </p>
 
 </div>
 </div>
@@ -578,6 +590,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get whether the lifetime on this projectile has run out. </p>
 
 </div>
 </div>
@@ -595,6 +608,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This projectile was killed, e.g. by an anti-missile system. </p>
 
 </div>
 </div>
@@ -612,6 +626,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out if this is a missile, and if so, how strong it is (i.e. what chance an anti-missile shot has of destroying it). </p>
 
 </div>
 </div>
@@ -640,6 +655,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Functions provided by the <a class="el" href="../../d7/d80/classBody.html">Body</a> base class: Frame GetFrame(int step = -1) const; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#aaef9972906c8b24360cc578d05fb1dfa">Position() const</a>; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a1a877a4915f3ecf19df065536b06532d">Velocity() const</a>; const <a class="el" href="../../d9/d80/classAngle.html">Angle</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a637115748ef7a544e7b4574f955e42e5">Facing() const</a>; <a class="el" href="../../dc/d4f/classPoint.html">Point</a> <a class="el" href="../../d7/d80/classBody.html#aa59695adb1600a5fa35b4e8da023de51">Unit() const</a>; const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *GetGovernment() const; Move the projectile. It may create effects or submunitions.</p>
+<p >This returns false if it is time to delete this projectile. </p>
 
 </div>
 </div>
@@ -657,6 +674,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get whether this projectile should explode the next time collision detection is run. </p>
 
 </div>
 </div>
@@ -674,6 +692,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out which ship or government this projectile is targeting. Note: this pointer is not guaranteed to be dereferenceable, so only use it for comparing.</p>
+<p >Find out which ship this projectile is targeting. </p>
 
 </div>
 </div>
@@ -708,6 +728,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This function is much more costly, so use it only if you need to get a non-const shared pointer to the target ship. </p>
 
 </div>
 </div>
@@ -797,6 +818,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The change in velocity of all stages of this projectile relative to the firing ship. </p>
 
 </div>
 </div>

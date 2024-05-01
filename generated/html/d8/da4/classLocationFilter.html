@@ -160,7 +160,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a80232e168c4f11c07eb8357749d8e187"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="../../d8/da4/classLocationFilter.html">LocationFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da4/classLocationFilter.html#a80232e168c4f11c07eb8357749d8e187">neighborFilters</a></td></tr>
 <tr class="separator:a80232e168c4f11c07eb8357749d8e187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class represents a set of constraints on a randomly chosen ship, planet, or system. For example, it can require that the planet used for a mission have a certain attribute or be owned by a certain government, or be a certain distance away from the current system. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af270407a070a700270c00cef1c342785" name="af270407a070a700270c00cef1c342785"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af270407a070a700270c00cef1c342785">&#9670;&nbsp;</a></span>LocationFilter() <span class="overload">[1/2]</span></h2>
 
@@ -209,6 +211,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../d8/da4/classLocationFilter.html#a053762b9d762915c45d08274237fd05e">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -227,6 +230,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this filter contains any specifications. </p>
 
 </div>
 </div>
@@ -244,6 +248,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if all of this filter's named content is invalid (e.g. its known members only match to content that is currently unavailable). If at least one valid parameter from every restriction is valid, then this filter is valid. </p>
 
 </div>
 </div>
@@ -262,6 +267,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Examine all the children of the given node and load any that are filters. </p>
 
 </div>
 </div>
@@ -288,6 +294,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Load one particular line of conditions. </p>
 
 </div>
 </div>
@@ -316,6 +323,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If the player is in the given system, does this filter match? </p>
 
 </div>
 </div>
@@ -334,6 +342,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Ships are chosen based on system/"near" filters, government, category of ship, outfits installed/carried, and their total attributes.</p>
+<p >Check for matches with the ship's system, government, category, outfits (installed and carried), and attributes. </p>
 
 </div>
 </div>
@@ -376,6 +386,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if the filter matches the given system. If it did not, return true only if the filter wasn't looking for planet characteristics or if the didPlanet argument is set (meaning we already checked those). </p>
 
 </div>
 </div>
@@ -438,6 +449,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Pick a random planet that matches this filter, based on the given origin. </p>
 
 </div>
 </div>
@@ -456,6 +468,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Generic find system / find planet methods, based on the given origin system (e.g. the player's current system) and ability to land.</p>
+<p >Pick a random system that matches this filter, based on the given origin. </p>
 
 </div>
 </div>
@@ -474,6 +488,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This only saves the children. Save the root node separately. It does handle indenting, however. </p>
 
 </div>
 </div>
@@ -492,6 +507,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Return a new <a class="el" href="../../d8/da4/classLocationFilter.html">LocationFilter</a> with any "distance" conditions converted into "near" references, relative to the given system.</p>
+<p >Convert a "distance" filter into a "near" filter. </p>
 
 </div>
 </div>
@@ -515,6 +532,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >It must have at least one attribute from each set in this list: </p>
 
 </div>
 </div>
@@ -537,6 +555,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The reference point and distance limits of a "near &lt;system&gt;" filter. </p>
 
 </div>
 </div>
@@ -669,6 +688,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These filters store all the things the planet or system must border. </p>
 
 </div>
 </div>
@@ -691,6 +711,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These filters store all the things the planet, system, or ship must not be. </p>
 
 </div>
 </div>
@@ -757,6 +778,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Distance limits used in a "distance" filter. </p>
 
 </div>
 </div>
@@ -779,6 +801,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >At least one of the outfits from each set must be available (to purchase or plunder): </p>
 
 </div>
 </div>
@@ -801,6 +824,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The planet must satisfy these conditions: </p>
 
 </div>
 </div>
@@ -823,6 +847,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A ship must belong to one of these categories: </p>
 
 </div>
 </div>
@@ -845,6 +870,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The system must satisfy these conditions: </p>
 
 </div>
 </div>

@@ -286,7 +286,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d54/classPanel.html#a54beaf51714a909c0731a3f11c3bf35b">Modifier</a> ()</td></tr>
 <tr class="separator:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >User interface panel that displays a conversation, allowing you to make choices. If a callback function is given, that function will be called when the panel closes, to report the outcome of the conversation. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abd4356fbdaf686afc0f98a13440872b7" name="abd4356fbdaf686afc0f98a13440872b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd4356fbdaf686afc0f98a13440872b7">&#9670;&nbsp;</a></span>ConversationPanel()</h2>
 
@@ -336,6 +338,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Constructor. </p>
 
 </div>
 </div>
@@ -363,6 +366,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The player just clicked on a conversation choice. </p>
 
 </div>
 </div>
@@ -389,6 +393,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle mouse click on the "ok," "done," or a conversation choice.</p>
+<p >The player just clicked one of the two name entry text fields. </p>
 
 </div>
 </div>
@@ -425,6 +431,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Allow scrolling by click and drag. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#af5abc296681dfa7e325f8b5c0cc22895">Panel</a>.</p>
 
@@ -452,6 +459,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Implements <a class="el" href="../../d8/d54/classPanel.html#ac567662a50d5e8995a123f6a3154c013">Panel</a>.</p>
 
@@ -479,6 +487,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Exit this panel and do whatever needs to happen next, which includes possibly activating a callback function and, if docked with an <a class="el" href="../../de/d71/classNPC.html">NPC</a>, destroying it or showing the <a class="el" href="../../d2/d42/classBoardingPanel.html">BoardingPanel</a> (if it is hostile).</p>
+<p >Exit this panel and do whatever needs to happen next. </p>
 
 </div>
 </div>
@@ -515,6 +525,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Go to the given conversation node. If a choice index is given, include the text of that choice in the conversation history.</p>
+<p >The player just selected the given choice. </p>
 
 </div>
 </div>
@@ -551,6 +563,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle selecting choices by hovering with the mouse. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#a5aaabd4cdabcd6251d9c4e86535f89bc">Panel</a>.</p>
 
@@ -601,6 +614,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Event handlers.</p>
+<p >Handle key presses. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#af7f4af41d7bb3d5e13556e394f0678df">Panel</a>.</p>
 
@@ -629,6 +644,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Given an index into the list of displayed choices (i.e. not including conditionally-skipped choices), return its "raw index" in the conversation (i.e. including conditionally-skipped choices) </p>
 
 </div>
 </div>
@@ -665,6 +681,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle the scroll wheel. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#a424d0b9ae5e89a5c629e313ffb85a7f9">Panel</a>.</p>
 
@@ -715,6 +732,7 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Allow the callback function to be a member of any class. </p>
 
 </div>
 </div>
@@ -738,6 +756,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This function should be called with the conversation outcome. </p>
 
 </div>
 </div>
@@ -760,6 +779,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A pointer to the mission that called this conversation. </p>
 
 </div>
 </div>
@@ -804,6 +824,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The current choices being presented to you, and their indices: </p>
 
 </div>
 </div>
@@ -826,6 +847,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The conversation we are displaying. </p>
 
 </div>
 </div>
@@ -848,6 +870,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Text entry fields for changing the player's name. </p>
 
 </div>
 </div>
@@ -870,6 +893,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Flicker time, set if the player enters invalid input for a pilot's name. </p>
 
 </div>
 </div>
@@ -914,6 +938,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether the mouse moved in the current frame. </p>
 
 </div>
 </div>
@@ -958,6 +983,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Maximum scroll amount. </p>
 
 </div>
 </div>
@@ -980,6 +1006,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >All conversations start with node 0. </p>
 
 </div>
 </div>
@@ -1002,6 +1029,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Reference to the player, to apply any changes to them. </p>
 
 </div>
 </div>
@@ -1024,6 +1052,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Current scroll position. </p>
 
 </div>
 </div>
@@ -1046,6 +1075,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If specified, this is a pointer to the ship that this conversation acts upon (e.g. the ship failing a "flight check", or the <a class="el" href="../../de/d71/classNPC.html">NPC</a> you have boarded). </p>
 
 </div>
 </div>
@@ -1068,6 +1098,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Text substitutions (player's name, and ship name). </p>
 
 </div>
 </div>
@@ -1090,6 +1121,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If specified, this is a star system to display with a special big pointer when the player brings up the map. (Typically a mission destination.) </p>
 
 </div>
 </div>
@@ -1112,6 +1144,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The "history" of the conversation up to this point: </p>
 
 </div>
 </div>
@@ -1134,6 +1167,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Should we use a <a class="el" href="../../df/df7/classPlayerInfo.html">PlayerInfo</a> transaction to prevent save-load glitches? </p>
 
 </div>
 </div>

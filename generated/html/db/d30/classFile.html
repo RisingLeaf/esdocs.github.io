@@ -98,7 +98,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a6602f104fa2842af14d803c40201f4cd"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d30/classFile.html#a6602f104fa2842af14d803c40201f4cd">file</a> = nullptr</td></tr>
 <tr class="separator:a6602f104fa2842af14d803c40201f4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >RAII wrapper for FILE, to make sure it gets closed if an error occurs. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae0e47777d41e6cedd18b59f024157482" name="ae0e47777d41e6cedd18b59f024157482"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0e47777d41e6cedd18b59f024157482">&#9670;&nbsp;</a></span>File() <span class="overload">[1/4]</span></h2>
 
@@ -303,6 +305,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Do not allow copying the FILE pointer. </p>
 
 </div>
 </div>
@@ -329,6 +332,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move assignment is OK though. </p>
 
 </div>
 </div>

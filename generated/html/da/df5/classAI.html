@@ -366,7 +366,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a62d0256d37a56962caab783e920947d9"><td class="memItemLeft" align="right" valign="top">std::map&lt; const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *, std::vector&lt; <a class="el" href="../../d2/d32/classShip.html">Ship</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df5/classAI.html#a62d0256d37a56962caab783e920947d9">allyLists</a></td></tr>
 <tr class="separator:a62d0256d37a56962caab783e920947d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class is responsible for controlling all the ships in the game, including the player's "flagship" - which is usually controlled via the keyboard but can also make use of the <a class="el" href="../../da/df5/classAI.html">AI</a>'s autopilot for landing, aiming, or hyperspace travel between systems. The <a class="el" href="../../da/df5/classAI.html">AI</a> also tracks which actions ships have performed, to avoid having the same ship try to scan or board the same target over and over. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="afc4ffb4cd20e507f34d5384c493aa656" name="afc4ffb4cd20e507f34d5384c493aa656"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc4ffb4cd20e507f34d5384c493aa656">&#9670;&nbsp;</a></span>Comp</h2>
 
@@ -386,6 +388,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Records of what various <a class="el" href="../../da/df5/classAI.html">AI</a> ships and factions have done. </p>
 
 </div>
 </div>
@@ -402,6 +405,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Any object that can be a ship's target is in a list of this type: </p>
 
 </div>
 </div>
@@ -443,6 +447,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Constructor, giving the <a class="el" href="../../da/df5/classAI.html">AI</a> access to the player and various object lists. </p>
 
 </div>
 </div>
@@ -528,6 +533,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Aim the given ship's turrets. </p>
 
 </div>
 </div>
@@ -546,6 +552,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the in-system strength of each government's allies and enemies. </p>
 
 </div>
 </div>
@@ -588,6 +595,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Disabled or stranded ships coordinate with other ships to get assistance.</p>
+<p >Check if the ship is being helped, and if not, ask for help. </p>
 
 </div>
 </div>
@@ -678,6 +687,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Fire whichever of the given ship's weapons can hit a hostile target. Return a bitmask giving the weapons to fire.</p>
+<p >Fire whichever of the given ship's weapons can hit a hostile target. </p>
 
 </div>
 </div>
@@ -745,6 +756,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Cache various lists of all targetable ships in the player's system for this Step. </p>
 
 </div>
 </div>
@@ -787,6 +799,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine if the selected ship is physically able to render assistance. </p>
 
 </div>
 </div>
@@ -823,6 +836,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if a ship can pursue its target (i.e. beyond the "fence").</p>
+<p >Check if the given target can be pursued by this ship. </p>
 
 </div>
 </div>
@@ -918,6 +933,8 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reset the <a class="el" href="../../da/df5/classAI.html">AI</a>'s memory of events.</p>
+<p >Remove records of what happened in the previous system, now that the player has entered a new one. </p>
 
 </div>
 </div>
@@ -935,6 +952,8 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear ship orders. This should be done when the player lands on a planet, but not when they jump from one system to another.</p>
+<p >Clear ship orders and assistance requests. These should be done when the player lands, but not when they change systems. </p>
 
 </div>
 </div>
@@ -971,6 +990,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Special personality behaviors.</p>
+<p >"Appeasing" ships will dump cargo after being injured, if they are being targeted. </p>
 
 </div>
 </div>
@@ -1007,6 +1028,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if this ship should cloak. Returns true if this ship decided to run away while cloaking. </p>
 
 </div>
 </div>
@@ -1151,6 +1173,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Prevent ships from stacking on each other when many are moving in sync. </p>
 
 </div>
 </div>
@@ -1271,6 +1294,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Find a target ship to flock around at high speed. </p>
 
 </div>
 </div>
@@ -1325,6 +1349,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Find nearest landing location. </p>
 
 </div>
 </div>
@@ -1377,6 +1402,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Pick a new target for the given ship. </p>
 
 </div>
 </div>
@@ -1455,6 +1481,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Obtain a list of ships matching the desired hostility.</p>
+<p >Return a list of all targetable ships in the same system as the player that match the desired hostility (i.e. enemy or non-enemy). Does not consider the ship's current target, as its inclusion may or may not be desired. </p>
 
 </div>
 </div>
@@ -1497,6 +1525,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >True if the government performed the indicated event to the other ship. </p>
 
 </div>
 </div>
@@ -1539,6 +1568,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >True if the ship has performed the indicated event against any member of the government.</p>
+<p >True if the ship has committed the action against that government. For example, if the player boarded any ship belonging to that government. </p>
 
 </div>
 </div>
@@ -1581,6 +1612,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >True if the ship performed the indicated event to the other ship. </p>
 
 </div>
 </div>
@@ -1717,6 +1749,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d8/d16/classFleet.html">Fleet</a> commands from the player. </p>
 
 </div>
 </div>
@@ -1927,6 +1960,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Instead of moving to a point with a fixed location, move to a moving point (<a class="el" href="../../d2/d32/classShip.html">Ship</a> = position + velocity) </p>
 
 </div>
 </div>
@@ -2119,6 +2153,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Prefer your parent's target planet for refueling, but if it and your current target planet can't fuel you, try to find one that can. </p>
 
 </div>
 </div>
@@ -2161,6 +2196,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Calculate how long it will take a projectile to reach a target given the target's relative position and velocity and the velocity of the projectile. If it cannot hit the target, this returns NaN.</p>
+<p >Get the amount of time it would take the given weapon to reach the given target, assuming it can be fired in any direction (i.e. turreted). For non-turreted weapons this can be used to calculate the ideal direction to point the ship in. </p>
 
 </div>
 </div>
@@ -2197,6 +2234,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the ship's target system or planet in order to reach the next desired system. Will target a landable planet to refuel. If the ship is an escort it will only use routes known to the player. </p>
 
 </div>
 </div>
@@ -2215,6 +2253,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the mouse position for turning the player's flagship. </p>
 
 </div>
 </div>
@@ -2257,6 +2296,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine if a carried ship meets any of the criteria for returning to its parent. </p>
 
 </div>
 </div>
@@ -2283,6 +2323,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Special decisions a ship might make.</p>
+<p >Determine if using an afterburner does not use up reserve fuel, cause undue energy strain, or undue thermal loads if almost overheated. </p>
 
 </div>
 </div>
@@ -2301,6 +2343,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Issue <a class="el" href="../../da/df5/classAI.html">AI</a> commands to all ships for one game step. </p>
 
 </div>
 </div>
@@ -2391,6 +2434,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Instead of coming to a full stop, adjust to a target velocity vector </p>
 
 </div>
 </div>
@@ -2459,6 +2503,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a vector giving the direction this ship should aim in in order to do maximum damage to a target at the given position with its non-turret, non-homing weapons. If the ship has no non-homing weapons, this just returns the direction to the target.</p>
+<p >Get a vector giving the direction this ship should aim in in order to do maximum damaged to a target at the given position with its non-turret, non-homing weapons. If the ship has no non-homing weapons, this just returns the direction to the target. </p>
 
 </div>
 </div>
@@ -2521,6 +2567,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >True if found asteroid.</p>
+<p >Searches every asteroid within the ship scan limit and returns either the asteroid closest to the ship or the asteroid of highest value in range, depending on the player's preferences. </p>
 
 </div>
 </div>
@@ -2547,6 +2595,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Methods of moving from the current position to a desired position / orientation. </p>
 
 </div>
 </div>
@@ -2589,6 +2638,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine the value to use in <a class="el" href="../../d9/d71/classCommand.html#a25ed056bea40fe3eb981ea7f16e75d4c">Command::SetTurn()</a> to turn the ship towards the desired facing. "precision" is an optional argument corresponding to a value of the dot product of the current and target facing vectors above which no turning should be attempting, to reduce constant, minute corrections. </p>
 
 </div>
 </div>
@@ -2607,6 +2657,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Allow the <a class="el" href="../../da/df5/classAI.html">AI</a> to track any events it is interested in. </p>
 
 </div>
 </div>
@@ -2626,7 +2677,7 @@ template&lt;class Type &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d9/d71/classCommand.html">Command</a> &amp;&#160;</td>
-          <td class="paramname"><em>clickCommands</em>&#160;</td>
+          <td class="paramname"><em>activeCommands</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2635,6 +2686,7 @@ template&lt;class Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Commands issued via the keyboard (mostly, to the flagship). </p>
 
 </div>
 </div>
@@ -2661,6 +2713,8 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert order types based on fulfillment status.</p>
+<p >Change the ship's order based on its current fulfillment of the order. </p>
 
 </div>
 </div>
@@ -2697,6 +2751,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Functions to classify ships based on government and system. </p>
 
 </div>
 </div>
@@ -2808,6 +2863,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d9/d71/classCommand.html">Command</a> applied by the player's "autopilot." </p>
 
 </div>
 </div>
@@ -2962,6 +3018,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >General firing command for ships. This is a data member to avoid thrashing the heap, since we can reuse the storage for each ship. </p>
 
 </div>
 </div>
@@ -3094,6 +3151,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The minimum speed before landing will consider non-landable objects. </p>
 
 </div>
 </div>
@@ -3204,6 +3262,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Position of the cursor, for when the player is using mouse turning. </p>
 
 </div>
 </div>
@@ -3248,6 +3307,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Current orders for the player's ships. Because this map only applies to player ships, which are never deleted except when landed, it can use ordinary pointers instead of weak pointers. </p>
 
 </div>
 </div>
@@ -3292,6 +3352,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >TODO: Figure out a way to remove the player dependency. </p>
 
 </div>
 </div>
@@ -3380,6 +3441,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Data from the game engine. </p>
 
 </div>
 </div>
@@ -3424,6 +3486,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The current step count for the <a class="el" href="../../da/df5/classAI.html">AI</a>, ranging from 0 to 30. Its value helps limit how often certain actions occur (such as changing targets). </p>
 
 </div>
 </div>

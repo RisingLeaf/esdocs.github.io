@@ -132,7 +132,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a6798d2187bd351cd28ac65651c6712a4"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d61/classCollisionSet.html#a6798d2187bd351cd28ac65651c6712a4">seenEpoch</a> = 0</td></tr>
 <tr class="separator:a6798d2187bd351cd28ac65651c6712a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A <a class="el" href="../../d8/d61/classCollisionSet.html">CollisionSet</a> allows efficient collision detection by splitting space up into a grid and keeping track of which objects are in each grid cell. A check for collisions can then only examine objects in certain cells. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afa41a14a52f1e3294d1a06a5276909f4" name="afa41a14a52f1e3294d1a06a5276909f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa41a14a52f1e3294d1a06a5276909f4">&#9670;&nbsp;</a></span>CollisionSet()</h2>
 
@@ -164,6 +166,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Initialize a collision set. The cell size and cell count should both be powers of two; otherwise, they are rounded down to a power of two. </p>
 
 </div>
 </div>
@@ -183,6 +186,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add an object to the set. </p>
 
 </div>
 </div>
@@ -200,6 +204,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get all objects within this collision set. </p>
 
 </div>
 </div>
@@ -228,6 +233,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get all objects within the given range of the given point. </p>
 
 </div>
 </div>
@@ -246,6 +252,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear all objects in the set. Specify which engine step we are on, so we know what animation frame each object is on.</p>
+<p >Clear all objects in the set. </p>
 
 </div>
 </div>
@@ -263,6 +271,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Finish adding objects (and organize them into the final lookup table). </p>
 
 </div>
 </div>
@@ -303,6 +312,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get all possible collisions along a line. Collisions are not necessarily sorted by distance. </p>
 
 </div>
 </div>
@@ -321,6 +331,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get all possible collisions for the given projectile. Collisions are not necessarily sorted by distance. </p>
 
 </div>
 </div>
@@ -355,6 +366,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get all objects touching a ring with a given inner and outer range centered at the given point. </p>
 
 </div>
 </div>
@@ -400,6 +412,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Vectors to store the objects in the collision set. </p>
 
 </div>
 </div>
@@ -444,6 +457,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The size of individual cells of the grid. </p>
 
 </div>
 </div>
@@ -466,6 +480,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The number of grid cells. </p>
 
 </div>
 </div>
@@ -488,6 +503,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Vector for returning the result of a circle query. </p>
 
 </div>
 </div>
@@ -510,6 +526,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The type of collisions this <a class="el" href="../../d8/d61/classCollisionSet.html">CollisionSet</a> is responsible for. </p>
 
 </div>
 </div>
@@ -532,6 +549,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >After <a class="el" href="../../d8/d61/classCollisionSet.html#a039ae3d51c35ae0a9b20c056825150b6">Finish()</a>, counts[index] is where a certain bin begins. </p>
 
 </div>
 </div>
@@ -554,6 +572,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Vector for returning the result of a line query. </p>
 
 </div>
 </div>
@@ -576,6 +595,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Keep track of which objects we've already considered </p>
 
 </div>
 </div>
@@ -664,6 +684,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The current game engine step. </p>
 
 </div>
 </div>

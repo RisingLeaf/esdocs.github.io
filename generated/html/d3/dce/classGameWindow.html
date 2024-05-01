@@ -100,7 +100,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a018570450c5011a886a4066845c38b0f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dce/classGameWindow.html#a018570450c5011a886a4066845c38b0f">ExitWithError</a> (const std::string &amp;message, bool doPopUp=true)</td></tr>
 <tr class="separator:a018570450c5011a886a4066845c38b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class is a collection of global functions for handling SDL_Windows. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a765f6769415303de264336023a7261b4" name="a765f6769415303de264336023a7261b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a765f6769415303de264336023a7261b4">&#9670;&nbsp;</a></span>AdjustViewport()</h2>
 
@@ -123,6 +125,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle resize events of the main window. </p>
 
 </div>
 </div>
@@ -159,6 +162,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Print the error message in the terminal, error file, and message box. Checks for video system errors and records those as well. </p>
 
 </div>
 </div>
@@ -184,6 +188,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Last window height, in windowed mode. </p>
 
 </div>
 </div>
@@ -285,6 +290,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Clean up the SDL context, window, and shut down SDL. </p>
+<p >#ifndef _WIN32</p>
+<p >#endif</p>
 
 </div>
 </div>
@@ -335,6 +343,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Ensure the proper icon is set on the main window. </p>
 
 </div>
 </div>
@@ -361,6 +370,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Attempt to set the game's VSync setting.</p>
+<p >Attempts to set the requested SDL Window VSync to the given state. Returns false if the operation could not be completed successfully. </p>
 
 </div>
 </div>
@@ -386,6 +397,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Paint the next frame in the main window. </p>
 
 </div>
 </div>
@@ -436,6 +448,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Last known windowed-mode width &amp; height.</p>
+<p >Last window width, in windowed mode. </p>
 
 </div>
 </div>

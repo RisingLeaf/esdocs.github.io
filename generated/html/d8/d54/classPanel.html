@@ -220,7 +220,9 @@ Friends</h2></td></tr>
 <tr class="memitem:aef008c3dadcd60243e199b4b59b40303"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d54/classPanel.html#aef008c3dadcd60243e199b4b59b40303">UI</a></td></tr>
 <tr class="separator:aef008c3dadcd60243e199b4b59b40303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a <a class="el" href="../../d9/dcf/classUI.html">UI</a> window (full screen or pop-up) which responds to user input and can draw itself. Everything displayed in the game is drawn in a <a class="el" href="../../d8/d54/classPanel.html">Panel</a>, and panels can stack on top of each other like "real" <a class="el" href="../../d9/dcf/classUI.html">UI</a> windows. By default, a panel allows the panels under it to show through, but does not allow them to receive any events that it does not know how to handle. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f9c2e03d792b7763150f29d0f8043e8" name="a7f9c2e03d792b7763150f29d0f8043e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f9c2e03d792b7763150f29d0f8043e8">&#9670;&nbsp;</a></span>~Panel()</h2>
 
@@ -243,6 +245,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Make the destructor virtual just in case any derived class needs it. </p>
 
 </div>
 </div>
@@ -272,6 +275,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a clickable zone to the panel. </p>
 
 </div>
 </div>
@@ -325,6 +329,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Is fast-forward allowed to be on when this panel is on top of the GUI stack?</p>
+<p >Panels will by default not allow fast-forward. The ones that do allow it will override this (virtual) function and return true. </p>
 
 <p>Reimplemented in <a class="el" href="../../dc/d06/classDialog.html#aff4b2e9ff39886cefc2c03ab503da9ef">Dialog</a>, <a class="el" href="../../d5/dcc/classMainPanel.html#ac08c20e367b1656823e36fda86981ea0">MainPanel</a>, <a class="el" href="../../d3/dab/classMapPanel.html#ad70d115bc9a89887972e67d43038ca4a">MapPanel</a>, and <a class="el" href="../../d6/d4a/classPlayerInfoPanel.html#ae98762e4426120d5f6b04e4dbe9d652a">PlayerInfoPanel</a>.</p>
 
@@ -344,6 +350,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear the list of clickable zones. </p>
 
 </div>
 </div>
@@ -424,6 +431,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Display the given help message if it has not yet been shown (or if force is set to true). Return true if the message was displayed. </p>
 
 </div>
 </div>
@@ -460,6 +468,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This is not for overriding, but for calling KeyDown with only one or two arguments. In this form, the command is never set, so you can call this with a key representing a known keyboard shortcut without worrying that a user-defined command key will override it. </p>
 
 </div>
 </div>
@@ -523,6 +532,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Implemented in <a class="el" href="../../d2/dab/classGameLoadingPanel.html#a164eed16ba2ea5d4928952be304979cb">GameLoadingPanel</a>, <a class="el" href="../../de/d89/classMenuAnimationPanel.html#ae4603b2dee8fd58fd31028c75992488b">MenuAnimationPanel</a>, <a class="el" href="../../d3/d3d/classBankPanel.html#a7a817f3d8bde95628ed1b86c199a7b12">BankPanel</a>, <a class="el" href="../../d2/d42/classBoardingPanel.html#a27464411cd2c50aa8d61940c8a4380de">BoardingPanel</a>, <a class="el" href="../../d5/d85/classConversationPanel.html#a7f2a3a4421bd6a4584d6a5b971c94b4f">ConversationPanel</a>, <a class="el" href="../../dc/d06/classDialog.html#a516b7defc111459e0f21233c31e53013">Dialog</a>, <a class="el" href="../../d2/d6a/classHailPanel.html#aedf6967ad3cd66b56d8b14c341e44848">HailPanel</a>, <a class="el" href="../../d1/d02/classHiringPanel.html#abad2974d36e136bcc8df9a49004b2203">HiringPanel</a>, <a class="el" href="../../d9/d42/classLoadPanel.html#a1a4a6b63f3a61e0f40c9950262c3c04b">LoadPanel</a>, <a class="el" href="../../d4/d27/classLogbookPanel.html#a2d0529c9d8acc86a27ee4c8d7bf01896">LogbookPanel</a>, <a class="el" href="../../d5/dcc/classMainPanel.html#a4201da44f6560a48089fbe5710b664e1">MainPanel</a>, <a class="el" href="../../d4/d25/classMapDetailPanel.html#ac29701d1da0876f0e49f203c50bda06d">MapDetailPanel</a>, <a class="el" href="../../d3/dab/classMapPanel.html#a2b02d0c0b96d247bc0040d2e43c7d988">MapPanel</a>, <a class="el" href="../../d8/de0/classMapSalesPanel.html#a716fafadb0b1116d2106ef6a50d440b4">MapSalesPanel</a>, <a class="el" href="../../dc/d68/classMenuPanel.html#a6a8e479103651e2b2b4bef165d691b1c">MenuPanel</a>, <a class="el" href="../../d6/d32/classMessageLogPanel.html#ad55358263fdf9c054815d4417178ecd9">MessageLogPanel</a>, <a class="el" href="../../d2/d80/classMissionPanel.html#a57053e5e45d3606e53a720879ee7267a">MissionPanel</a>, <a class="el" href="../../d2/d03/classPlanetPanel.html#abfe449b73abb099da8294f931b2b7904">PlanetPanel</a>, <a class="el" href="../../d6/d4a/classPlayerInfoPanel.html#a6f312d223bb2cc6b890b9f87a9cd6e78">PlayerInfoPanel</a>, <a class="el" href="../../d0/d20/classPreferencesPanel.html#abdef2dee7dd1f22e4ce178fbfd91a070">PreferencesPanel</a>, <a class="el" href="../../d8/dfa/classShipInfoPanel.html#a668d4bcb088ebda0c80cf60ca15ac102">ShipInfoPanel</a>, <a class="el" href="../../d4/d63/classShopPanel.html#ab864437a0475760d21b98178db8b59c0">ShopPanel</a>, <a class="el" href="../../d9/db9/classSpaceportPanel.html#a40189c5b76821ed0133ddc3b809c80b8">SpaceportPanel</a>, <a class="el" href="../../d7/d2c/classTradingPanel.html#ac0a815a224c895474768b62baed84842">TradingPanel</a>, and <a class="el" href="../../da/d82/classStartConditionsPanel.html#ac13ed947584ce9623edf18669875d308">StartConditionsPanel</a>.</p>
 
@@ -550,6 +560,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Dim the background of this panel. </p>
 
 </div>
 </div>
@@ -586,6 +597,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw a sprite repeatedly to make a vertical edge. </p>
 
 </div>
 </div>
@@ -611,6 +623,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If a clickable zone is clicked while editing is happening, the panel may need to know to exit editing mode before handling the click. </p>
 
 <p>Reimplemented in <a class="el" href="../../d0/d20/classPreferencesPanel.html#a49801e698e5e594128622ecf656bfd72">PreferencesPanel</a>.</p>
 
@@ -701,6 +714,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Return true if this is a full-screen panel, so there is no point in drawing any of the panels under it. </p>
 
 </div>
 </div>
@@ -726,6 +740,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if this panel can be "interrupted" to return to the main menu. </p>
 
 </div>
 </div>
@@ -774,6 +789,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Only override the ones you need; the default action is to return false. </p>
 
 <p>Reimplemented in <a class="el" href="../../d3/d3d/classBankPanel.html#a158786da11aec2fe8526aaaa07fc441e">BankPanel</a>, <a class="el" href="../../d2/d42/classBoardingPanel.html#a42e5c38ae3d76ff5ac830743702b7fba">BoardingPanel</a>, <a class="el" href="../../d5/d85/classConversationPanel.html#a541515ed4062efc8cafb3d5b0141aec1">ConversationPanel</a>, <a class="el" href="../../dc/d06/classDialog.html#ae23a4ad9dc55d17562e39c294e273705">Dialog</a>, <a class="el" href="../../d2/d6a/classHailPanel.html#a360662572ee4dfebfa4de9763c62948f">HailPanel</a>, <a class="el" href="../../d1/d02/classHiringPanel.html#a0258ba01a6622b1bed0aa14b277f1dea">HiringPanel</a>, <a class="el" href="../../d9/d42/classLoadPanel.html#a8ebebf7291588b1be01364aa00704c41">LoadPanel</a>, <a class="el" href="../../d4/d27/classLogbookPanel.html#a518195f87828a37f60f13d8da33ed002">LogbookPanel</a>, <a class="el" href="../../d5/dcc/classMainPanel.html#a89c104dd7c3e010806ec8c9c46273950">MainPanel</a>, <a class="el" href="../../d4/d25/classMapDetailPanel.html#a08e58e197699095802d5edf21919f232">MapDetailPanel</a>, <a class="el" href="../../d3/dab/classMapPanel.html#a7107fe2866dbc8361717d5f2986b4239">MapPanel</a>, <a class="el" href="../../d8/de0/classMapSalesPanel.html#aff6f8308e1474b8481211fea4ce1c370">MapSalesPanel</a>, <a class="el" href="../../dc/d68/classMenuPanel.html#af7a5ec08fbe8f71b2b50b73ff78a3722">MenuPanel</a>, <a class="el" href="../../d6/d32/classMessageLogPanel.html#a5550eb05a9af1ce0ca56040572654bac">MessageLogPanel</a>, <a class="el" href="../../d2/d80/classMissionPanel.html#a43805be0f7165c26194be2d604cd248b">MissionPanel</a>, <a class="el" href="../../d2/d03/classPlanetPanel.html#a7e7497d8b57e915029a213758de43c70">PlanetPanel</a>, <a class="el" href="../../d6/d4a/classPlayerInfoPanel.html#ad296d00348be53755ce30876c57df22a">PlayerInfoPanel</a>, <a class="el" href="../../d0/d20/classPreferencesPanel.html#a214d7a9bb1e5703dd14287f0291c55fd">PreferencesPanel</a>, <a class="el" href="../../d8/dfa/classShipInfoPanel.html#afa1cda7932ede719942cb050fd0e70a2">ShipInfoPanel</a>, <a class="el" href="../../d4/d63/classShopPanel.html#aa3a3f64d0d2aa01fab6d0491e1702910">ShopPanel</a>, <a class="el" href="../../d7/d2c/classTradingPanel.html#aa6a7837df926dc01f116b993646dfa99">TradingPanel</a>, and <a class="el" href="../../da/d82/classStartConditionsPanel.html#a76ca1b02b18961b3d26cd366b759efbe">StartConditionsPanel</a>.</p>
 
@@ -801,6 +817,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A lot of different <a class="el" href="../../d9/dcf/classUI.html">UI</a> elements allow a modifier to change the number of something you are buying, so the shared function is defined here: </p>
 
 </div>
 </div>
@@ -1044,6 +1061,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move the state of this panel forward one game step. </p>
 
 <p>Reimplemented in <a class="el" href="../../d2/dab/classGameLoadingPanel.html#ac3bfc58c032ea8218b7fb4aefb8210c9">GameLoadingPanel</a>, <a class="el" href="../../de/d89/classMenuAnimationPanel.html#adb553b3c99bc082a511ac76105e3de7a">MenuAnimationPanel</a>, <a class="el" href="../../d3/d3d/classBankPanel.html#a7885e0d0cd7e7d9cd9a5b2895d8a4b69">BankPanel</a>, <a class="el" href="../../d1/d02/classHiringPanel.html#af1311b6fd40c73eeb62f0f2d669c47a0">HiringPanel</a>, <a class="el" href="../../d5/dcc/classMainPanel.html#a9915cfca77287e7ebfc6ec160f1a913c">MainPanel</a>, <a class="el" href="../../d4/d25/classMapDetailPanel.html#a1cdf5c5b271ef8c95079427f6e6dbb8b">MapDetailPanel</a>, <a class="el" href="../../d3/dab/classMapPanel.html#aaafa66729ad1e3ee9425565921c79708">MapPanel</a>, <a class="el" href="../../dc/d68/classMenuPanel.html#aa23c268f54221e5c34daf14a49ffd974">MenuPanel</a>, <a class="el" href="../../d2/d80/classMissionPanel.html#a0adf690ab5e245145c0402a9275ccb60">MissionPanel</a>, <a class="el" href="../../d2/d6f/classOutfitterPanel.html#a9c3eb11c1eb667ba4ac9811f6ee047b5">OutfitterPanel</a>, <a class="el" href="../../d2/d03/classPlanetPanel.html#abfcf89aa594bc6a0060a60df8100310f">PlanetPanel</a>, <a class="el" href="../../d6/d4a/classPlayerInfoPanel.html#a9866b0526cbf4ffc6c7836cfeeffa759">PlayerInfoPanel</a>, <a class="el" href="../../d8/dfa/classShipInfoPanel.html#a022c1d1aae154defb2fff9a449d7a607">ShipInfoPanel</a>, <a class="el" href="../../d7/d93/classShipyardPanel.html#a3d9894083d175412c92e777274e38449">ShipyardPanel</a>, <a class="el" href="../../d4/d63/classShopPanel.html#a4e5fa6841bd18dbe31e43c1505cb3339">ShopPanel</a>, <a class="el" href="../../d9/db9/classSpaceportPanel.html#ac1452aed8764794607079201100dc521">SpaceportPanel</a>, and <a class="el" href="../../d7/d2c/classTradingPanel.html#a207e8021fc639edaf8f29b7049f5267d">TradingPanel</a>.</p>
 
@@ -1071,6 +1089,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Return true if, when this panel is on the stack, no events should be passed to any panel under it. By default, all panels do this. </p>
 
 </div>
 </div>
@@ -1089,6 +1108,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if a click at the given coordinates triggers a clickable zone. If so, apply that zone's action and return true. </p>
 
 </div>
 </div>

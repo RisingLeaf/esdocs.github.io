@@ -128,7 +128,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:aa85337f954cb9eb30a9a9785257e3f22"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfc/classDataWriter.html#aa85337f954cb9eb30a9a9785257e3f22">space</a> = &quot; &quot;</td></tr>
 <tr class="separator:aa85337f954cb9eb30a9a9785257e3f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class writes data in a hierarchical format, where an indented line is considered the "child" of the first line above it that is less indented. By using this class, you can have a function add data to the file without having to tell that function what indentation level it is at. This class also automatically adds quotation marks around strings if they contain whitespace. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c950fecb6cdab12d7742671474cff08" name="a3c950fecb6cdab12d7742671474cff08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c950fecb6cdab12d7742671474cff08">&#9670;&nbsp;</a></span>DataWriter() <span class="overload">[1/4]</span></h2>
 
@@ -152,6 +154,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Constructor, specifying the file to write. </p>
 
 </div>
 </div>
@@ -169,6 +172,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Constructor for a <a class="el" href="../../db/dfc/classDataWriter.html">DataWriter</a> that will not save its contents automatically </p>
 
 </div>
 </div>
@@ -238,6 +242,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The file is not actually saved until the destructor is called. This makes it possible to write the whole file in a single chunk.</p>
+<p >Destructor, which saves the file all in one block. </p>
 
 </div>
 </div>
@@ -256,6 +262,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Begin a new line that is a "child" of the previous line.</p>
+<p >Increase the indentation level. </p>
 
 </div>
 </div>
@@ -273,6 +281,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Finish writing a block of child nodes and decrease the indentation.</p>
+<p >Decrease the indentation level. </p>
 
 </div>
 </div>
@@ -338,11 +348,12 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">void DataWriter::SaveToPath </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Save the contents to a file. </p>
 
 </div>
 </div>
@@ -360,6 +371,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >End the current line. This can be used to add line breaks or to terminate a line you have been writing token by token with <a class="el" href="../../db/dfc/classDataWriter.html#a0189c8b9ea4c0f8aeab5a16e0bd38d6d">WriteToken()</a>.</p>
+<p >Begin a new line of the file. </p>
 
 </div>
 </div>
@@ -390,6 +403,8 @@ template&lt;class A , class ... B&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The <a class="el" href="../../db/dfc/classDataWriter.html#ab89f41733b8dce1f89eb1157c9a6d872">Write()</a> function can take any number of arguments. Each argument is converted to a token. Arguments may be strings or numeric values.</p>
+<p >The <a class="el" href="../../db/dfc/classDataWriter.html#ab89f41733b8dce1f89eb1157c9a6d872">Write()</a> function can take any number of arguments, each of which becomes a token. They must be either strings or numeric types. </p>
 
 </div>
 </div>
@@ -408,6 +423,8 @@ template&lt;class A , class ... B&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Write the entire structure represented by a <a class="el" href="../../d7/d25/classDataNode.html">DataNode</a>, including any children that it has.</p>
+<p >Write a <a class="el" href="../../d7/d25/classDataNode.html">DataNode</a> with all its children. </p>
 
 </div>
 </div>
@@ -426,6 +443,8 @@ template&lt;class A , class ... B&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Write a comment. It will be at the current indentation level, and will have "# " inserted before it.</p>
+<p >Write a comment line, at the current indentation level. </p>
 
 </div>
 </div>
@@ -446,6 +465,8 @@ template&lt;class A &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Write a token of any arithmetic type.</p>
+<p >Write any numeric type as a single token. </p>
 
 </div>
 </div>
@@ -464,6 +485,8 @@ template&lt;class A &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Write a token, without writing a whole line. Use this very carefully.</p>
+<p >Write a token, given as a character string. </p>
 
 </div>
 </div>
@@ -505,6 +528,7 @@ template&lt;class A &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Remember which string should be written before the next token. This is "indent" for the first token in a line and "space" for subsequent tokens. </p>
 
 </div>
 </div>
@@ -527,6 +551,7 @@ template&lt;class A &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Current indentation level. </p>
 
 </div>
 </div>
@@ -549,6 +574,7 @@ template&lt;class A &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Compose the output in memory before writing it to file. </p>
 
 </div>
 </div>
@@ -571,6 +597,7 @@ template&lt;class A &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Save path (in UTF-8). Empty string for in-memory <a class="el" href="../../db/dfc/classDataWriter.html">DataWriter</a>. </p>
 
 </div>
 </div>
@@ -593,6 +620,8 @@ template&lt;class A &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Before writing each token, we will write either the indentation string above, or this string.</p>
+<p >This string constant is just used for remembering what string needs to be written before the next token - either the full indentation or this, a space: </p>
 
 </div>
 </div>

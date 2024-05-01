@@ -199,7 +199,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:afbb01a5bb33e38e680e7d4e549a20625"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/d32/classShip.html">Ship</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/classDistanceMap.html#afbb01a5bb33e38e680e7d4e549a20625">ship</a> = nullptr</td></tr>
 <tr class="separator:afbb01a5bb33e38e680e7d4e549a20625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This is a map of how many hyperspace jumps it takes to get to other systems from the given "center" system. Ships with a hyperdrive travel using the "links" between systems. Ships with jump drives can make use of those links, but can also travel to any of a system's "neighbors." A distance map can also be used to calculate the shortest route between two systems. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4889b82bc72f7801180dfeb894c26449" name="a4889b82bc72f7801180dfeb894c26449"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4889b82bc72f7801180dfeb894c26449">&#9670;&nbsp;</a></span>DistanceMap() <span class="overload">[1/4]</span></h2>
 
@@ -239,6 +241,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Find paths to the given system. The optional arguments put a limit on how many systems will be returned and how far away they are allowed to be.</p>
+<p >Find paths to the given system. If the given maximum count is above zero, it is a limit on how many systems should be returned. If it is below zero it specifies the maximum distance away that paths should be found. </p>
 
 </div>
 </div>
@@ -293,6 +297,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Find paths to the given system, potentially using wormholes, a jump drive, or both. Optional arguments are as above.</p>
+<p >Constructor that allows configuring the use of wormholes and jump drive travel. Since no ship instance is available, we use the base game's default fuel for jump travel. </p>
 
 </div>
 </div>
@@ -329,6 +335,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If a player is given, the map will only use hyperspace paths known to the player; that is, one end of the path has been visited. Also, if the player's flagship has a jump drive, the jumps will be make use of it. </p>
 
 </div>
 </div>
@@ -363,6 +370,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the path for the given ship to get to the given system. The ship will use a jump drive or hyperdrive depending on what it has. The pathfinding will stop once a path to the destination is found. If a player is given, the path will only include systems that the player has visited. </p>
 
 </div>
 </div>
@@ -400,6 +408,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add the given path to the record. </p>
 
 </div>
 </div>
@@ -442,6 +451,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check whether the given link is travelable. If no player was given in the constructor then this is always true; otherwise, the player must know that the given link exists.</p>
+<p >Check whether the given link is travelable. If no player was given in the constructor then this depends on travel restrictions; otherwise, the player must know that the given link exists. </p>
 
 </div>
 </div>
@@ -460,6 +471,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out how many days away the given system is. </p>
 
 </div>
 </div>
@@ -477,6 +489,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the end of the route.</p>
+<p >Return the destination system - the 'center' system. </p>
 
 </div>
 </div>
@@ -513,6 +527,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if we already have a better path to the given system. </p>
 
 </div>
 </div>
@@ -531,6 +546,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out if the given system is reachable. </p>
 
 </div>
 </div>
@@ -557,6 +573,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Depending on the capabilities of the given ship, use hyperspace paths, jump drive paths, or both to find the shortest route. Bail out if the source system or the maximum count is reached. </p>
 
 </div>
 </div>
@@ -593,6 +610,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add the given links to the map. Return false if an end condition is hit. </p>
 
 </div>
 </div>
@@ -621,6 +639,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >How much fuel is needed to travel between two systems. </p>
 
 </div>
 </div>
@@ -639,6 +658,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Starting in the given system, what is the next system along the route? </p>
 
 </div>
 </div>
@@ -656,6 +676,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a set containing all the systems. </p>
 
 </div>
 </div>
@@ -701,6 +722,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Variables only used during construction: </p>
 
 </div>
 </div>
@@ -723,6 +745,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >How much fuel is used for travel. If either value is zero, it means that the ship does not have that type of drive. </p>
 
 </div>
 </div>

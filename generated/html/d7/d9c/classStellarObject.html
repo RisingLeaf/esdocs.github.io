@@ -255,7 +255,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d80/classBody.html#ab5d1367968ab9eb36708eef8155f3133">government</a> = nullptr</td></tr>
 <tr class="separator:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a planet, star, moon, or other large object in space. This does not store the details of what is on that object, if anything; that is handled by the <a class="el" href="../../d5/dec/classPlanet.html">Planet</a> class. Each object's position depends on what it is orbiting around and how far away it is from that object. Each day, all the objects in each system move slightly in their orbits. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5da511c3ca491003bccf1ecbfbc7b0b6" name="a5da511c3ca491003bccf1ecbfbc7b0b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5da511c3ca491003bccf1ecbfbc7b0b6">&#9670;&nbsp;</a></span>StellarObject()</h2>
 
@@ -270,6 +272,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Object default constructor. </p>
 
 </div>
 </div>
@@ -288,6 +291,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out how far this object is from its parent. </p>
 
 </div>
 </div>
@@ -305,6 +309,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this object's planet, if any. It may or may not be fully defined. </p>
 
 </div>
 </div>
@@ -322,6 +327,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if this object represents a planet with valid data. </p>
 
 </div>
 </div>
@@ -339,6 +345,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This object's system hazards. </p>
 
 </div>
 </div>
@@ -356,6 +363,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this is a moon. </p>
 
 </div>
 </div>
@@ -373,6 +381,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this is a star. </p>
 
 </div>
 </div>
@@ -390,6 +399,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this is a station. </p>
 
 </div>
 </div>
@@ -407,6 +417,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If it is impossible to land on this planet, get the message explaining why (e.g. too hot, too cold, etc.). </p>
 
 </div>
 </div>
@@ -424,6 +435,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Only planets that you can land on have names. </p>
 
 </div>
 </div>
@@ -441,6 +453,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this object's parent index (in the <a class="el" href="../../dd/d2d/classSystem.html">System</a>'s vector of objects). </p>
 
 </div>
 </div>
@@ -459,6 +472,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the radar color to be used for displaying this object.</p>
+<p >Get the color to be used for displaying this object. </p>
 
 </div>
 </div>
@@ -476,6 +491,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Functions provided by the <a class="el" href="../../d7/d80/classBody.html">Body</a> base class: bool <a class="el" href="../../d7/d80/classBody.html#a753d9c8e0195a45ddf41fdbf1aa70a8f">HasSprite() const</a>; int <a class="el" href="../../d7/d80/classBody.html#a01ca0ff7407a175a8f2de3af8a27eb1f">Width() const</a>; int <a class="el" href="../../d7/d80/classBody.html#ab2f10e7b45679ffcf38830ec45783450">Height() const</a>; Frame GetFrame(int step = -1) const; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#aaef9972906c8b24360cc578d05fb1dfa">Position() const</a>; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a1a877a4915f3ecf19df065536b06532d">Velocity() const</a>; const <a class="el" href="../../d9/d80/classAngle.html">Angle</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a637115748ef7a544e7b4574f955e42e5">Facing() const</a>; <a class="el" href="../../dc/d4f/classPoint.html">Point</a> <a class="el" href="../../d7/d80/classBody.html#aa59695adb1600a5fa35b4e8da023de51">Unit() const</a>; Get the radius of this planet, i.e. how close you must be to land.</p>
+<p >Get the radius of this planet, i.e. how close you must be to land. </p>
 
 </div>
 </div>
@@ -499,6 +516,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Let <a class="el" href="../../dd/d2d/classSystem.html">System</a> handle setting all the values of an Object. </p>
 
 </div>
 </div>

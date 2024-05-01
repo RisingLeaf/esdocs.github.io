@@ -297,7 +297,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d54/classPanel.html#a54beaf51714a909c0731a3f11c3bf35b">Modifier</a> ()</td></tr>
 <tr class="separator:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A dialog box displays a given message to the player. The box will expand to fit the message, and may also include a text input field. The box may have only an "ok" button, or may also have a "cancel" button. If this dialog is introducing a mission, the buttons are instead "accept" and "decline". A callback function can be given to receive the player's response. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac8da502a796355c737d19e5e60daa5c4" name="ac8da502a796355c737d19e5e60daa5c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8da502a796355c737d19e5e60daa5c4">&#9670;&nbsp;</a></span>Dialog() <span class="overload">[1/9]</span></h2>
 
@@ -341,6 +343,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >An OK / Cancel dialog where Cancel can be disabled. The okIsActive lets you select whether "OK" (true) or "Cancel" (false) are selected as the default option. </p>
 
 </div>
 </div>
@@ -383,6 +386,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../dc/d06/classDialog.html">Dialog</a> that has no callback (information only). In this form, there is only an "ok" button, not a "cancel" button. </p>
 
 </div>
 </div>
@@ -429,6 +433,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../da/d97/classMission.html">Mission</a> accept / decline dialog. </p>
 
 </div>
 </div>
@@ -502,6 +507,7 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Three different kinds of dialogs can be constructed: requesting numerical input, requesting text input, or not requesting any input at all. In any case, the callback is called only if the user selects "ok", not "cancel." </p>
 
 </div>
 </div>
@@ -670,6 +676,7 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This callback requests text input but with validation. The "ok" button is disabled if the validation callback returns false. </p>
 
 </div>
 </div>
@@ -766,6 +773,7 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Callback is always called with value user input to dialog (ok == true, cancel == false). </p>
 
 </div>
 </div>
@@ -792,6 +800,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Some dialogs allow fast-forward to stay active. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#ab1bfa8579b2a025e70b77b833da90755">Panel</a>.</p>
 
@@ -889,6 +898,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Implements <a class="el" href="../../d8/d54/classPanel.html#ac567662a50d5e8995a123f6a3154c013">Panel</a>.</p>
 
@@ -939,6 +949,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Common code from all three constructors: </p>
 
 </div>
 </div>
@@ -987,6 +998,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The user can click "ok" or "cancel", or use the tab key to toggle which button is highlighted and the enter key to select it. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#af7f4af41d7bb3d5e13556e394f0678df">Panel</a>.</p>
 
@@ -1031,6 +1043,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Static method used to convert a <a class="el" href="../../d7/d25/classDataNode.html">DataNode</a> into formatted <a class="el" href="../../dc/d06/classDialog.html">Dialog</a> text.</p>
+<p ><a class="el" href="../../dc/d82/classFormat.html">Format</a> and add the text from the given node to the given string. </p>
 
 </div>
 </div>

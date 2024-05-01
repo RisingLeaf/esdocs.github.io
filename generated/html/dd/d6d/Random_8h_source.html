@@ -91,42 +91,30 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Collection of functions for generating random numbers with a variety of</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// different distributions. (This is done partly because on some systems the</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// random number generation is not thread-safe.)</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d78/classRandom.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d78/classRandom.html">Random</a> {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Seed the generator (e.g. to make it produce exactly the same random</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// numbers it produced previously).</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d78/classRandom.html#a3de7ef75336e052b9fd641d7bf30c756">Seed</a>(uint64_t seed);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#ae6f1d844e86b760cea8b71628d9ceeb7">Int</a>();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#ae6f1d844e86b760cea8b71628d9ceeb7">Int</a>(uint32_t modulus);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d5/d78/classRandom.html#af0c46d56a0e717518e69d612a408ff20">Real</a>();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Slower functions for getting random numbers from a given distribution.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// Do not use these functions in time-critical code.</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// Return the expected number of failures before k successes, when the</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// probability of success is p. The mean value will be k / (1 - p).</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#ab6a4e64522b6f77bdd35972f35dd60d4">Polya</a>(uint32_t k, <span class="keywordtype">double</span> p = .5);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// Get a number from a binomial distribution (i.e. integer bell curve).</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#abc4ef80c03ec983afdde6687b350c092">Binomial</a>(uint32_t t, <span class="keywordtype">double</span> p = .5);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Get a number from a normal distribution with standard or specified mean and stddev.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d5/d78/classRandom.html#a1835099b6525fd215b5a977a5e0b1f22">Normal</a>(<span class="keywordtype">double</span> mean = 0, <span class="keywordtype">double</span> sigma = 1);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassRandom_html"><div class="ttname"><a href="../../d5/d78/classRandom.html">Random</a></div><div class="ttdef"><b>Definition:</b> Random.h:26</div></div>
-<div class="ttc" id="aclassRandom_html_a1835099b6525fd215b5a977a5e0b1f22"><div class="ttname"><a href="../../d5/d78/classRandom.html#a1835099b6525fd215b5a977a5e0b1f22">Random::Normal</a></div><div class="ttdeci">static double Normal(double mean=0, double sigma=1)</div><div class="ttdef"><b>Definition:</b> Random.cpp:113</div></div>
-<div class="ttc" id="aclassRandom_html_a3de7ef75336e052b9fd641d7bf30c756"><div class="ttname"><a href="../../d5/d78/classRandom.html#a3de7ef75336e052b9fd641d7bf30c756">Random::Seed</a></div><div class="ttdeci">static void Seed(uint64_t seed)</div><div class="ttdef"><b>Definition:</b> Random.cpp:46</div></div>
-<div class="ttc" id="aclassRandom_html_ab6a4e64522b6f77bdd35972f35dd60d4"><div class="ttname"><a href="../../d5/d78/classRandom.html#ab6a4e64522b6f77bdd35972f35dd60d4">Random::Polya</a></div><div class="ttdeci">static uint32_t Polya(uint32_t k, double p=.5)</div><div class="ttdef"><b>Definition:</b> Random.cpp:89</div></div>
-<div class="ttc" id="aclassRandom_html_abc4ef80c03ec983afdde6687b350c092"><div class="ttname"><a href="../../d5/d78/classRandom.html#abc4ef80c03ec983afdde6687b350c092">Random::Binomial</a></div><div class="ttdeci">static uint32_t Binomial(uint32_t t, double p=.5)</div><div class="ttdef"><b>Definition:</b> Random.cpp:101</div></div>
-<div class="ttc" id="aclassRandom_html_ae6f1d844e86b760cea8b71628d9ceeb7"><div class="ttname"><a href="../../d5/d78/classRandom.html#ae6f1d844e86b760cea8b71628d9ceeb7">Random::Int</a></div><div class="ttdeci">static uint32_t Int()</div><div class="ttdef"><b>Definition:</b> Random.cpp:56</div></div>
-<div class="ttc" id="aclassRandom_html_af0c46d56a0e717518e69d612a408ff20"><div class="ttname"><a href="../../d5/d78/classRandom.html#af0c46d56a0e717518e69d612a408ff20">Random::Real</a></div><div class="ttdeci">static double Real()</div><div class="ttdef"><b>Definition:</b> Random.cpp:77</div></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d5/d78/classRandom.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d78/classRandom.html">Random</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d78/classRandom.html#a3de7ef75336e052b9fd641d7bf30c756">Seed</a>(uint64_t seed);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#ae6f1d844e86b760cea8b71628d9ceeb7">Int</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#ae6f1d844e86b760cea8b71628d9ceeb7">Int</a>(uint32_t modulus);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d5/d78/classRandom.html#af0c46d56a0e717518e69d612a408ff20">Real</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#ab6a4e64522b6f77bdd35972f35dd60d4">Polya</a>(uint32_t k, <span class="keywordtype">double</span> p = .5);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="../../d5/d78/classRandom.html#abc4ef80c03ec983afdde6687b350c092">Binomial</a>(uint32_t t, <span class="keywordtype">double</span> p = .5);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d5/d78/classRandom.html#a1835099b6525fd215b5a977a5e0b1f22">Normal</a>(<span class="keywordtype">double</span> mean = 0, <span class="keywordtype">double</span> sigma = 1);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassRandom_html"><div class="ttname"><a href="../../d5/d78/classRandom.html">Random</a></div><div class="ttdef"><b>Definition:</b> Random.h:28</div></div>
+<div class="ttc" id="aclassRandom_html_a1835099b6525fd215b5a977a5e0b1f22"><div class="ttname"><a href="../../d5/d78/classRandom.html#a1835099b6525fd215b5a977a5e0b1f22">Random::Normal</a></div><div class="ttdeci">static double Normal(double mean=0, double sigma=1)</div><div class="ttdef"><b>Definition:</b> Random.cpp:123</div></div>
+<div class="ttc" id="aclassRandom_html_a3de7ef75336e052b9fd641d7bf30c756"><div class="ttname"><a href="../../d5/d78/classRandom.html#a3de7ef75336e052b9fd641d7bf30c756">Random::Seed</a></div><div class="ttdeci">static void Seed(uint64_t seed)</div><div class="ttdef"><b>Definition:</b> Random.cpp:50</div></div>
+<div class="ttc" id="aclassRandom_html_ab6a4e64522b6f77bdd35972f35dd60d4"><div class="ttname"><a href="../../d5/d78/classRandom.html#ab6a4e64522b6f77bdd35972f35dd60d4">Random::Polya</a></div><div class="ttdeci">static uint32_t Polya(uint32_t k, double p=.5)</div><div class="ttdef"><b>Definition:</b> Random.cpp:95</div></div>
+<div class="ttc" id="aclassRandom_html_abc4ef80c03ec983afdde6687b350c092"><div class="ttname"><a href="../../d5/d78/classRandom.html#abc4ef80c03ec983afdde6687b350c092">Random::Binomial</a></div><div class="ttdeci">static uint32_t Binomial(uint32_t t, double p=.5)</div><div class="ttdef"><b>Definition:</b> Random.cpp:109</div></div>
+<div class="ttc" id="aclassRandom_html_ae6f1d844e86b760cea8b71628d9ceeb7"><div class="ttname"><a href="../../d5/d78/classRandom.html#ae6f1d844e86b760cea8b71628d9ceeb7">Random::Int</a></div><div class="ttdeci">static uint32_t Int()</div><div class="ttdef"><b>Definition:</b> Random.cpp:60</div></div>
+<div class="ttc" id="aclassRandom_html_af0c46d56a0e717518e69d612a408ff20"><div class="ttname"><a href="../../d5/d78/classRandom.html#af0c46d56a0e717518e69d612a408ff20">Random::Real</a></div><div class="ttdeci">static double Real()</div><div class="ttdef"><b>Definition:</b> Random.cpp:81</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

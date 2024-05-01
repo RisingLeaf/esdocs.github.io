@@ -122,7 +122,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a63be3fca300198587a4efce82ab9b2f9"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2f/classMusic.html#a63be3fca300198587a4efce82ab9b2f9">condition</a></td></tr>
 <tr class="separator:a63be3fca300198587a4efce82ab9b2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The <a class="el" href="../../d2/d2f/classMusic.html">Music</a> class streams mp3 audio from a file and delivers it to the program on "block" at a time, so it never needs to hold the entire decoded file in memory. Each block is 16-bit stereo, 44100 Hz. If no file is specified, or if the decoding thread is not done yet, it returns silence rather than blocking, so the game won't freeze if the music stops for some reason. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab5143f67c021bc77894c8e91de2b916b" name="ab5143f67c021bc77894c8e91de2b916b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5143f67c021bc77894c8e91de2b916b">&#9670;&nbsp;</a></span>Music()</h2>
 
@@ -137,6 +139,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d2/d2f/classMusic.html">Music</a> constructor, which starts the decoding thread. Initially, the thread has no file to read, so it will sleep until a file is specified. </p>
 
 </div>
 </div>
@@ -154,6 +157,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Destructor, which waits for the thread to stop. </p>
 
 </div>
 </div>
@@ -180,6 +184,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This is the entry point for the decoding thread.</p>
+<p >Entry point for the decoding thread. </p>
 
 </div>
 </div>
@@ -197,6 +203,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of the current music source playing. </p>
 
 </div>
 </div>
@@ -240,6 +247,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the next audio buffer to play. </p>
 
 </div>
 </div>
@@ -258,6 +266,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the source of music. If the path is empty, this music will be silent. </p>
 
 </div>
 </div>
@@ -435,6 +444,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This pointer holds the file for as long as it is owned by the main thread. When the decode thread takes possession of it, it sets this pointer to null. </p>
 
 </div>
 </div>
@@ -479,6 +489,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Buffers for storing the decoded audio sample. The "silence" buffer holds a block of silence to be returned if nothing was read from the file. </p>
 
 </div>
 </div>

@@ -95,67 +95,65 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Class representing a set of items that are for sale on a given planet.</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Multiple sale sets can be merged together into a single one.</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d25/classSale.html">Sale</a> : <span class="keyword">public</span> std::set&lt;const Item *&gt; {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">   32</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">Load</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;node, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d5f/classSet.html">Set&lt;Item&gt;</a> &amp;items);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">   34</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">Add</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../df/d25/classSale.html">Sale&lt;Item&gt;</a> &amp;other);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d25/classSale.html">Sale</a> : <span class="keyword">public</span> std::set&lt;const Item *&gt; {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">   34</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">Load</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;node, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d5f/classSet.html">Set&lt;Item&gt;</a> &amp;items);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">   36</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">Has</a>(<span class="keyword">const</span> Item *item) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">Add</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../df/d25/classSale.html">Sale&lt;Item&gt;</a> &amp;other);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">Has</a>(<span class="keyword">const</span> Item *item) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">   42</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">Sale&lt;Item&gt;::Load</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;node, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d5f/classSet.html">Set&lt;Item&gt;</a> &amp;items)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;child : node)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">const</span> std::string &amp;token = child.Token(0);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">bool</span> remove = (token == <span class="stringliteral">&quot;clear&quot;</span> || token == <span class="stringliteral">&quot;remove&quot;</span>);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span>(remove &amp;&amp; child.Size() == 1)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            this-&gt;clear();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(remove &amp;&amp; child.Size() &gt;= 2)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            this-&gt;<a class="code hl_function" href="../../d8/def/WeightedList_8h.html#aeaae291906dc0b139f5465d32e899279">erase</a>(items.<a class="code hl_function" href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Get</a>(child.Token(1)));</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(token == <span class="stringliteral">&quot;add&quot;</span> &amp;&amp; child.Size() &gt;= 2)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            this-&gt;insert(items.<a class="code hl_function" href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Get</a>(child.Token(1)));</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            this-&gt;insert(items.<a class="code hl_function" href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Get</a>(token));</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">Sale&lt;Item&gt;::Load</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;node, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d5f/classSet.html">Set&lt;Item&gt;</a> &amp;items)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;child : node)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">const</span> std::string &amp;token = child.Token(0);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">bool</span> remove = (token == <span class="stringliteral">&quot;clear&quot;</span> || token == <span class="stringliteral">&quot;remove&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span>(remove &amp;&amp; child.Size() == 1)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            this-&gt;clear();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(remove &amp;&amp; child.Size() &gt;= 2)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            this-&gt;<a class="code hl_function" href="../../d8/def/WeightedList_8h.html#aeaae291906dc0b139f5465d32e899279">erase</a>(items.<a class="code hl_function" href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Get</a>(child.Token(1)));</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(token == <span class="stringliteral">&quot;add&quot;</span> &amp;&amp; child.Size() &gt;= 2)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            this-&gt;insert(items.<a class="code hl_function" href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Get</a>(child.Token(1)));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            this-&gt;insert(items.<a class="code hl_function" href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Get</a>(token));</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">   62</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">Sale&lt;Item&gt;::Add</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../df/d25/classSale.html">Sale&lt;Item&gt;</a> &amp;other)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    this-&gt;insert(other.begin(), other.end());</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">Sale&lt;Item&gt;::Add</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../df/d25/classSale.html">Sale&lt;Item&gt;</a> &amp;other)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    this-&gt;insert(other.begin(), other.end());</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">   70</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">Sale&lt;Item&gt;::Has</a>(<span class="keyword">const</span> Item *item)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> this-&gt;count(item);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Item&gt;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">   72</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">Sale&lt;Item&gt;::Has</a>(<span class="keyword">const</span> Item *item)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> this-&gt;count(item);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aDataNode_8h_html"><div class="ttname"><a href="../../d2/da2/DataNode_8h.html">DataNode.h</a></div></div>
 <div class="ttc" id="aSet_8h_html"><div class="ttname"><a href="../../d4/d45/Set_8h.html">Set.h</a></div></div>
-<div class="ttc" id="aWeightedList_8h_html_aeaae291906dc0b139f5465d32e899279"><div class="ttname"><a href="../../d8/def/WeightedList_8h.html#aeaae291906dc0b139f5465d32e899279">erase</a></div><div class="ttdeci">std::size_t erase(WeightedList&lt; T &gt; &amp;list, const T &amp;item)</div><div class="ttdef"><b>Definition:</b> WeightedList.h:89</div></div>
-<div class="ttc" id="aclassDataNode_html"><div class="ttname"><a href="../../d7/d25/classDataNode.html">DataNode</a></div><div class="ttdef"><b>Definition:</b> DataNode.h:32</div></div>
-<div class="ttc" id="aclassSale_html"><div class="ttname"><a href="../../df/d25/classSale.html">Sale</a></div><div class="ttdef"><b>Definition:</b> Sale.h:30</div></div>
-<div class="ttc" id="aclassSale_html_a824cd8d63ba2c0120924ca31c398c7ad"><div class="ttname"><a href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">Sale::Has</a></div><div class="ttdeci">bool Has(const Item *item) const</div><div class="ttdef"><b>Definition:</b> Sale.h:70</div></div>
-<div class="ttc" id="aclassSale_html_ab9d38670ae0a127a754830a2c5863c9c"><div class="ttname"><a href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">Sale::Load</a></div><div class="ttdeci">void Load(const DataNode &amp;node, const Set&lt; Item &gt; &amp;items)</div><div class="ttdef"><b>Definition:</b> Sale.h:42</div></div>
-<div class="ttc" id="aclassSale_html_ad504194963f5fcd8dfcf6b0e65c352bb"><div class="ttname"><a href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">Sale::Add</a></div><div class="ttdeci">void Add(const Sale&lt; Item &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Sale.h:62</div></div>
-<div class="ttc" id="aclassSet_html"><div class="ttname"><a href="../../d1/d5f/classSet.html">Set</a></div><div class="ttdef"><b>Definition:</b> Set.h:28</div></div>
-<div class="ttc" id="aclassSet_html_ad162097b80662fcd478acaa20d143206"><div class="ttname"><a href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Set::Get</a></div><div class="ttdeci">Type * Get(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> Set.h:32</div></div>
+<div class="ttc" id="aWeightedList_8h_html_aeaae291906dc0b139f5465d32e899279"><div class="ttname"><a href="../../d8/def/WeightedList_8h.html#aeaae291906dc0b139f5465d32e899279">erase</a></div><div class="ttdeci">std::size_t erase(WeightedList&lt; T &gt; &amp;list, const T &amp;item)</div><div class="ttdef"><b>Definition:</b> WeightedList.h:97</div></div>
+<div class="ttc" id="aclassDataNode_html"><div class="ttname"><a href="../../d7/d25/classDataNode.html">DataNode</a></div><div class="ttdef"><b>Definition:</b> DataNode.h:34</div></div>
+<div class="ttc" id="aclassSale_html"><div class="ttname"><a href="../../df/d25/classSale.html">Sale</a></div><div class="ttdef"><b>Definition:</b> Sale.h:32</div></div>
+<div class="ttc" id="aclassSale_html_a824cd8d63ba2c0120924ca31c398c7ad"><div class="ttname"><a href="../../df/d25/classSale.html#a824cd8d63ba2c0120924ca31c398c7ad">Sale::Has</a></div><div class="ttdeci">bool Has(const Item *item) const</div><div class="ttdef"><b>Definition:</b> Sale.h:72</div></div>
+<div class="ttc" id="aclassSale_html_ab9d38670ae0a127a754830a2c5863c9c"><div class="ttname"><a href="../../df/d25/classSale.html#ab9d38670ae0a127a754830a2c5863c9c">Sale::Load</a></div><div class="ttdeci">void Load(const DataNode &amp;node, const Set&lt; Item &gt; &amp;items)</div><div class="ttdef"><b>Definition:</b> Sale.h:44</div></div>
+<div class="ttc" id="aclassSale_html_ad504194963f5fcd8dfcf6b0e65c352bb"><div class="ttname"><a href="../../df/d25/classSale.html#ad504194963f5fcd8dfcf6b0e65c352bb">Sale::Add</a></div><div class="ttdeci">void Add(const Sale&lt; Item &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Sale.h:64</div></div>
+<div class="ttc" id="aclassSet_html"><div class="ttname"><a href="../../d1/d5f/classSet.html">Set</a></div><div class="ttdef"><b>Definition:</b> Set.h:30</div></div>
+<div class="ttc" id="aclassSet_html_ad162097b80662fcd478acaa20d143206"><div class="ttname"><a href="../../d1/d5f/classSet.html#ad162097b80662fcd478acaa20d143206">Set::Get</a></div><div class="ttdeci">Type * Get(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> Set.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

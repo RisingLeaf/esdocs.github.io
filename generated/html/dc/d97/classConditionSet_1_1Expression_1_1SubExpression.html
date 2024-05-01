@@ -116,7 +116,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a80dc234074e5bf2a835b7c8e9b2bf125"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d97/classConditionSet_1_1Expression_1_1SubExpression.html#a80dc234074e5bf2a835b7c8e9b2bf125">operatorCount</a> = 0</td></tr>
 <tr class="separator:a80dc234074e5bf2a835b7c8e9b2bf125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A <a class="el" href="../../dc/d97/classConditionSet_1_1Expression_1_1SubExpression.html">SubExpression</a> results from applying operator-precedence parsing to one side of an <a class="el" href="../../d4/d73/classConditionSet_1_1Expression.html">Expression</a>. The operators and tokens needed to recreate the given side are stored, and can be interleaved to restore the original string. Based on them, a sequence of "Operations" is created for runtime evaluation. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef4b4aef75d736ad1bf3376ca6fd0017" name="aef4b4aef75d736ad1bf3376ca6fd0017"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef4b4aef75d736ad1bf3376ca6fd0017">&#9670;&nbsp;</a></span>SubExpression() <span class="overload">[1/2]</span></h2>
 
@@ -209,6 +211,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Use a valid working index and data pointer vector to create an evaluable <a class="el" href="../../da/de1/classConditionSet_1_1Expression_1_1SubExpression_1_1Operation.html">Operation</a>. </p>
 
 </div>
 </div>
@@ -237,6 +240,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Substitute numbers for any string values and then compute the result.</p>
+<p >Evaluate the <a class="el" href="../../dc/d97/classConditionSet_1_1Expression_1_1SubExpression.html">SubExpression</a> using the given condition maps. </p>
 
 </div>
 </div>
@@ -262,6 +267,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parse the token and operators vectors to make the sequence vector. </p>
 
 </div>
 </div>
@@ -279,6 +285,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this <a class="el" href="../../dc/d97/classConditionSet_1_1Expression_1_1SubExpression.html">SubExpression</a> was able to build correctly. </p>
 
 </div>
 </div>
@@ -305,6 +312,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parse the input vector into the tokens and operators vectors. Parentheses are considered simple operators, and also insert an empty string into tokens. </p>
 
 </div>
 </div>
@@ -322,6 +330,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Interleave tokens and operators to reproduce the initial string.</p>
+<p >Convert the tokens and operators back to a string, for use in logging. </p>
 
 </div>
 </div>
@@ -339,6 +349,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Interleave tokens and operators, but do not combine.</p>
+<p >Interleave the tokens and operators, for use in the save file. </p>
 
 </div>
 </div>
@@ -362,6 +374,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The number of true (non-parentheses) operators. </p>
 
 </div>
 </div>
@@ -406,6 +419,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Iteration of the sequence vector yields the result. </p>
 
 </div>
 </div>
@@ -428,6 +442,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The tokens vector converts into a data vector of numeric values during evaluation. </p>
 
 </div>
 </div>

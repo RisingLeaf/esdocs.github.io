@@ -387,7 +387,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a161cf491e10d793a5d91af17f0e37b91"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/d54/classMapPanel_1_1Link.html">Link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dab/classMapPanel.html#a161cf491e10d793a5d91af17f0e37b91">links</a></td></tr>
 <tr class="separator:a161cf491e10d793a5d91af17f0e37b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class provides the base class for both the "map details" panel and the missions panel, and handles drawing of the underlying starmap and coloring the systems based on a selected criterion. It also handles finding and drawing routes in between systems. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2e68c5dd494acf7230a7b4ac2757abdd" name="a2e68c5dd494acf7230a7b4ac2757abdd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e68c5dd494acf7230a7b4ac2757abdd">&#9670;&nbsp;</a></span>MapPanel()</h2>
 
@@ -453,6 +455,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Map panels allow fast-forward to stay active. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#ab1bfa8579b2a025e70b77b833da90755">Panel</a>.</p>
 
@@ -491,6 +494,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Center the view on the given system (may actually be slightly offset to account for panels on the screen). </p>
 
 </div>
 </div>
@@ -628,6 +632,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Implements <a class="el" href="../../d8/d54/classPanel.html#ac567662a50d5e8995a123f6a3154c013">Panel</a>.</p>
 
@@ -657,6 +662,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Indicate which other systems have player escorts.</p>
+<p >Communicate the location of non-destroyed, player-owned ships. </p>
 
 </div>
 </div>
@@ -907,6 +914,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Display the name of and distance to the selected system.</p>
+<p >Fill in the top-middle header bar that names the selected system, and indicates its distance. </p>
 
 </div>
 </div>
@@ -932,6 +941,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw systems in accordance to the set commodity color scheme. </p>
 
 </div>
 </div>
@@ -1026,6 +1036,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw map mode buttons, escort/storage tooltips, and the non-routable system warning. </p>
 
 </div>
 </div>
@@ -1092,6 +1103,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Returns if previous-&gt;next can be done with a known travel type. </p>
 
 </div>
 </div>
@@ -1154,6 +1166,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If the mouse has moved near a known system that contains escorts, track the dwell time. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#a5aaabd4cdabcd6251d9c4e86535f89bc">Panel</a>.</p>
 
@@ -1184,6 +1197,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check whether the <a class="el" href="../../de/d71/classNPC.html">NPC</a> and waypoint conditions of the given mission have been satisfied. </p>
 
 </div>
 </div>
@@ -1268,6 +1282,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Only override the ones you need; the default action is to return false. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#af7f4af41d7bb3d5e13556e394f0678df">Panel</a>.</p>
 
@@ -1298,6 +1313,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the color mapping for various system attributes. </p>
 
 </div>
 </div>
@@ -1431,6 +1447,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move the state of this panel forward one game step. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#abe42f22d508c1cfd1a2f8ecad31d6762">Panel</a>.</p>
 
@@ -1538,6 +1555,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Cache the map layout, so it doesn't have to be re-calculated every frame. The cache must be updated when the coloring mode changes.</p>
+<p >Cache the map layout, so it doesn't have to be re-calculated every frame. The node cache must be updated when the coloring mode changes. </p>
 
 </div>
 </div>
@@ -1608,6 +1627,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This is the coloring mode currently used in the cache. </p>
 
 </div>
 </div>
@@ -1652,6 +1672,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Distance from the screen center to the nearest owned system, for use in determining which governments are in the legend. </p>
 
 </div>
 </div>
@@ -1718,6 +1739,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Systems in which your (active and parked) escorts and stored outfits are located. </p>
 
 </div>
 </div>
@@ -1740,6 +1762,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >For tooltips: </p>
 
 </div>
 </div>
@@ -1828,6 +1851,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw links only outside the system ring, which has radius <a class="el" href="../../d3/dab/classMapPanel.html#ab7d8371304ec058168c4ee6e89764684">MapPanel::OUTER</a>. </p>
 
 </div>
 </div>
@@ -1982,6 +2006,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The system in which the player is located. </p>
 
 </div>
 </div>
@@ -2048,6 +2073,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The selected planet, if any. </p>
 
 </div>
 </div>
@@ -2070,6 +2096,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The (non-null) system which is currently selected. </p>
 
 </div>
 </div>
@@ -2092,6 +2119,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >An X offset in pixels to be applied to the selected system <a class="el" href="../../d9/dcf/classUI.html">UI</a> if something else gets in the way of its default position. </p>
 
 </div>
 </div>
@@ -2202,6 +2230,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Enumeration for how the systems should be colored: </p>
 
 </div>
 </div>
@@ -2268,6 +2297,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A system associated with a dialog or conversation. </p>
 
 </div>
 </div>

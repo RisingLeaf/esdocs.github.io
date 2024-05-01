@@ -418,7 +418,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d54/classPanel.html#a54beaf51714a909c0731a3f11c3bf35b">Modifier</a> ()</td></tr>
 <tr class="separator:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing the common elements of both the shipyard panel and the outfitter panel (e.g. the sidebar with the ships you own). </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af062cf192a4e16a57903794f49691d76" name="af062cf192a4e16a57903794f49691d76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af062cf192a4e16a57903794f49691d76">&#9670;&nbsp;</a></span>ShopPane</h2>
 
@@ -618,6 +620,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The selected item's category has collapsed, to advance to next displayed item. </p>
 
 </div>
 </div>
@@ -654,6 +657,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if the given point is within the button zone, and if so return the letter of the button (or ' ' if it's not on a button). </p>
 
 </div>
 </div>
@@ -705,6 +709,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If the selected item is no longer displayed, advance selection until we find something that is. </p>
 
 </div>
 </div>
@@ -928,6 +933,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Implements <a class="el" href="../../d8/d54/classPanel.html#ac567662a50d5e8995a123f6a3154c013">Panel</a>.</p>
 
@@ -1338,6 +1344,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Helper function for <a class="el" href="../../d9/dcf/classUI.html">UI</a> buttons to determine if the selected item is already owned. Affects if "Install" is shown for already owned items or if "Buy" is shown for items not yet owned.</p>
+<p >If we are buying into cargo, then items in cargo don't count as already owned, but they count as "already installed" in cargo. </p>
 
 </div>
 </div>
@@ -1386,6 +1394,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Only override the ones you need; the default action is to return false. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#af7f4af41d7bb3d5e13556e394f0678df">Panel</a>.</p>
 
@@ -1450,6 +1459,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If selected item is offscreen, scroll just enough to put it on. </p>
 
 </div>
 </div>
@@ -1651,6 +1661,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Find the currently selected item. </p>
 
 </div>
 </div>
@@ -1834,6 +1845,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move the state of this panel forward one game step. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#abe42f22d508c1cfd1a2f8ecad31d6762">Panel</a>.</p>
 
@@ -1863,6 +1875,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These are for the individual shop panels to override. </p>
 
 <p>Implemented in <a class="el" href="../../d2/d6f/classOutfitterPanel.html#a1d5101b76f4a8670379bb99865c32a9b">OutfitterPanel</a>, and <a class="el" href="../../d7/d93/classShipyardPanel.html#ad2d3b93c1e816819df0d82fc7e8245f6">ShipyardPanel</a>.</p>
 
@@ -2128,6 +2141,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Remember the current day, for calculating depreciation. </p>
 
 </div>
 </div>
@@ -2194,6 +2208,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The player-owned ship being reordered. </p>
 
 </div>
 </div>
@@ -2370,6 +2385,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >(It may be worth moving the above pointers into the derived classes in the future.) </p>
 
 </div>
 </div>
@@ -2480,6 +2496,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The player-owned ship that was first selected in the sidebar (or most recently purchased). </p>
 
 </div>
 </div>
@@ -2502,6 +2519,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The group of all selected, player-owned ships. </p>
 
 </div>
 </div>
@@ -2546,6 +2564,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The currently selected <a class="el" href="../../d0/dae/classOutfit.html">Outfit</a>, for the <a class="el" href="../../d2/d6f/classOutfitterPanel.html">OutfitterPanel</a>. </p>
 
 </div>
 </div>
@@ -2568,6 +2587,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The currently selected <a class="el" href="../../d2/d32/classShip.html">Ship</a>, for the <a class="el" href="../../d7/d93/classShipyardPanel.html">ShipyardPanel</a>. </p>
 
 </div>
 </div>

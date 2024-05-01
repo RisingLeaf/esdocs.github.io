@@ -137,7 +137,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a41e53096ebf1ef3c8fa660d3cf9cb92b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dc7/classConditionSet.html">ConditionSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcc/classGameAction.html#a41e53096ebf1ef3c8fa660d3cf9cb92b">conditions</a></td></tr>
 <tr class="separator:a41e53096ebf1ef3c8fa660d3cf9cb92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A <a class="el" href="../../dc/dcc/classGameAction.html">GameAction</a> represents what happens when a <a class="el" href="../../da/d97/classMission.html">Mission</a> or <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a> reaches a certain milestone. This can include when the <a class="el" href="../../da/d97/classMission.html">Mission</a> is offered, accepted, declined, completed, or failed, or when a <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a> reaches an "action" node. GameActions might include giving the player payment or a special item, modifying condition flags, or queueing a <a class="el" href="../../dd/dbd/classGameEvent.html">GameEvent</a> to occur. Any new mechanics added to <a class="el" href="../../dc/dcc/classGameAction.html">GameAction</a> should be able to be safely executed while in a <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a81f0b4cc0c01dcde21951e23dee5633d" name="a81f0b4cc0c01dcde21951e23dee5633d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81f0b4cc0c01dcde21951e23dee5633d">&#9670;&nbsp;</a></span>GameAction() <span class="overload">[1/2]</span></h2>
 
@@ -178,6 +180,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../dc/dcc/classGameAction.html#ae573bda530e07296745e63cde17450d5">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -213,6 +216,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Perform this action.</p>
+<p >Perform the specified tasks. </p>
 
 </div>
 </div>
@@ -272,6 +277,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >"Instantiate" this action by filling in the wildcard data for the actual payment, event delay, etc. </p>
 
 </div>
 </div>
@@ -297,6 +303,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether this action instance contains any tasks to perform. </p>
 
 </div>
 </div>
@@ -333,6 +340,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Process a single sibling node.</p>
+<p >Load a single child at a time, used for streamlining <a class="el" href="../../d4/d24/classMissionAction.html#acdd8e26962ea07238eeb340632b2d7d4">MissionAction::Load</a>. </p>
 
 </div>
 </div>
@@ -443,6 +452,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if this <a class="el" href="../../dc/dcc/classGameAction.html">GameAction</a> references content that is not fully defined.</p>
+<p >Check this template or instantiated <a class="el" href="../../dc/dcc/classGameAction.html">GameAction</a> to see if any used content is not fully defined (e.g. plugin removal, typos in names, etc.). </p>
 
 </div>
 </div>
@@ -510,6 +521,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >When this action is performed, the missions with these names fail. </p>
 
 </div>
 </div>
@@ -532,6 +544,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >When this action is performed, the mission that called this action is failed. </p>
 
 </div>
 </div>

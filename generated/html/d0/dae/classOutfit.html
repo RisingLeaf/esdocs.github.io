@@ -470,7 +470,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:afdc043fcc5d8e22637b1f22742945a65 inherit pro_attribs_classWeapon"><td class="memItemLeft" align="right" valign="top">std::pair&lt; const <a class="el" href="../../d0/dae/classOutfit.html">Outfit</a> *, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classWeapon.html#afdc043fcc5d8e22637b1f22742945a65">ammo</a></td></tr>
 <tr class="separator:afdc043fcc5d8e22637b1f22742945a65 inherit pro_attribs_classWeapon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing an outfit that can be installed in a ship. A ship's "attributes" are simply stored as a series of key-value pairs, and an outfit can add to or subtract from any of those values. Weapons also have another set of attributes unique to them, and outfits can also specify additional information like the sprite to use in the outfitter panel for selling them, or the sprite or sound to be used for an engine flare. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a50d52bef3f72f1458a92bdecb8911b24" name="a50d52bef3f72f1458a92bdecb8911b24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50d52bef3f72f1458a92bdecb8911b24">&#9670;&nbsp;</a></span>Add()</h2>
 
@@ -496,6 +498,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >For tracking a combination of outfits in a ship: add the given number of instances of the given outfit to this outfit. </p>
 
 </div>
 </div>
@@ -522,6 +525,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add the license with the given name to the licenses required by this outfit, if it is not already present. </p>
 
 </div>
 </div>
@@ -540,6 +544,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add the licenses required by the given outfit to this outfit. </p>
 
 </div>
 </div>
@@ -557,6 +562,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the afterburner effect, if any. </p>
 
 </div>
 </div>
@@ -602,6 +608,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine whether the given number of instances of the given outfit can be added to a ship with the attributes represented by this instance. If not, return the maximum number that can be added. </p>
 
 </div>
 </div>
@@ -644,6 +651,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These get called a lot, so inline them for speed. </p>
 
 </div>
 </div>
@@ -712,6 +720,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this outfit's engine flare sprites, if any.</p>
+<p >Get this outfit's engine flare sprite, if any. </p>
 
 </div>
 </div>
@@ -729,6 +739,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the sprite this outfit uses when dumped into space. </p>
 
 </div>
 </div>
@@ -850,6 +861,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this outfit has been defined via <a class="el" href="../../d0/dae/classOutfit.html#aa8cb3194ca0970c193a1bb607c43c827">Outfit::Load</a> (vs. only being referred to). </p>
 
 </div>
 </div>
@@ -867,6 +879,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this outfit's jump effects and sounds, if any. </p>
 
 </div>
 </div>
@@ -935,6 +948,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the licenses needed to buy or operate this ship.</p>
+<p >Get the licenses needed to purchase this outfit. </p>
 
 </div>
 </div>
@@ -953,6 +968,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >An "outfit" can be loaded from an "outfit" node or from a ship's "attributes" node. </p>
 
 </div>
 </div>
@@ -1074,6 +1090,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Modify this outfit's attributes. Note that this cannot be used to change special attributes, like cost and mass.</p>
+<p >Modify this outfit's attributes. </p>
 
 </div>
 </div>
@@ -1143,6 +1161,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the image to display in the outfitter when buying this item. </p>
 
 </div>
 </div>
@@ -1160,6 +1179,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >When writing to the player's save, the reference name is used even if this outfit was not fully defined (i.e. belongs to an inactive plugin). </p>
 
 </div>
 </div>
@@ -1227,6 +1247,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These are all the possible category strings for outfits. </p>
 
 </div>
 </div>
@@ -1359,6 +1380,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The integers in these pairs/maps indicate the number of sprites/effects/sounds to be placed/played. </p>
 
 </div>
 </div>
@@ -1601,6 +1623,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Licenses needed to purchase this item. </p>
 
 </div>
 </div>
@@ -1711,6 +1734,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The series that this outfit is a part of and its index within that series. Used for sorting within shops. </p>
 
 </div>
 </div>

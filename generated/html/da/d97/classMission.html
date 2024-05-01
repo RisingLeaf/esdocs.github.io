@@ -397,7 +397,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a34ad807b24c6e416c52fab4ae2a7f59f"><td class="memItemLeft" align="right" valign="top">std::set&lt; const <a class="el" href="../../d4/d24/classMissionAction.html">MissionAction</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d97/classMission.html#a34ad807b24c6e416c52fab4ae2a7f59f">didEnter</a></td></tr>
 <tr class="separator:a34ad807b24c6e416c52fab4ae2a7f59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class represents a mission that the player can take on, such as carrying cargo from one planet to another or defending or attacking a ship. Many of a mission's parameters can be randomized, either so that the same mission template can be reused many times, or just so the mission is not always exactly the same every time you replay the game. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="abc3a45f3ca7fd1c36494460d2f97a431" name="abc3a45f3ca7fd1c36494460d2f97a431"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc3a45f3ca7fd1c36494460d2f97a431">&#9670;&nbsp;</a></span>Location</h2>
 
@@ -409,6 +411,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out where this mission is offered. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc3a45f3ca7fd1c36494460d2f97a431af073fc5e520165e2be828ae7ece532d8" name="abc3a45f3ca7fd1c36494460d2f97a431af073fc5e520165e2be828ae7ece532d8"></a>SPACEPORT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abc3a45f3ca7fd1c36494460d2f97a431a54612d1b0fbd8aae2185697fe50ec891" name="abc3a45f3ca7fd1c36494460d2f97a431a54612d1b0fbd8aae2185697fe50ec891"></a>LANDING&#160;</td><td class="fielddoc"></td></tr>
@@ -432,6 +435,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >When the state of this mission changes, it may make changes to the player information or show new <a class="el" href="../../d9/dcf/classUI.html">UI</a> panels. <a class="el" href="../../df/df7/classPlayerInfo.html#a79d248baf0e13e2c780eccc00c380bf3">PlayerInfo::MissionCallback()</a> will be used as the callback for an <code>on offer</code> conversation, to handle its response. If it is not possible for this change to happen, this function returns false. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a463e25b3f9819b11a3db77c1cc06c6c9a135028f968a6c904a196ca7d8975fa2e" name="a463e25b3f9819b11a3db77c1cc06c6c9a135028f968a6c904a196ca7d8975fa2e"></a>COMPLETE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a463e25b3f9819b11a3db77c1cc06c6c9a744bbd18864d48f3aeddfe582c476ec3" name="a463e25b3f9819b11a3db77c1cc06c6c9a744bbd18864d48f3aeddfe582c476ec3"></a>OFFER&#160;</td><td class="fielddoc"></td></tr>
@@ -498,6 +502,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Copying a mission instance isn't allowed. </p>
 
 </div>
 </div>
@@ -575,6 +580,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../da/d97/classMission.html#a249443873abd68171945bd0a7728a2b8">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -594,6 +600,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a string to show if this mission is "blocked" from being offered because it requires you to have more passenger or cargo space free. After calling this function, any future calls to it will return an empty string so that you do not display the same message multiple times. </p>
 
 </div>
 </div>
@@ -676,6 +683,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if it's possible to offer or complete this mission right now. The check for whether you can offer a mission does not take available space into account, so before actually offering a mission you should also check if the player has enough space.</p>
+<p >Check if it's possible to offer or complete this mission right now. </p>
 
 </div>
 </div>
@@ -728,6 +737,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If this mission's deadline was before the given date and it has not been marked as failing already, mark it and return true. </p>
 
 </div>
 </div>
@@ -745,6 +755,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the string to be shown in the destination planet's hailing dialog. If this is "auto", you don't have to hail them to get landing permission. </p>
 
 </div>
 </div>
@@ -762,6 +773,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The mission must be completed by this deadline (if there is a deadline). </p>
 
 </div>
 </div>
@@ -847,6 +859,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If any event occurs between two ships, check to see if this mission cares about it. This may affect the mission status or display a message. </p>
 
 </div>
 </div>
@@ -929,6 +942,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Perform an "on enter" <a class="el" href="../../d4/d24/classMissionAction.html">MissionAction</a> associated with the current system. Returns true if an action was performed. </p>
 
 </div>
 </div>
@@ -946,6 +960,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The mission should take this many jumps. Only matters to available jobs (not saved to file) </p>
 
 </div>
 </div>
@@ -963,6 +978,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark a mission failed (e.g. due to a "fail" action in another mission). </p>
 
 </div>
 </div>
@@ -998,6 +1014,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a specific mission action from this mission. If the mission action is not found for the given trigger, returns an empty mission action.</p>
+<p >Get a specific mission action from this mission. If a mission action is not found for the given trigger, returns an empty mission action. </p>
 
 </div>
 </div>
@@ -1016,6 +1034,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if you have special clearance to land on your destination. </p>
 
 </div>
 </div>
@@ -1051,6 +1070,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether we have full clearance to land and use the planet's services, or whether we are landing in secret ("infiltrating"). </p>
 
 </div>
 </div>
@@ -1068,6 +1088,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this mission has high priority. If any high-priority missions are available, no others will be shown at landing or in the spaceport. This is to be used for missions that are part of a series. </p>
 
 </div>
 </div>
@@ -1086,6 +1107,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Checks if the given ship belongs to one of the mission's NPCs. </p>
 
 </div>
 </div>
@@ -1122,6 +1144,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this mission's cargo can fit entirely on the referenced ship. </p>
 
 </div>
 </div>
@@ -1139,6 +1162,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the internal name used for this mission. This name is unique and is never modified by string substitution, so it can be used in condition variables, etc. </p>
 
 </div>
 </div>
@@ -1201,6 +1225,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >"Instantiate" a mission by replacing randomly selected values and places with a single choice, and then replacing any wildcard text as well. </p>
 
 </div>
 </div>
@@ -1253,6 +1278,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this mission is a "minor" mission. Minor missions will only be offered if no other missions (minor or otherwise) are being offered. </p>
 
 </div>
 </div>
@@ -1271,6 +1297,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This function dictates whether missions on the player's map are shown in bright or dim text colors, and may be called while in-flight or landed. </p>
 
 </div>
 </div>
@@ -1288,6 +1315,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this mission is unique, i.e. not something that will be offered over and over again in different variants. </p>
 
 </div>
 </div>
@@ -1305,6 +1333,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this mission should be quarantined due to requiring currently- undefined ships, planets, or systems (i.e. is from an inactive plugin).</p>
+<p >Check if this instantiated mission uses any systems, planets, or ships that are not fully defined. If everything is fully defined, this is a valid mission. </p>
 
 </div>
 </div>
@@ -1322,6 +1352,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this mission should be shown in your mission list. If not, the player will not know this mission exists (which is sometimes useful). </p>
 
 </div>
 </div>
@@ -1340,6 +1371,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load a mission, either from the game data or from a saved game. </p>
 
 </div>
 </div>
@@ -1374,6 +1406,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add "never" to the toOffer <a class="el" href="../../d8/dc7/classConditionSet.html">ConditionSet</a>, preventing this mission from offering. </p>
 
 </div>
 </div>
@@ -1391,6 +1424,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a list of NPCs associated with this mission. Every time the player takes off from a planet, they should be added to the active ships. </p>
 
 </div>
 </div>
@@ -1486,6 +1520,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >For legacy code, contraband definitions can be placed in two different locations, so move that parsing out to a helper function. </p>
 
 </div>
 </div>
@@ -1520,6 +1555,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this mission recommends that the game be autosaved when it is accepted. This should be set for main story line missions that have a high chance of failing, such as escort missions. </p>
 
 </div>
 </div>
@@ -1566,6 +1602,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Save a mission. It is safe to assume that any mission that is being saved is already "instantiated," so only a subset of the data must be saved. </p>
 
 </div>
 </div>
@@ -1583,6 +1620,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d8/d9c/classInformation.html">Information</a> about what you are doing. </p>
 
 </div>
 </div>
@@ -1618,6 +1656,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Update which NPCs are active based on their spawn and despawn conditions. </p>
 
 </div>
 </div>
@@ -1643,6 +1682,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Basic mission information. </p>
 
 </div>
 </div>
@@ -1717,6 +1757,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Actions to perform: </p>
 
 </div>
 </div>
@@ -1805,6 +1846,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parameters for generating random cargo amounts: </p>
 
 </div>
 </div>
@@ -2047,6 +2089,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Track which <code>on enter</code> MissionActions have triggered. </p>
 
 </div>
 </div>
@@ -2399,6 +2442,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >NPCs: </p>
 
 </div>
 </div>
@@ -2421,6 +2465,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >"on enter" actions may name a specific system, or rely on matching a <a class="el" href="../../d8/da4/classLocationFilter.html">LocationFilter</a> in order to designate the matched system. </p>
 
 </div>
 </div>
@@ -2465,6 +2510,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parameters for generating random passenger amounts: </p>
 
 </div>
 </div>
@@ -2619,6 +2665,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The ship this mission originated from, if it is a boarding mission. </p>
 
 </div>
 </div>
@@ -2685,6 +2732,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >User-defined text replacements unique to this mission: </p>
 
 </div>
 </div>
@@ -2883,6 +2931,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Systems that must be visited: </p>
 
 </div>
 </div>

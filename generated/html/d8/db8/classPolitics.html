@@ -120,7 +120,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a327f269bea76adccdb995e1a77a70827"><td class="memItemLeft" align="right" valign="top">std::set&lt; const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/classPolitics.html#a327f269bea76adccdb995e1a77a70827">fined</a></td></tr>
 <tr class="separator:a327f269bea76adccdb995e1a77a70827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class represents the current state of relationships between governments in the game, and in particular the relationship of each government to the player. The player has a reputation with each government, which is affected by what they do for a government or its allies or enemies. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3a8126f3332c891818f78a6882d416ac" name="a3a8126f3332c891818f78a6882d416ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a8126f3332c891818f78a6882d416ac">&#9670;&nbsp;</a></span>AddReputation()</h2>
 
@@ -164,6 +166,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Bribe the given government to be friendly to you for one day. </p>
 
 </div>
 </div>
@@ -192,6 +195,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Bribe a planet to let the player's ships land there. </p>
 
 </div>
 </div>
@@ -210,6 +214,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the player can land on the given planet. </p>
 
 </div>
 </div>
@@ -238,6 +243,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the given ship can land on the given planet. </p>
 
 </div>
 </div>
@@ -330,6 +336,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check to see if the player has done anything they should be fined for. Each government can only fine you once per day.</p>
+<p >Check to see if the player has done anything they should be fined for. </p>
 
 </div>
 </div>
@@ -410,6 +418,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Commit the given "offense" against the given government (which may not actually consider it to be an offense). This may result in temporary hostilities (if the event type is PROVOKE), or a permanent change to your reputation.</p>
+<p >Commit the given "offense" against the given government (which may not actually consider it to be an offense). This may result in temporary hostilities (if the even type is PROVOKE), or a permanent change to your reputation. </p>
 
 </div>
 </div>
@@ -428,6 +438,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or set your reputation with the given government. </p>
 
 </div>
 </div>
@@ -445,6 +456,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reset to the initial political state defined in the game data. </p>
 
 </div>
 </div>
@@ -462,6 +474,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reset any temporary effects (typically because a day has passed).</p>
+<p >Reset any temporary provocation (typically because a day has passed). </p>
 
 </div>
 </div>
@@ -623,6 +637,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >attitude[target][other] stores how much an action toward the given target government will affect your reputation with the given other government. The relationships need not be perfectly symmetrical. For example, just because Republic ships will help a merchant under attack does not mean that merchants will come to the aid of Republic ships. </p>
 
 </div>
 </div>

@@ -235,7 +235,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d80/classBody.html#ab5d1367968ab9eb36708eef8155f3133">government</a> = nullptr</td></tr>
 <tr class="separator:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing the template for a visual effect such as an explosion, which is drawn for effect but has no impact on any other objects in the game. Because this class is more heavyweight than it needs to be, actual visual effects when they are placed use the <a class="el" href="../../db/dd9/classVisual.html">Visual</a> class, based on the template provided by an <a class="el" href="../../d3/df0/classEffect.html">Effect</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac6c2de11fe5ecf50aebb6631243ef920" name="ac6c2de11fe5ecf50aebb6631243ef920"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6c2de11fe5ecf50aebb6631243ef920">&#9670;&nbsp;</a></span>Load()</h2>
 
@@ -268,6 +270,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Functions provided by the <a class="el" href="../../d7/d80/classBody.html">Body</a> base class: Frame GetFrame(int step = -1) const; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#aaef9972906c8b24360cc578d05fb1dfa">Position() const</a>; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a1a877a4915f3ecf19df065536b06532d">Velocity() const</a>; const <a class="el" href="../../d9/d80/classAngle.html">Angle</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a637115748ef7a544e7b4574f955e42e5">Facing() const</a>; <a class="el" href="../../dc/d4f/classPoint.html">Point</a> <a class="el" href="../../d7/d80/classBody.html#aa59695adb1600a5fa35b4e8da023de51">Unit() const</a>; double <a class="el" href="../../d7/d80/classBody.html#a78716498ff21e1694faf1ec217aa4f0b">Zoom() const</a>; </p>
 
 </div>
 </div>
@@ -309,6 +312,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Allow the <a class="el" href="../../db/dd9/classVisual.html">Visual</a> class to access all these private members. </p>
 
 </div>
 </div>
@@ -332,6 +336,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Absolute values are independent of the parent <a class="el" href="../../d7/d80/classBody.html">Body</a> if specified. </p>
 
 </div>
 </div>
@@ -596,6 +601,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parameters used for randomizing spin and velocity. The random angle is added to the parent angle, and then a random velocity in that direction is added to the parent velocity. </p>
 
 </div>
 </div>

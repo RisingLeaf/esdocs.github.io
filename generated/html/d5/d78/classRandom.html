@@ -88,7 +88,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1835099b6525fd215b5a977a5e0b1f22"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d78/classRandom.html#a1835099b6525fd215b5a977a5e0b1f22">Normal</a> (double mean=0, double sigma=1)</td></tr>
 <tr class="separator:a1835099b6525fd215b5a977a5e0b1f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Collection of functions for generating random numbers with a variety of different distributions. (This is done partly because on some systems the random number generation is not thread-safe.) </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abc4ef80c03ec983afdde6687b350c092" name="abc4ef80c03ec983afdde6687b350c092"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc4ef80c03ec983afdde6687b350c092">&#9670;&nbsp;</a></span>Binomial()</h2>
 
@@ -122,6 +124,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a number from a binomial distribution (i.e. integer bell curve). </p>
 
 </div>
 </div>
@@ -209,6 +212,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a number from a normal distribution with standard or specified mean and stddev.</p>
+<p >Get a normally distributed number with standard or specified mean and stddev. </p>
 
 </div>
 </div>
@@ -245,6 +250,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Slower functions for getting random numbers from a given distribution. Do not use these functions in time-critical code. Return the expected number of failures before k successes, when the probability of success is p. The mean value will be k / (1 - p).</p>
+<p >Return the expected number of failures before k successes, when the probability of success is p. The mean value will be k / (1 - p). </p>
 
 </div>
 </div>
@@ -296,6 +303,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Seed the generator (e.g. to make it produce exactly the same random numbers it produced previously). </p>
 
 </div>
 </div>

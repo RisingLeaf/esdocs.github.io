@@ -131,7 +131,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a54b22d4471595b81e4652050687682db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddf/structEsUuid_1_1UuidType.html">UuidType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d38/classEsUuid.html#a54b22d4471595b81e4652050687682db">value</a></td></tr>
 <tr class="separator:a54b22d4471595b81e4652050687682db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class wrapping IETF v4 GUIDs, providing lazy initialization. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af7e08cad55ae0521099276a57dd56017" name="af7e08cad55ae0521099276a57dd56017"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7e08cad55ae0521099276a57dd56017">&#9670;&nbsp;</a></span>EsUuid() <span class="overload">[1/4]</span></h2>
 
@@ -205,6 +207,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Copying a UUID does not copy its value. (This allows us to use simple copy operations on stock ship definitions when spawning fleets, etc.) </p>
 
 </div>
 </div>
@@ -231,6 +234,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >UUIDs can be move-constructed as-is. </p>
 
 </div>
 </div>
@@ -257,6 +261,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Internal constructor, from a string.</p>
+<p >Internal constructor. Note that the provided value may not be a valid v4 UUID, in which case an error is logged and we return a new UUID. </p>
 
 </div>
 </div>
@@ -276,6 +282,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Explicitly clone this UUID.</p>
+<p >Explicitly copy the value of the other UUID. </p>
 
 </div>
 </div>
@@ -380,6 +388,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Copy-assigning also results in an empty UUID. </p>
 
 </div>
 </div>
@@ -406,6 +415,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >UUIDs can be move-assigned as-is. </p>
 
 </div>
 </div>
@@ -432,6 +442,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >UUIDs can be compared against other UUIDs. </p>
 
 </div>
 </div>
@@ -457,6 +468,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a string representation of this ID, e.g. for serialization. </p>
 
 </div>
 </div>
@@ -482,6 +494,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Lazy initialization getter. </p>
 
 </div>
 </div>

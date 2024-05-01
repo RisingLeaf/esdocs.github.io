@@ -149,7 +149,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:af85b88d1e632c027559ee95bb72b1fc1"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db9/classScrollVar.html#af85b88d1e632c027559ee95bb72b1fc1">displaySize</a> {}</td></tr>
 <tr class="separator:af85b88d1e632c027559ee95bb72b1fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class ScrollVar&lt; T &gt;</div><p >This class allows you to set a scroll value and provides animation interpolation between the old and new values, while clamping the value to a suitable range. The <a class="el" href="../../d7/d54/classAnimate.html">Animate</a> methods will return negative values, as they are meant to be added as an offset to the draw position. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9e69f8de3abc401665cfe4d3a3367d97" name="a9e69f8de3abc401665cfe4d3a3367d97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e69f8de3abc401665cfe4d3a3367d97">&#9670;&nbsp;</a></span>ScrollVar() <span class="overload">[1/2]</span></h2>
 
@@ -233,6 +236,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Makes sure the animation value stays in range. </p>
 
 </div>
 </div>
@@ -249,6 +253,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns true if the value is at the maximum. </p>
 
 </div>
 </div>
@@ -265,6 +270,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns true if the value is at the minimum. </p>
 
 </div>
 </div>
@@ -281,6 +287,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the maximum size of the scroll content. </p>
 
 </div>
 </div>
@@ -301,6 +308,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Shortcut mathematical operators for convenience. </p>
 
 </div>
 </div>
@@ -331,6 +339,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Modifies the scroll value by dy, then clamps it to a suitable range. </p>
 
 </div>
 </div>
@@ -347,6 +356,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns true if scroll buttons are needed. </p>
 
 </div>
 </div>
@@ -385,6 +395,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Sets the scroll value directly, then clamps it to a suitable range. </p>
 
 <p>Reimplemented from <a class="el" href="../../d7/d54/classAnimate.html#afe0119ae7e583f4855b875c112526b39">Animate&lt; T &gt;</a>.</p>
 
@@ -407,6 +418,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the size of the displayable scroll area. </p>
 
 </div>
 </div>
@@ -427,6 +439,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the maximum size of the scroll content. </p>
 
 </div>
 </div>

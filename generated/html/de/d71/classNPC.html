@@ -229,7 +229,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a88f3c5abad0c4708dd0a15c2267975b3"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../de/d71/classNPC.html#a3e3224c62fd247387abc85c21f4ceee2">Trigger</a>, <a class="el" href="../../df/d57/classNPCAction.html">NPCAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d71/classNPC.html#a88f3c5abad0c4708dd0a15c2267975b3">npcActions</a></td></tr>
 <tr class="separator:a88f3c5abad0c4708dd0a15c2267975b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >An <a class="el" href="../../de/d71/classNPC.html">NPC</a> is a ship associated with a mission. Certain required actions are associated with each <a class="el" href="../../de/d71/classNPC.html">NPC</a>, such as boarding it, killing it, or making sure it is not boarded or killed. NPCs also have different "behaviors," such as staying in the system they started in, or attacking only the player's ships. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a3e3224c62fd247387abc85c21f4ceee2" name="a3e3224c62fd247387abc85c21f4ceee2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e3224c62fd247387abc85c21f4ceee2">&#9670;&nbsp;</a></span>Trigger</h2>
 
@@ -250,7 +252,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a4f4b6e02e01e29084ce56ee5aa952bfd" name="a3e3224c62fd247387abc85c21f4ceee2a4f4b6e02e01e29084ce56ee5aa952bfd"></a>ASSIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a4f4b6e02e01e29084ce56ee5aa952bfd" name="a3e3224c62fd247387abc85c21f4ceee2a4f4b6e02e01e29084ce56ee5aa952bfd"></a>ASSIST&#160;</td><td class="fielddoc"><p >Triggers corresponding directly to ShipEvents. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a71d177b6ea01163d80b032baf3335071" name="a3e3224c62fd247387abc85c21f4ceee2a71d177b6ea01163d80b032baf3335071"></a>SCAN_CARGO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a62d76ca767fe6934ca02284696f96557" name="a3e3224c62fd247387abc85c21f4ceee2a62d76ca767fe6934ca02284696f96557"></a>SCAN_OUTFITS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a62996439142240ca046c479aac1bdbdb" name="a3e3224c62fd247387abc85c21f4ceee2a62996439142240ca046c479aac1bdbdb"></a>PROVOKE&#160;</td><td class="fielddoc"></td></tr>
@@ -259,7 +262,8 @@ Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2ab72f08e0732365cac9599b5c42157bf9" name="a3e3224c62fd247387abc85c21f4ceee2ab72f08e0732365cac9599b5c42157bf9"></a>CAPTURE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2ac39aa6dbe619bb8ef8187b00b686df6a" name="a3e3224c62fd247387abc85c21f4ceee2ac39aa6dbe619bb8ef8187b00b686df6a"></a>DESTROY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a57c102cdbe7d64441cd90d61d29bcf30" name="a3e3224c62fd247387abc85c21f4ceee2a57c102cdbe7d64441cd90d61d29bcf30"></a>ENCOUNTER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a3986dd0914958ae2115e0ae7f10beef3" name="a3e3224c62fd247387abc85c21f4ceee2a3986dd0914958ae2115e0ae7f10beef3"></a>KILL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3e3224c62fd247387abc85c21f4ceee2a3986dd0914958ae2115e0ae7f10beef3" name="a3e3224c62fd247387abc85c21f4ceee2a3986dd0914958ae2115e0ae7f10beef3"></a>KILL&#160;</td><td class="fielddoc"><p >Can be triggered by either the CAPTURE or DESTROY events. </p>
+</td></tr>
 </table>
 
 </div>
@@ -313,6 +317,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Copying an <a class="el" href="../../de/d71/classNPC.html">NPC</a> instance isn't allowed. </p>
 
 </div>
 </div>
@@ -390,6 +395,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../de/d71/classNPC.html#a2af946fadb7edc404070fd1b6ec26293">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -437,6 +443,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Handle the given <a class="el" href="../../dd/d37/classShipEvent.html">ShipEvent</a>. </p>
 
 </div>
 </div>
@@ -491,6 +498,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle any <a class="el" href="../../de/d71/classNPC.html">NPC</a> mission actions that may have been triggered by a <a class="el" href="../../dd/d37/classShipEvent.html">ShipEvent</a>. </p>
 
 </div>
 </div>
@@ -508,6 +516,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if the <a class="el" href="../../de/d71/classNPC.html">NPC</a> is in a failed state. A failed state is irrecoverable, except for NPCs which would despawn upon the player's next landing. </p>
 
 </div>
 </div>
@@ -536,6 +545,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if the <a class="el" href="../../de/d71/classNPC.html">NPC</a> is in a successful state, assuming the player is in the given system. (By default, a despawnable <a class="el" href="../../de/d71/classNPC.html">NPC</a> has succeeded and is not actually checked.) </p>
 
 </div>
 </div>
@@ -582,6 +592,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Create a copy of this <a class="el" href="../../de/d71/classNPC.html">NPC</a> but with the fleets replaced by the actual ships they represent, wildcards in the conversation text replaced, etc. </p>
 
 </div>
 </div>
@@ -600,6 +611,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the <a class="el" href="../../de/d71/classNPC.html">NPC</a> is supposed to be accompanied and is not. </p>
 
 </div>
 </div>
@@ -688,6 +700,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Note: the <a class="el" href="../../de/d71/classNPC.html#a248e59d00cefb8c69d5d5b7a67cfdea0">Save()</a> function can assume this is an instantiated mission, not a template, so fleets will be replaced by individual ships already.</p>
+<p >Note: the <a class="el" href="../../de/d71/classNPC.html#a248e59d00cefb8c69d5d5b7a67cfdea0">Save()</a> function can assume this is an instantiated <a class="el" href="../../de/d71/classNPC.html">NPC</a>, not a template, so fleets will be replaced by individual ships already. </p>
 
 </div>
 </div>
@@ -705,6 +719,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the ships associated with this set of NPCs. </p>
 
 </div>
 </div>
@@ -722,6 +737,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if this <a class="el" href="../../de/d71/classNPC.html">NPC</a> should be placed in-flight. </p>
 
 </div>
 </div>
@@ -740,6 +756,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Update or check spawning and despawning for this <a class="el" href="../../de/d71/classNPC.html">NPC</a>.</p>
+<p >Update spawning and despawning for this <a class="el" href="../../de/d71/classNPC.html">NPC</a>. </p>
 
 </div>
 </div>
@@ -783,6 +801,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if this <a class="el" href="../../de/d71/classNPC.html">NPC</a> or <a class="el" href="../../de/d71/classNPC.html">NPC</a> template uses well-defined data. Returns the reason the <a class="el" href="../../de/d71/classNPC.html">NPC</a> is not valid, or an empty string if valid. </p>
 
 </div>
 </div>
@@ -806,6 +825,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The cargo ships in this <a class="el" href="../../de/d71/classNPC.html">NPC</a> will be able to carry. </p>
 
 </div>
 </div>
@@ -828,6 +848,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether we have actually checked spawning conditions yet. (This will generally be true, except when reloading a save.) </p>
 
 </div>
 </div>
@@ -894,6 +915,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../dc/d06/classDialog.html">Dialog</a> or conversation to show when all requirements for this <a class="el" href="../../de/d71/classNPC.html">NPC</a> are met: </p>
 
 </div>
 </div>
@@ -960,6 +982,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The government of the ships in this <a class="el" href="../../de/d71/classNPC.html">NPC</a>: </p>
 
 </div>
 </div>
@@ -1004,6 +1027,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Start out in a location matching this filter, or in a particular system: </p>
 
 </div>
 </div>
@@ -1070,6 +1094,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The NPCActions that this <a class="el" href="../../de/d71/classNPC.html">NPC</a> can run on certain events/triggers. </p>
 
 </div>
 </div>
@@ -1114,6 +1139,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Once true, the <a class="el" href="../../de/d71/classNPC.html">NPC</a> will be despawned on landing and it will no longer contribute to the parent mission's ability to be completed or failed. </p>
 
 </div>
 </div>
@@ -1136,6 +1162,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Once true, the <a class="el" href="../../de/d71/classNPC.html">NPC</a> will be spawned on takeoff and its success state will influence the parent mission's ability to be completed. </p>
 
 </div>
 </div>
@@ -1180,6 +1207,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Start out landed on this planet. </p>
 
 </div>
 </div>
@@ -1202,6 +1230,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The <a class="el" href="../../dd/d37/classShipEvent.html">ShipEvent</a> actions that have been done to each ship. </p>
 
 </div>
 </div>
@@ -1246,6 +1275,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The ships may be listed individually or referred to as a fleet, and may be customized or just refer to stock objects: </p>
 
 </div>
 </div>
@@ -1290,6 +1320,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This must be done to each ship in this set to complete the mission: </p>
 
 </div>
 </div>
@@ -1356,6 +1387,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Conditions that must be met in order for this <a class="el" href="../../de/d71/classNPC.html">NPC</a> to be placed or despawned: </p>
 
 </div>
 </div>

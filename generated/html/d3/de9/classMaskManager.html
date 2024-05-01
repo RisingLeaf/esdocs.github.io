@@ -90,7 +90,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a41c9a291777846095b609c0d11a44a29"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classMaskManager.html#a41c9a291777846095b609c0d11a44a29">spriteMutex</a></td></tr>
 <tr class="separator:a41c9a291777846095b609c0d11a44a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class that stores the masks for sprites that have them, and provides the correct mask for the scale that the sprite requests. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3ee3651c4c8ce30e28697a64135b2b17" name="a3ee3651c4c8ce30e28697a64135b2b17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ee3651c4c8ce30e28697a64135b2b17">&#9670;&nbsp;</a></span>GetMasks()</h2>
 
@@ -116,6 +118,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the masks for the given sprite at the given scale. If a sprite has no masks, an empty mask is returned. </p>
 
 </div>
 </div>
@@ -144,6 +147,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a scale that the given sprite needs to have a mask for. </p>
 
 </div>
 </div>
@@ -161,6 +165,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Create the scaled versions of all masks from the 1x versions. </p>
 
 </div>
 </div>
@@ -189,6 +194,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Move the given masks at 1x scale into the manager's storage. </p>
 
 </div>
 </div>
@@ -234,6 +240,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Mutex to make sure different threads don't modify the masks at the same time. </p>
 
 </div>
 </div>

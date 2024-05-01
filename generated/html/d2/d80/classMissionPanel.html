@@ -406,7 +406,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6e4fb141eb1fda665fad1517f3259ee1 inherit pro_attribs_classMapPanel"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dab/classMapPanel.html#a6e4fb141eb1fda665fad1517f3259ee1">selectedSystemOffset</a> = 0</td></tr>
 <tr class="separator:a6e4fb141eb1fda665fad1517f3259ee1 inherit pro_attribs_classMapPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A panel that displays a list of missions (accepted missions, and also the available "jobs" to accept if any) and a map of their destinations. You can accept any "jobs" that are available, and can also abort any mission that you have previously accepted. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad859defff1a548b55f507a3b4c528d5c" name="ad859defff1a548b55f507a3b4c528d5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad859defff1a548b55f507a3b4c528d5c">&#9670;&nbsp;</a></span>MissionPanel() <span class="overload">[1/2]</span></h2>
 
@@ -430,6 +432,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Open the missions panel directly. </p>
 
 </div>
 </div>
@@ -456,6 +459,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Switch to the missions panel from another map panel. </p>
 
 </div>
 </div>
@@ -628,6 +632,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Centers on the next involved system for the clicked mission from the mission list </p>
 
 </div>
 </div>
@@ -691,6 +696,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#a2b02d0c0b96d247bc0040d2e43c7d988">MapPanel</a>.</p>
 
@@ -718,6 +724,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Display and explain the various pointers that may appear on the map. </p>
 
 </div>
 </div>
@@ -766,6 +773,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw the display names of the given missions, using the reference point. </p>
 
 </div>
 </div>
@@ -827,6 +835,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw rings around systems that need to be visited for the given mission.</p>
+<p >Highlight the systems associated with the given mission (i.e. destination and waypoints) by drawing colored rings around them. </p>
 
 </div>
 </div>
@@ -875,6 +885,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw the backgrounds for the "available jobs" and accepted missions/jobs lists.</p>
+<p >Draw the background for the lists of available and accepted missions (based on pos). </p>
 
 </div>
 </div>
@@ -926,6 +938,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Updates availableIt and acceptedIt to select the first available or accepted mission in the given system. Returns true if a mission was found. </p>
 
 </div>
 </div>
@@ -962,6 +975,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check to see if the mouse is over either of the mission lists. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#a66a5c469eb546c9450dee83903b6b0f2">MapPanel</a>.</p>
 
@@ -1012,6 +1026,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Only override the ones you need; the default action is to return false. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#a7107fe2866dbc8361717d5f2986b4239">MapPanel</a>.</p>
 
@@ -1102,6 +1117,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Selects the first available or accepted mission if no mission is already selected. Returns true if the selection was changed. </p>
 
 </div>
 </div>
@@ -1128,6 +1144,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Use availableIt/acceptedIt to set <a class="el" href="../../d3/dab/classMapPanel.html#a2d5b720eb85836e68c41c550ee89383f">MapPanel::selectedSystem</a>, call DoScroll/CenterOnSystem. CenterOnSystem will either pan to the system or immediately jump to it. </p>
 
 </div>
 </div>
@@ -1153,6 +1170,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move the state of this panel forward one game step. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#aaafa66729ad1e3ee9425565921c79708">MapPanel</a>.</p>
 

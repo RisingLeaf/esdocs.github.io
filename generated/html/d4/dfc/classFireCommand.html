@@ -113,7 +113,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac93ec88d1869c9bf813fa263fab47ca0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; signed char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dfc/classFireCommand.html#ac93ec88d1869c9bf813fa263fab47ca0">aim</a></td></tr>
 <tr class="separator:ac93ec88d1869c9bf813fa263fab47ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class that represents firing commands from ships, which includes whether a weapon is currently firing and its turn (if any). </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac8a8b53f149eb81fb6e44a54dda456d2" name="ac8a8b53f149eb81fb6e44a54dda456d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8a8b53f149eb81fb6e44a54dda456d2">&#9670;&nbsp;</a></span>Aim()</h2>
 
@@ -137,6 +139,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Gets the current turn rate of the turret at the given weapon index. </p>
 
 </div>
 </div>
@@ -154,6 +157,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reset this to an empty command. </p>
 
 </div>
 </div>
@@ -180,6 +184,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get or set the fire commands.</p>
+<p >Check if this command includes a command to fire the given weapon. </p>
 
 </div>
 </div>
@@ -205,6 +211,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if any weapons are firing. </p>
 
 </div>
 </div>
@@ -267,6 +274,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the turn rate of the turret with the given weapon index. A value of -1 or 1 means to turn at the full speed the turret is capable of. </p>
 
 </div>
 </div>
@@ -293,6 +301,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add to this set of commands a command to fire the given weapon. </p>
 
 </div>
 </div>
@@ -311,6 +320,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the specified amount of hardpoints desired. </p>
 
 </div>
 </div>
@@ -337,6 +347,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Assigns the subset of other to this class that is no larger than this command's hardpoint size. </p>
 
 </div>
 </div>
@@ -360,6 +371,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Turret turn rates, reduced to 8 bits to save space. </p>
 
 </div>
 </div>
@@ -382,6 +394,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The weapon commands stores whether the given weapon is active. </p>
 
 </div>
 </div>

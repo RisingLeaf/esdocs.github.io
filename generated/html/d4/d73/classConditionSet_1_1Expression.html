@@ -123,7 +123,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a355971ee13774a9ce4482a03a868ff15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d97/classConditionSet_1_1Expression_1_1SubExpression.html">SubExpression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d73/classConditionSet_1_1Expression.html#a355971ee13774a9ce4482a03a868ff15">right</a></td></tr>
 <tr class="separator:a355971ee13774a9ce4482a03a868ff15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class represents a single expression involving a condition, either testing what value it has, or modifying it in some way. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a49e68bb1df88ef522d84c3443559f7ec" name="a49e68bb1df88ef522d84c3443559f7ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49e68bb1df88ef522d84c3443559f7ec">&#9670;&nbsp;</a></span>Expression() <span class="overload">[1/2]</span></h2>
 
@@ -218,6 +220,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Assign the computed value to the desired condition. </p>
 
 </div>
 </div>
@@ -235,6 +238,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if this <a class="el" href="../../d4/d73/classConditionSet_1_1Expression.html">Expression</a> instantiated properly.</p>
+<p >Checks if either side of the expression is tokenless. </p>
 
 </div>
 </div>
@@ -252,6 +257,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >True if this <a class="el" href="../../d4/d73/classConditionSet_1_1Expression.html">Expression</a> performs a comparison and false if it performs an assignment.</p>
+<p >Returns true if the operator is a comparison and false otherwise. </p>
 
 </div>
 </div>
@@ -269,6 +276,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the left side of this <a class="el" href="../../d4/d73/classConditionSet_1_1Expression.html">Expression</a>.</p>
+<p >Returns everything to the left of the main assignment or comparison operator. In an assignment expression, this should be only a single token. </p>
 
 </div>
 </div>
@@ -315,6 +324,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Functions to use this expression:</p>
+<p >Evaluate both the left- and right-hand sides of the expression, then compare the evaluated numeric values. </p>
 
 </div>
 </div>
@@ -343,6 +354,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Assign the computed value to the desired temporary condition. </p>
 
 </div>
 </div>
@@ -360,6 +372,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Convert this expression into a string, for traces.</p>
+<p >Create a loggable string (for PrintTrace). </p>
 
 </div>
 </div>
@@ -383,6 +397,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Pointer to a binary function that defines the assignment or comparison operation to be performed between SubExpressions. </p>
 
 </div>
 </div>
@@ -405,6 +420,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >SubExpressions contain one or more tokens and any number of simple operators. </p>
 
 </div>
 </div>
@@ -427,6 +443,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >String representation of the <a class="el" href="../../d4/d73/classConditionSet_1_1Expression.html">Expression</a>'s binary function. </p>
 
 </div>
 </div>

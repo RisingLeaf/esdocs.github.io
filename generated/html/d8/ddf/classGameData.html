@@ -214,7 +214,9 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a16a023ad838a3f7c22813a246a6f253f"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="../../de/d3a/classImageSet.html">ImageSet</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddf/classGameData.html#a16a023ad838a3f7c22813a246a6f253f">FindImages</a> ()</td></tr>
 <tr class="separator:a16a023ad838a3f7c22813a246a6f253f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class storing all the data used in the game: sprites, data files, etc. This data is globally accessible, but can only be modified in certain ways. Events that occur over the course of the game may change the state of the game data, so we must revert to the initial state when loading a new player and then apply whatever changes have happened in that particular player's universe. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5fe05ea15f53fddf4bbdc4007332429c" name="a5fe05ea15f53fddf4bbdc4007332429c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fe05ea15f53fddf4bbdc4007332429c">&#9670;&nbsp;</a></span>AddJumpRange()</h2>
 
@@ -379,6 +381,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Apply the given change to the universe. </p>
 
 </div>
 </div>
@@ -404,6 +407,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check for objects that are referred to but never defined. </p>
 
 </div>
 </div>
@@ -505,6 +509,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Mark all persons in the given list as dead. </p>
 
 </div>
 </div>
@@ -531,6 +536,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Thread-safe way to draw the menu background. </p>
 
 </div>
 </div>
@@ -732,6 +738,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Collections for ship, bay type, outfit, and other categories. </p>
 
 </div>
 </div>
@@ -933,6 +940,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Custom messages to be shown when trying to land on certain stellar objects. </p>
 
 </div>
 </div>
@@ -1059,6 +1067,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether initial game loading is complete (data, sprites and audio are loaded). </p>
 
 </div>
 </div>
@@ -1236,6 +1245,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a reference to the <a class="el" href="../../df/d69/classUniverseObjects.html">UniverseObjects</a> object. </p>
 
 </div>
 </div>
@@ -1422,6 +1432,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Begin loading a sprite that was previously deferred. Currently this is done with all landscapes to speed up the program's startup. </p>
 
 </div>
 </div>
@@ -1458,6 +1469,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Strings for combat rating levels, etc. </p>
 
 </div>
 </div>
@@ -1484,6 +1496,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Functions for the dynamic economy. </p>
 
 </div>
 </div>
@@ -1509,6 +1522,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Re-activate any special persons that were created previously but that are still alive. </p>
 
 </div>
 </div>
@@ -1534,6 +1548,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Revert any changes that have been made to the universe. </p>
 
 </div>
 </div>
@@ -1672,6 +1687,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the solar power and wind output of the given stellar object sprite. </p>
 
 </div>
 </div>
@@ -1723,6 +1739,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the list of resource sources (i.e. plugin folders). </p>
 
 </div>
 </div>
@@ -1949,6 +1966,7 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Update the neighbor lists and other information for all the systems. This must be done any time that a change creates or moves a system. </p>
 
 </div>
 </div>

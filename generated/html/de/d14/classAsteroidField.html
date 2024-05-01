@@ -121,7 +121,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5612496a842e6f02c9d538b47276c54e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d6/d57/classCollision.html">Collision</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d14/classAsteroidField.html#a5612496a842e6f02c9d538b47276c54e">result</a></td></tr>
 <tr class="separator:a5612496a842e6f02c9d538b47276c54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a field of asteroids. The field actually "repeats" every 4096 pixels. That is, an asteroid present at (100, 200) is also present at (4196, 200), (100, 4296), etc. Other games often just "wrap" the asteroids to the screen, meaning that there are no actual asteroids beyond what the player can see, but that means that missiles are not in danger of hitting an asteroid unless they are on screen, and also causes trouble if the screen is resized on the fly. Asteroids never change direction or speed, even if they are hit by a projectile. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9daa07f82c9db387fa3612bed2c838a1" name="a9daa07f82c9db387fa3612bed2c838a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9daa07f82c9db387fa3612bed2c838a1">&#9670;&nbsp;</a></span>AsteroidField()</h2>
 
@@ -136,6 +138,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Constructor, to set up the collision set parameters. </p>
 
 </div>
 </div>
@@ -228,6 +231,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reset the asteroid field (typically because you entered a new system).</p>
+<p >Clear the list of asteroids. </p>
 
 </div>
 </div>
@@ -246,6 +251,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the given projectile collides with any asteroids. This excludes minables. </p>
 
 </div>
 </div>
@@ -264,6 +270,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the given projectile collides with any minables. </p>
 
 </div>
 </div>
@@ -298,6 +305,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw the asteroid field, with the field of view centered on the given point.</p>
+<p >Draw the asteroids, centered on the given location. </p>
 
 </div>
 </div>
@@ -315,6 +324,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of minable asteroids. </p>
 
 </div>
 </div>
@@ -349,6 +359,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Move all the asteroids forward one time step, and populate the asteroid and minable collision sets.</p>
+<p >Move all the asteroids forward one step. </p>
 
 </div>
 </div>
@@ -460,6 +472,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Vector for returning the result of CollideAsteroids. </p>
 
 </div>
 </div>

@@ -121,7 +121,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a8077b2295a4d00f8d224912e5c0f0a89"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d9/de9/classMask.html">Mask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3a/classImageSet.html#a8077b2295a4d00f8d224912e5c0f0a89">masks</a></td></tr>
 <tr class="separator:a8077b2295a4d00f8d224912e5c0f0a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >An <a class="el" href="../../de/d3a/classImageSet.html">ImageSet</a> is a collection of file paths for all the images that must be loaded for a given sprite, including 1x and 2x resolution variants. It also stores masks for any sprite for which they should be calculated. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac4100ed9e18cf7a1816a016233987fec" name="ac4100ed9e18cf7a1816a016233987fec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4100ed9e18cf7a1816a016233987fec">&#9670;&nbsp;</a></span>ImageSet()</h2>
 
@@ -145,6 +147,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >ImageSets should be created with a name, as some image paths (e.g. plugin icons) do not contain the associated image name. </p>
 
 </div>
 </div>
@@ -164,6 +167,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a single image to this set. Assume the name of the image has already been checked to make sure it belongs in this set. </p>
 
 </div>
 </div>
@@ -190,6 +194,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine whether the given path or name is for a sprite whose loading should be deferred until needed. </p>
 
 </div>
 </div>
@@ -207,6 +212,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Whether this image set is empty, i.e. has no images. </p>
 
 </div>
 </div>
@@ -233,6 +239,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if the given path is to an image of a valid file type. </p>
 
 </div>
 </div>
@@ -258,6 +265,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Load all the frames. This should be called in one of the image-loading worker threads. This also generates collision masks if needed. </p>
 
 </div>
 </div>
@@ -275,6 +283,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of the sprite for this image set. </p>
 
 </div>
 </div>
@@ -301,6 +310,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the base name for the given path. The path should be relative to one of the source image directories, not a full filesystem path. </p>
 
 </div>
 </div>
@@ -329,6 +339,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Create the sprite and optionally upload the image data to the GPU. After this is called, the internal image buffers and mask vector will be cleared, but the paths are saved in case the sprite needs to be loaded again. </p>
 
 </div>
 </div>
@@ -354,6 +365,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Reduce all given paths to frame images into a sequence of consecutive frames. </p>
 
 </div>
 </div>
@@ -377,6 +389,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Data loaded from the images: </p>
 
 </div>
 </div>
@@ -399,6 +412,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Paths to all the images that were discovered during loading. </p>
 
 </div>
 </div>
@@ -443,6 +457,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Name of the sprite that will be initialized with these images. </p>
 
 </div>
 </div>
@@ -465,6 +480,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Paths that comprise a valid animation sequence of 1 or more frames. </p>
 
 </div>
 </div>

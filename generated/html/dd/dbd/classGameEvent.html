@@ -138,7 +138,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aea9b2f0bd962c582e30a085e7e9c8c7b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="../../d5/dec/classPlanet.html">Planet</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbd/classGameEvent.html#aea9b2f0bd962c582e30a085e7e9c8c7b">planetsToUnvisit</a></td></tr>
 <tr class="separator:aea9b2f0bd962c582e30a085e7e9c8c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This represents something that happens that changes the universe. For example, a system may be taken over by a different government, or a new type of ship or weapon may become available for purchase. Events that do not specify a date on which they occur will happen in response to missions. An event always sets the "event: &lt;name&gt;" condition when it occurs, which allows you to use the mission framework to specify a message that can be shown to the player the next time they land on a planet after that event happens. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1567e8656c1f5d110064c7cf7ba3e0ad" name="a1567e8656c1f5d110064c7cf7ba3e0ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1567e8656c1f5d110064c7cf7ba3e0ad">&#9670;&nbsp;</a></span>GameEvent() <span class="overload">[1/2]</span></h2>
 
@@ -187,6 +189,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../dd/dbd/classGameEvent.html#a176ab5d3639bcb28c63a3edb9e6e84fe">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -206,6 +209,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Apply this event's changes to the player. Returns a list of data changes that need to be applied in a batch with other events that are applied at the same time. </p>
 
 </div>
 </div>
@@ -249,6 +253,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine the universe object definitions that are defined by the given list of changes. </p>
 
 </div>
 </div>
@@ -266,6 +271,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If disabled, an event will not <a class="el" href="../../dd/dbd/classGameEvent.html#aff71638e2343624fa6f9a8d3b6583d99">Apply()</a> or <a class="el" href="../../dd/dbd/classGameEvent.html#a1da91cbc33e763a56c116037ff9ee14b">Save()</a>.</p>
+<p >Prevent this <a class="el" href="../../dd/dbd/classGameEvent.html">GameEvent</a> from being applied or written into a player's save. (Events read from a save are not associated with the managed <a class="el" href="../../d1/d5f/classSet.html">Set</a> of <a class="el" href="../../d8/ddf/classGameData.html#a55350f34470de2804d8743ad87c194c3">GameData::Events</a>.) </p>
 
 </div>
 </div>
@@ -300,6 +307,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this <a class="el" href="../../dd/dbd/classGameEvent.html">GameEvent</a> has been loaded (vs. simply referred to) and if it references any items that have not been defined. Returns an empty string if it is valid. If not, a reason will be given in the string.</p>
+<p >Check that this <a class="el" href="../../dd/dbd/classGameEvent.html">GameEvent</a> has been loaded from a file (vs. referred to only by name), and that the systems &amp; planets it references are similarly defined. Returns an empty string if it is valid. If not, a reason will be given in the string. </p>
 
 </div>
 </div>
@@ -335,6 +344,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >All events held by <a class="el" href="../../d8/ddf/classGameData.html">GameData</a> have a name, but those loaded from a save do not. </p>
 
 </div>
 </div>
@@ -389,6 +399,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >"Stock" GameEvents require a name to be serialized with an accepted mission. </p>
 
 </div>
 </div>

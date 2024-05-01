@@ -120,7 +120,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a13657c4c7b65692ffabd72c5bb4b3ff4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d80/classAngle.html#a13657c4c7b65692ffabd72c5bb4b3ff4">angle</a> = 0</td></tr>
 <tr class="separator:a13657c4c7b65692ffabd72c5bb4b3ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Represents an angle, in degrees. Angles are in "clock" orientation rather than usual mathematical orientation. That is, 0 degrees is up, and angles increase in a clockwise direction. Angles can be efficiently mapped to unit vectors, which also makes rotating a vector an efficient operation. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae11bc50ba42a423b19e60f666caf9130" name="ae11bc50ba42a423b19e60f666caf9130"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae11bc50ba42a423b19e60f666caf9130">&#9670;&nbsp;</a></span>Angle() <span class="overload">[1/4]</span></h2>
 
@@ -143,6 +145,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The default constructor creates an angle pointing up (zero degrees). </p>
 
 </div>
 </div>
@@ -169,6 +172,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct an <a class="el" href="../../d9/d80/classAngle.html">Angle</a> from the given angle in degrees. Allow this conversion to be implicit to allow syntax like "angle += 30".</p>
+<p >Construct an <a class="el" href="../../d9/d80/classAngle.html">Angle</a> from the given angle in degrees. </p>
 
 </div>
 </div>
@@ -195,6 +200,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct an angle pointing in the direction of the given vector. </p>
 
 </div>
 </div>
@@ -221,6 +227,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Constructor using <a class="el" href="../../d9/d80/classAngle.html">Angle</a>'s internal representation. </p>
 
 </div>
 </div>
@@ -239,6 +246,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Convert an <a class="el" href="../../d9/d80/classAngle.html">Angle</a> object to degrees, in the range -180 to 180.</p>
+<p >Convert an angle back to a value in degrees. </p>
 
 </div>
 </div>
@@ -275,6 +284,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mathematical operators. </p>
 
 </div>
 </div>
@@ -389,6 +399,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Return a random angle up to the given amount (between 0 and 360).</p>
+<p >Get a random angle. </p>
 
 </div>
 </div>
@@ -415,6 +427,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a random angle between 0 and the given number of degrees. </p>
 
 </div>
 </div>
@@ -433,6 +446,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Return a point rotated by this angle around (0, 0). </p>
 
 </div>
 </div>
@@ -450,6 +464,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a unit vector in the direction of this angle. </p>
 
 </div>
 </div>
@@ -473,6 +488,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The angle is stored as an integer value between 0 and 2^16 - 1. This is so that any angle can be mapped to a unit vector (a very common operation) with just a single array lookup. It also means that "wrapping" angles to the range of 0 to 360 degrees can be done via a bit mask. </p>
 
 </div>
 </div>

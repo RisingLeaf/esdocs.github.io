@@ -251,7 +251,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a606c5ce243d130520465550d9e1304b4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="../../dd/d2d/classSystem.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classPlanet.html#a606c5ce243d130520465550d9e1304b4">systems</a></td></tr>
 <tr class="separator:a606c5ce243d130520465550d9e1304b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a stellar object you can land on. (This includes planets, moons, and space stations.) Each planet has a certain set of services that are available, as well as attributes that determine what sort of missions might choose it as a source or destination. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ad988c1878de1e21a45e2aef7228b9898" name="ad988c1878de1e21a45e2aef7228b9898"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad988c1878de1e21a45e2aef7228b9898">&#9670;&nbsp;</a></span>Friendliness</h2>
 
@@ -295,6 +297,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of "attributes" of the planet. </p>
 
 </div>
 </div>
@@ -383,6 +386,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Demand tribute, and get the planet's response. </p>
 
 </div>
 </div>
@@ -401,6 +405,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >While being tributed, attempt to spawn the next specified defense fleet. </p>
 
 </div>
 </div>
@@ -418,6 +423,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the planet's descriptive text. </p>
 
 </div>
 </div>
@@ -436,6 +442,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Legacy wormhole do not have an associated <a class="el" href="../../d7/dbe/classWormhole.html">Wormhole</a> object so we must auto generate one if we detect such legacy wormhole. </p>
 
 </div>
 </div>
@@ -453,6 +460,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This is what fraction of your fleet's value you must pay as a bribe in order to land on this planet. (If zero, you cannot bribe it.) </p>
 
 </div>
 </div>
@@ -487,6 +495,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this planet's government. If not set, returns the system's government.</p>
+<p >Get this planet's government. Most planets follow the government of the system they are in. </p>
 
 </div>
 </div>
@@ -504,6 +514,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this planet's port. </p>
 
 </div>
 </div>
@@ -521,6 +532,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> or get what system this planet is in. This is so that missions, for example, can just hold a planet pointer instead of a system as well. </p>
 
 </div>
 </div>
@@ -555,6 +567,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the security of this planet has been changed from the default so that we can check if an uninhabited world should fine the player. </p>
 
 </div>
 </div>
@@ -573,6 +586,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Below are convenience functions which access the game state in <a class="el" href="../../d8/db8/classPolitics.html">Politics</a>, but do so with a less convoluted syntax: </p>
 
 </div>
 </div>
@@ -590,6 +604,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether this planet's port is named. </p>
 
 </div>
 </div>
@@ -607,6 +622,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this planet has an outfitter. </p>
 
 </div>
 </div>
@@ -624,6 +640,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether there are port services (such as trading, jobs, banking, and hiring) available on this planet. </p>
 
 </div>
 </div>
@@ -641,6 +658,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this planet has a shipyard. </p>
 
 </div>
 </div>
@@ -659,6 +677,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the given ship has all the attributes necessary to allow it to land on this planet. </p>
 
 </div>
 </div>
@@ -693,6 +712,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this planet is inhabited (i.e. it has a spaceport, and does not have the "uninhabited" attribute). </p>
 
 </div>
 </div>
@@ -711,6 +731,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this planet is in the given system. Note that wormholes may be in more than one system. </p>
 
 </div>
 </div>
@@ -728,6 +749,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this planet has any required attributes that restrict landability. </p>
 
 </div>
 </div>
@@ -745,6 +767,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if both this planet and its containing system(s) have been defined.</p>
+<p ><a class="el" href="../../df/da6/classTest.html">Test</a> if this planet has been loaded (vs. just referred to). It must also be located in at least one system, and all systems that claim it must themselves be valid. </p>
 
 </div>
 </div>
@@ -762,6 +786,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if planet is part of a wormhole (that is, landing on it will take you to a new system).</p>
+<p >Check if this is a wormhole (that is, it appears in multiple systems). </p>
 
 </div>
 </div>
@@ -779,6 +805,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the landscape sprite. </p>
 
 </div>
 </div>
@@ -807,6 +834,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load a planet's description from a file. </p>
 
 </div>
 </div>
@@ -824,6 +852,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of the ambient audio to play on this planet. </p>
 
 </div>
 </div>
@@ -841,6 +870,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of the planet (all wormholes use the same name). When saving missions or writing the player's save, the reference name associated with this planet is used even if the planet was not fully defined (i.e. it belongs to an inactive plugin).</p>
+<p >Get the name of the planet. </p>
 
 </div>
 </div>
@@ -858,6 +889,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get planet's noun descriptor from attributes </p>
 
 </div>
 </div>
@@ -875,6 +907,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of outfits available from the outfitter. </p>
 
 </div>
 </div>
@@ -893,6 +926,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Remove the given system from the list of systems this planet is in. This must be done when game events rearrange the planets in a system. </p>
 
 </div>
 </div>
@@ -910,6 +944,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >You need this good a reputation with this system's government to land here. </p>
 
 </div>
 </div>
@@ -944,6 +979,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This is how likely the planet's authorities are to notice if you are doing something illegal. </p>
 
 </div>
 </div>
@@ -997,6 +1033,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of ships in the shipyard. </p>
 
 </div>
 </div>
@@ -1014,6 +1051,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Every system this planet is in. If this list has more than one entry, it's a wormhole. </p>
 
 </div>
 </div>
@@ -1031,6 +1069,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name used for this planet in the data files. </p>
 
 </div>
 </div>
@@ -1120,6 +1159,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Ships that have been created by instantiating its defense fleets. </p>
 
 </div>
 </div>
@@ -1142,6 +1182,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >How many fleets have been spawned, and the index of the next to be spawned. </p>
 
 </div>
 </div>
@@ -1164,6 +1205,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The defense fleets that should be spawned (in order of specification). </p>
 
 </div>
 </div>
@@ -1186,6 +1228,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The minimum combat rating needed to dominate this planet. </p>
 
 </div>
 </div>
@@ -1450,6 +1493,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Any required attributes needed to land on this planet. </p>
 
 </div>
 </div>
@@ -1538,6 +1582,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The lists above will be converted into actual ship lists when they are first asked for: </p>
 
 </div>
 </div>
@@ -1582,6 +1627,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The salary to be paid if this planet is dominated. </p>
 
 </div>
 </div>

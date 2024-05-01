@@ -305,6 +305,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Constructors for flotsam carrying either a commodity or an outfit. </p>
 
 </div>
 </div>
@@ -357,6 +358,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This is what the flotsam contains: </p>
 
 </div>
 </div>
@@ -409,6 +411,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Move the object one time-step forward. </p>
 
 </div>
 </div>
@@ -482,6 +485,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Place flotsam coming from something other than a ship. Optionally specify the maximum relative velocity, or the exact relative velocity as a vector. </p>
 
 </div>
 </div>
@@ -500,6 +504,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Functions provided by the <a class="el" href="../../d7/d80/classBody.html">Body</a> base class: Frame GetFrame(int step = -1) const; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#aaef9972906c8b24360cc578d05fb1dfa">Position() const</a>; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a1a877a4915f3ecf19df065536b06532d">Velocity() const</a>; const <a class="el" href="../../d9/d80/classAngle.html">Angle</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a637115748ef7a544e7b4574f955e42e5">Facing() const</a>; <a class="el" href="../../dc/d4f/classPoint.html">Point</a> <a class="el" href="../../d7/d80/classBody.html#aa59695adb1600a5fa35b4e8da023de51">Unit() const</a>; Place this flotsam, and set the given ship as its source. This is a separate function because a ship may queue up flotsam to dump but take several frames before it finishes dumping it all.</p>
+<p >Place this flotsam, and set the given ship as its source. This is a separate function because a ship may queue up flotsam to dump but take several frames before it finishes dumping it all. </p>
 
 </div>
 </div>
@@ -535,6 +541,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This is the one ship that cannot pick up this flotsam. </p>
 
 </div>
 </div>
@@ -552,6 +559,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Ships from this <a class="el" href="../../d4/dad/classGovernment.html">Government</a> should not pick up this flotsam because it was explicitly dumped by a member of this government. (NPCs typically perform this type of dumping to appease pirates.)</p>
+<p >Ships from this <a class="el" href="../../d4/dad/classGovernment.html">Government</a> should not pick up this flotsam because it was explicitly dumped by a member of this government. </p>
 
 </div>
 </div>
@@ -570,6 +579,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Transfer contents to the collector ship. The flotsam velocity is stabilized in proportion to the amount being transferred. </p>
 
 </div>
 </div>
@@ -587,6 +597,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This is how big one "unit" of the flotsam is (in tons). If a ship has less than this amount of space, it can't pick up anything here. </p>
 
 </div>
 </div>
@@ -786,6 +797,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Amount of tons that is expected per box. </p>
 
 </div>
 </div>

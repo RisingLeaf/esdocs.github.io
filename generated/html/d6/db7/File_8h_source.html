@@ -92,32 +92,29 @@ $(function() {
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// RAII wrapper for FILE, to make sure it gets closed if an error occurs.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/d30/classFile.html">File</a> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#ae0e47777d41e6cedd18b59f024157482">   27</a></span>    <a class="code hl_function" href="../../db/d30/classFile.html#ae0e47777d41e6cedd18b59f024157482">File</a>() noexcept = default;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#af006717e667b166f0e24e18dcfac9711">   28</a></span>    explicit <a class="code hl_class" href="../../db/d30/classFile.html">File</a>(const std::<span class="keywordtype">string</span> &amp;path, <span class="keywordtype">bool</span> write = false);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#a042f525d4beac394675727bcd5cce274">   29</a></span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a>(const <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;) = delete;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a>(<a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;&amp;other) noexcept;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ~<a class="code hl_class" href="../../db/d30/classFile.html">File</a>() noexcept;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// Do not allow copying the FILE pointer.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#a878dae94a3b260807de318337ecfc515">   34</a></span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;operator=(const <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;) = delete;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// Move assignment is OK though.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;operator=(<a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;&amp;) noexcept;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    explicit operator <span class="keywordtype">bool</span>() const;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    operator FILE*() const;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>private:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#a6602f104fa2842af14d803c40201f4cd">   42</a></span>    FILE *<a class="code hl_variable" href="../../db/d30/classFile.html#a6602f104fa2842af14d803c40201f4cd">file</a> = <span class="keywordtype">nullptr</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/d30/classFile.html">File</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#ae0e47777d41e6cedd18b59f024157482">   29</a></span>    <a class="code hl_function" href="../../db/d30/classFile.html#ae0e47777d41e6cedd18b59f024157482">File</a>() noexcept = default;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#af006717e667b166f0e24e18dcfac9711">   30</a></span>    explicit <a class="code hl_class" href="../../db/d30/classFile.html">File</a>(const std::<span class="keywordtype">string</span> &amp;path, <span class="keywordtype">bool</span> write = false);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#a042f525d4beac394675727bcd5cce274">   31</a></span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a>(const <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;) = delete;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a>(<a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;&amp;other) noexcept;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    ~<a class="code hl_class" href="../../db/d30/classFile.html">File</a>() noexcept;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#a878dae94a3b260807de318337ecfc515">   38</a></span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;operator=(const <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;) = delete;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;operator=(<a class="code hl_class" href="../../db/d30/classFile.html">File</a> &amp;&amp;) noexcept;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    explicit operator <span class="keywordtype">bool</span>() const;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    operator FILE*() const;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassFile_html"><div class="ttname"><a href="../../db/d30/classFile.html">File</a></div><div class="ttdef"><b>Definition:</b> File.h:25</div></div>
-<div class="ttc" id="aclassFile_html_a6602f104fa2842af14d803c40201f4cd"><div class="ttname"><a href="../../db/d30/classFile.html#a6602f104fa2842af14d803c40201f4cd">File::file</a></div><div class="ttdeci">FILE * file</div><div class="ttdef"><b>Definition:</b> File.h:42</div></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>private:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../db/d30/classFile.html#a6602f104fa2842af14d803c40201f4cd">   48</a></span>    FILE *<a class="code hl_variable" href="../../db/d30/classFile.html#a6602f104fa2842af14d803c40201f4cd">file</a> = <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassFile_html"><div class="ttname"><a href="../../db/d30/classFile.html">File</a></div><div class="ttdef"><b>Definition:</b> File.h:27</div></div>
+<div class="ttc" id="aclassFile_html_a6602f104fa2842af14d803c40201f4cd"><div class="ttname"><a href="../../db/d30/classFile.html#a6602f104fa2842af14d803c40201f4cd">File::file</a></div><div class="ttdeci">FILE * file</div><div class="ttdef"><b>Definition:</b> File.h:48</div></div>
 <div class="ttc" id="aclassFile_html_ae0e47777d41e6cedd18b59f024157482"><div class="ttname"><a href="../../db/d30/classFile.html#ae0e47777d41e6cedd18b59f024157482">File::File</a></div><div class="ttdeci">File() noexcept=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

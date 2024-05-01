@@ -114,7 +114,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:adc7d16a5e8dfc38e5944885263fc8989"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9a/classCaptureOdds.html#adc7d16a5e8dfc38e5944885263fc8989">casualtiesD</a></td></tr>
 <tr class="separator:adc7d16a5e8dfc38e5944885263fc8989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class stores the odds that one ship will be able to capture another, and can report the odds for any number of crew up to what each ship starts out with (because the odds change each time a crew member is lost). If either ship has hand-to-hand weapons available, the crew members will make use of them starting with whatever weapon is most useful to them. In each round of combat, one ship will lose one crew member. Which ship loses depends on the ratio of the strengths of the two crews (plus weapons), and whether each crew is attacking or defending; defending crew get a +1 power bonus. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae7899b206c0e5bd8398dfe04a5fa0443" name="ae7899b206c0e5bd8398dfe04a5fa0443"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7899b206c0e5bd8398dfe04a5fa0443">&#9670;&nbsp;</a></span>CaptureOdds()</h2>
 
@@ -140,6 +142,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate odds that the first given ship can capture the second, assuming the first ship always attacks and the second one always defends.</p>
+<p >Constructor. </p>
 
 </div>
 </div>
@@ -169,6 +173,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the expected number of casualties in the remainder of the battle if the two ships have the given number of crew remaining.</p>
+<p >Get the expected number of casualties for the attacker in the remainder of the battle if the two ships have the given number of crew remaining. </p>
 
 </div>
 </div>
@@ -187,6 +193,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total power (inherent crew power plus bonuses from hand to hand weapons) for each ship when they have the given number of crew remaining.</p>
+<p >Get the total power (inherent crew power plus bonuses from hand to hand weapons) for the attacker when they have the given number of crew remaining. </p>
 
 </div>
 </div>
@@ -212,6 +220,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Generate the lookup table.</p>
+<p >Generate the lookup tables. </p>
 
 </div>
 </div>
@@ -240,6 +250,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the expected number of casualties for the defender in the remainder of the battle if the two ships have the given number of crew remaining. </p>
 
 </div>
 </div>
@@ -258,6 +269,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total power (inherent crew power plus bonuses from hand to hand weapons) for the defender when they have the given number of crew remaining. </p>
 
 </div>
 </div>
@@ -294,6 +306,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Map crew numbers into an index in the lookup table.</p>
+<p >Map the given crew complements to an index in the lookup tables. There is no row in the table for 0 crew on either ship. </p>
 
 </div>
 </div>
@@ -322,6 +336,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the odds of the attacker winning if the two ships have the given number of crew members remaining. </p>
 
 </div>
 </div>
@@ -358,6 +373,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Calculate attack or defense power for each number of crew members up to the given ship's full complement.</p>
+<p >Generate a vector with the total power of the given ship's crew when any number of them are left, either for attacking or for defending. </p>
 
 </div>
 </div>
@@ -381,6 +398,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Capture odds lookup table. </p>
 
 </div>
 </div>
@@ -403,6 +421,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Expected casualties lookup table. </p>
 
 </div>
 </div>
@@ -447,6 +466,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Attacker and defender power lookup tables. </p>
 
 </div>
 </div>

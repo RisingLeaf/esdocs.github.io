@@ -111,7 +111,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a8d9dc49d9a10f4d729d3e9798e981f39"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classConditionsStore_1_1ConditionEntry.html#a8d9dc49d9a10f4d729d3e9798e981f39">fullKey</a></td></tr>
 <tr class="separator:a8d9dc49d9a10f4d729d3e9798e981f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Storage entry for a condition. Can act as a int64_t proxy when operator[] is used for access to conditions in the <a class="el" href="../../de/d08/classConditionsStore.html">ConditionsStore</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a902b415aa84f9cae0be2ea7c43d465d8" name="a902b415aa84f9cae0be2ea7c43d465d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a902b415aa84f9cae0be2ea7c43d465d8">&#9670;&nbsp;</a></span>operator int64_t()</h2>
 
@@ -126,6 +128,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >int64_t proxy helper functions. Those functions allow access to the conditions using <code>operator[]</code> on <a class="el" href="../../de/d08/classConditionsStore.html">ConditionsStore</a>. </p>
 
 </div>
 </div>
@@ -259,6 +262,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The full keyname for condition we want to access. This full keyname is required when accessing prefixed providers, because such providers will only know the prefix part of the key. </p>
 
 </div>
 </div>

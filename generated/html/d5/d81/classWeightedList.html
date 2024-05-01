@@ -145,7 +145,10 @@ Friends</h2></td></tr>
 <tr class="memitem:a7e47a54304edd475db6787f4c90396ac"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d81/classWeightedList.html#a7e47a54304edd475db6787f4c90396ac">erase_if</a> (<a class="el" href="../../d5/d81/classWeightedList.html">WeightedList</a>&lt; T &gt; &amp;list, UnaryPredicate pred)</td></tr>
 <tr class="separator:a7e47a54304edd475db6787f4c90396ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Type&gt;<br />
+class WeightedList&lt; Type &gt;</div><p >Template representing a list of objects of a given type where each item in the list is weighted with an integer. This list can be queried to randomly return one object from the list where the probability of an object being returned is the weight of the object over the sum of the weights of all objects in the list. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa35a461b2ebc9a9a31e1c931ac630fde" name="aa35a461b2ebc9a9a31e1c931ac630fde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa35a461b2ebc9a9a31e1c931ac630fde">&#9670;&nbsp;</a></span>const_iterator</h2>
 
@@ -214,6 +217,7 @@ template&lt;class Callable &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Average the result of the given function by the choices' weights. </p>
 
 </div>
 </div>
@@ -322,6 +326,7 @@ template&lt;class Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Supplying a callable that does not return an arithmetic value will fail to compile. </p>
 
 </div>
 </div>
@@ -381,6 +386,7 @@ template&lt;class ... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >All weights must be &gt;= 1.</p>
 
 </div>
 </div>

@@ -176,7 +176,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:af24a117fa543f7ddd18ae434e431ae56"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/d28/classConversation_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbc/classConversation.html#af24a117fa543f7ddd18ae434e431ae56">nodes</a></td></tr>
 <tr class="separator:af24a117fa543f7ddd18ae434e431ae56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a conversation, generally occurring when the player is asked to accept or decline a mission. The conversation can take different paths depending on what responses you choose, leading you to accept, decline, or (rarely) to be killed. A conversation can also branch based on various condition flags that are set for the player, or even trigger various changes to the game's state. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4cd558d9fd38b5d595562f3fe37bc510" name="a4cd558d9fd38b5d595562f3fe37bc510"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cd558d9fd38b5d595562f3fe37bc510">&#9670;&nbsp;</a></span>Conversation() <span class="overload">[1/2]</span></h2>
 
@@ -217,6 +219,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../d3/dbc/classConversation.html#a02c8e068d76dc852a510519d8bf16701">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -254,6 +257,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add a label, pointing to whatever node is created next. </p>
 
 </div>
 </div>
@@ -279,6 +283,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add an "empty" node. It will contain one empty line of text, with its goto link set to fall through to the next node. </p>
 
 </div>
 </div>
@@ -297,6 +302,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If the given node is a choice node, check how many choices it offers. </p>
 
 </div>
 </div>
@@ -315,6 +321,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of conditions that the given node tests. </p>
 
 </div>
 </div>
@@ -343,6 +350,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns true if the given node index is in the range of valid nodes for this <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a> <em>and</em> the given element index is in the range of valid elements for the given node. </p>
 
 </div>
 </div>
@@ -361,6 +369,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the action that the given node applies. </p>
 
 </div>
 </div>
@@ -403,6 +412,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> up a "goto". Depending on whether the named label has been seen yet or not, it is either resolved immediately or added to the unresolved set. </p>
 
 </div>
 </div>
@@ -431,6 +441,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Some choices have conditions in each option. If all options are disabled, the choice cannot be shown.</p>
+<p >Check if the given conversation node is a choice node. </p>
 
 </div>
 </div>
@@ -457,6 +469,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parse the children to see if there is a condition. </p>
 
 </div>
 </div>
@@ -491,6 +504,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Generate a new conversation from this template, filling in any text substitutions and instantiating any actions.</p>
+<p >Do text replacement throughout this conversation, and instantiate any potential actions. </p>
 
 </div>
 </div>
@@ -509,6 +524,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the given conversation node performs an action. </p>
 
 </div>
 </div>
@@ -527,6 +543,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the given conversation node is a conditional branch. </p>
 
 </div>
 </div>
@@ -545,6 +562,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The beginning of the conversation is node 0. Some nodes have choices for the user to select; others just automatically continue to another node. Nodes may also display images or include conditional branches.</p>
+<p >Check if the given conversation node is a choice node. </p>
 
 </div>
 </div>
@@ -570,6 +589,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if any data is loaded in this conversation object.</p>
+<p >Check if this conversation contains any data. </p>
 
 </div>
 </div>
@@ -595,6 +616,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if this conversation includes a name prompt.</p>
+<p >Check if this conversation contains a name prompt, and thus can be used as an "intro" conversation. </p>
 
 </div>
 </div>
@@ -613,6 +636,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Read or write to files.</p>
+<p >Load a conversation from file. </p>
 
 </div>
 </div>
@@ -639,6 +664,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parse the children of the given node to see if they contain any "gotos" or "conditions." If so, link them up properly. Return true if gotos or conditions were found.</p>
+<p >Parse the children of the given node to see if then contain any "gotos," or "to shows." If so, link them up properly. Return true if gotos or conditions were found. </p>
 
 </div>
 </div>
@@ -667,6 +694,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out where the conversation goes if the given option is chosen. </p>
 
 </div>
 </div>
@@ -685,6 +713,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns true if the given node index is in the range of valid nodes for this <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a>. Note: This function only considers actual <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a> nodes to be valid choices. The negative "outcome" values (ACCEPT, DEFER, etc.) are special sentinel values, rather than indices of <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a> nodes, and are therefore considered invalid by this function.</p>
+<p >Returns true if the given node index is in the range of valid nodes for this <a class="el" href="../../d3/dbc/classConversation.html">Conversation</a>. </p>
 
 </div>
 </div>
@@ -711,6 +741,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check whether the given conversation outcome is one that forces the player to immediately depart.</p>
+<p >Check if this conversation outcome requires the player to leave immediately. </p>
 
 </div>
 </div>
@@ -729,6 +761,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Write a conversation to file. </p>
 
 </div>
 </div>
@@ -747,6 +780,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the scene image, if any, associated with the given node. </p>
 
 </div>
 </div>
@@ -781,6 +815,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns whether the given node should be displayed. Returns false if:</p><ul>
+<li>The node (or element) is out of range.</li>
+<li>The node is not a choice node, and element is non-zero.</li>
+<li>The node (or element) has conditions and those conditions are not met. and true otherwise.</li>
+</ul>
+<p >Returns whether the given node should be displayed. </p>
 
 </div>
 </div>
@@ -799,6 +839,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Go to the next node of the conversation, ignoring any choices. </p>
 
 </div>
 </div>
@@ -827,6 +868,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the text of the given element of the given node. </p>
 
 </div>
 </div>
@@ -844,6 +886,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the actions in this conversation are valid. </p>
 
 </div>
 </div>
@@ -867,6 +910,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The possible outcomes of a conversation: </p>
 
 </div>
 </div>
@@ -955,6 +999,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The player may simply die (if landed on a planet or captured while in space), or the flagship might also explode. </p>
 
 </div>
 </div>
@@ -1021,6 +1066,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >While parsing the conversation, keep track of what labels link to what nodes. If a name appears in a goto before that label appears, remember what node and what element it appeared at in order to link it up later. </p>
 
 </div>
 </div>
@@ -1043,6 +1089,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These 3 options force the player to TakeOff (if landed), or cause the boarded NPCs to explode, in addition to respectively duplicating the above mission outcomes. </p>
 
 </div>
 </div>
@@ -1065,6 +1112,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The actual conversation data: </p>
 
 </div>
 </div>

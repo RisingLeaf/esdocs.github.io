@@ -148,7 +148,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae379d2e6beb2e1e27f8cf4733265af71"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0b/classBoardingPanel_1_1Plunder.html#ae379d2e6beb2e1e27f8cf4733265af71">value</a></td></tr>
 <tr class="separator:ae379d2e6beb2e1e27f8cf4733265af71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class represents one item in the list of outfits you can plunder. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afabf1fd4963308fa9097ed352107b7ee" name="afabf1fd4963308fa9097ed352107b7ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afabf1fd4963308fa9097ed352107b7ee">&#9670;&nbsp;</a></span>Plunder() <span class="overload">[1/2]</span></h2>
 
@@ -180,6 +182,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../dd/d0b/classBoardingPanel_1_1Plunder.html">Plunder</a> can be either outfits or commodities. </p>
 
 </div>
 </div>
@@ -208,6 +211,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Constructor (outfit installed in the victim ship or transported as cargo). </p>
 
 </div>
 </div>
@@ -227,6 +231,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out how many of these I can take if I have this amount of cargo space free. </p>
 
 </div>
 </div>
@@ -244,6 +249,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check how many of this item are left un-plundered. Once this is zero, the item can be removed from the list. </p>
 
 </div>
 </div>
@@ -261,6 +267,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If this is an outfit, get the outfit. Otherwise, this returns null. </p>
 
 </div>
 </div>
@@ -278,6 +285,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of this item. If it is a commodity, this is its name. </p>
 
 </div>
 </div>
@@ -296,6 +304,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sort by value per ton of mass. </p>
 
 </div>
 </div>
@@ -313,6 +322,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the mass, in the format "&lt;count&gt; x &lt;unit mass&gt;". If this is a commodity, no unit mass is given (because it is 1). If the count is 1, only the unit mass is reported.</p>
+<p >Get the mass, in the format "&lt;count&gt; x &lt;unit mass&gt;". If the count is 1, only the unit mass is reported. </p>
 
 </div>
 </div>
@@ -331,6 +342,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Take some or all of this plunder item. </p>
 
 </div>
 </div>
@@ -356,6 +368,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Commodities come in units of one ton. </p>
 
 </div>
 </div>
@@ -373,6 +386,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the value of each unit of this plunder item. </p>
 
 </div>
 </div>
@@ -398,6 +412,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Update the text to reflect a change in the item count. </p>
 
 </div>
 </div>
@@ -415,6 +430,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total value (unit value times count) as a string. </p>
 
 </div>
 </div>

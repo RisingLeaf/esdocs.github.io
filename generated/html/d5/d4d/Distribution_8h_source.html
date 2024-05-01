@@ -93,31 +93,27 @@ $(function() {
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// A class which generates an angle of inaccuracy for a projectile</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// given its inaccuracy value and type.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d2/ddc/classDistribution.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d2/ddc/classDistribution.html">Distribution</a> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d2/ddc/classDistribution.html#a70777a79f5f5dc8f1d6d8c3acee4e42d">   29</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d2/ddc/classDistribution.html#a70777a79f5f5dc8f1d6d8c3acee4e42d">Type</a> {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        Narrow = 0,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        Medium = 1,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        Wide = 2,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        Uniform = 3,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        Triangular = 4</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    };</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// Generate an angle that gets projectile heading</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// when combined with hardpoint aim.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">static</span> <a class="code hl_class" href="../../d9/d80/classAngle.html">Angle</a> <a class="code hl_function" href="../../d2/ddc/classDistribution.html#aadafb00aaf8ef64d4b205b6a97747735">GenerateInaccuracy</a>(<span class="keywordtype">double</span> value, std::pair&lt;Type, bool&gt; distribution);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassAngle_html"><div class="ttname"><a href="../../d9/d80/classAngle.html">Angle</a></div><div class="ttdef"><b>Definition:</b> Angle.h:29</div></div>
-<div class="ttc" id="aclassDistribution_html"><div class="ttname"><a href="../../d2/ddc/classDistribution.html">Distribution</a></div><div class="ttdef"><b>Definition:</b> Distribution.h:27</div></div>
-<div class="ttc" id="aclassDistribution_html_a70777a79f5f5dc8f1d6d8c3acee4e42d"><div class="ttname"><a href="../../d2/ddc/classDistribution.html#a70777a79f5f5dc8f1d6d8c3acee4e42d">Distribution::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> Distribution.h:29</div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d2/ddc/classDistribution.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d2/ddc/classDistribution.html">Distribution</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d2/ddc/classDistribution.html#a70777a79f5f5dc8f1d6d8c3acee4e42d">   31</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d2/ddc/classDistribution.html#a70777a79f5f5dc8f1d6d8c3acee4e42d">Type</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        Narrow = 0,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        Medium = 1,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        Wide = 2,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        Uniform = 3,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        Triangular = 4</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    };</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <a class="code hl_class" href="../../d9/d80/classAngle.html">Angle</a> <a class="code hl_function" href="../../d2/ddc/classDistribution.html#aadafb00aaf8ef64d4b205b6a97747735">GenerateInaccuracy</a>(<span class="keywordtype">double</span> value, std::pair&lt;Type, bool&gt; distribution);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassAngle_html"><div class="ttname"><a href="../../d9/d80/classAngle.html">Angle</a></div><div class="ttdef"><b>Definition:</b> Angle.h:31</div></div>
+<div class="ttc" id="aclassDistribution_html"><div class="ttname"><a href="../../d2/ddc/classDistribution.html">Distribution</a></div><div class="ttdef"><b>Definition:</b> Distribution.h:29</div></div>
+<div class="ttc" id="aclassDistribution_html_a70777a79f5f5dc8f1d6d8c3acee4e42d"><div class="ttname"><a href="../../d2/ddc/classDistribution.html#a70777a79f5f5dc8f1d6d8c3acee4e42d">Distribution::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> Distribution.h:31</div></div>
 <div class="ttc" id="aclassDistribution_html_aadafb00aaf8ef64d4b205b6a97747735"><div class="ttname"><a href="../../d2/ddc/classDistribution.html#aadafb00aaf8ef64d4b205b6a97747735">Distribution::GenerateInaccuracy</a></div><div class="ttdeci">static Angle GenerateInaccuracy(double value, std::pair&lt; Type, bool &gt; distribution)</div><div class="ttdef"><b>Definition:</b> Distribution.cpp:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

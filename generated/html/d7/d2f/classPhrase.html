@@ -116,7 +116,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:af61380749f10962cbe6c14a21e39efa4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d7/d8b/classPhrase_1_1Sentence.html">Sentence</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d2f/classPhrase.html#af61380749f10962cbe6c14a21e39efa4">sentences</a></td></tr>
 <tr class="separator:af61380749f10962cbe6c14a21e39efa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a set of rules for generating text strings from words. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9dd7b9bd3e9f2ed097e0f0d3833a5f5a" name="a9dd7b9bd3e9f2ed097e0f0d3833a5f5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9dd7b9bd3e9f2ed097e0f0d3833a5f5a">&#9670;&nbsp;</a></span>Phrase() <span class="overload">[1/2]</span></h2>
 
@@ -165,6 +167,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../d7/d2f/classPhrase.html#ae2839b5739bb3509e49d534eb846a57f">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -192,6 +195,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Replace all occurrences ${phrase name} with the expanded phrase from <a class="el" href="../../d8/ddf/classGameData.html#a64b3b428e373c132c18335182067d38a">GameData::Phrases()</a> </p>
 
 </div>
 </div>
@@ -209,6 +213,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a random sentence's text. </p>
 
 </div>
 </div>
@@ -244,6 +249,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Parse the given node into a new branch associated with this phrase. </p>
 
 </div>
 </div>
@@ -261,6 +267,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name associated with the node this phrase was instantiated from, or "Unnamed Phrase" if it was anonymously defined. </p>
 
 </div>
 </div>
@@ -277,7 +284,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool Phrase::ReferencesPhrase </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d2f/classPhrase.html">Phrase</a> *&#160;</td>
-          <td class="paramname"><em>phrase</em></td><td>)</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -287,6 +294,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Inspect this phrase and all its subphrases to determine if a cyclic reference exists between this phrase and the other. </p>
 
 </div>
 </div>
@@ -332,6 +340,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Each time this phrase is defined, a new sentence is created. </p>
 
 </div>
 </div>

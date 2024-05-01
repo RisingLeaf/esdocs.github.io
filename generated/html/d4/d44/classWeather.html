@@ -152,7 +152,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:adf621b3c34042ba4d5dae5bd1e9503a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/classWeather.html#adf621b3c34042ba4d5dae5bd1e9503a9">shouldBeRemoved</a> = false</td></tr>
 <tr class="separator:adf621b3c34042ba4d5dae5bd1e9503a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p ><a class="el" href="../../d4/d44/classWeather.html">Weather</a> is used to contain an active system hazard, keeping track of the hazard's lifetime, its strength, and if it should cause any damage. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a22261c146dad8ad60ec5e39494d92f85" name="a22261c146dad8ad60ec5e39494d92f85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22261c146dad8ad60ec5e39494d92f85">&#9670;&nbsp;</a></span>Weather() <span class="overload">[1/2]</span></h2>
 
@@ -247,6 +249,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate this weather's strength for the current frame, to be used to find out what the current period and damage multipliers are. </p>
 
 </div>
 </div>
@@ -272,6 +275,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >What the hazard's damage is multiplied by given the current weather strength. </p>
 
 </div>
 </div>
@@ -289,6 +293,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The hazard that is associated with this weather event. </p>
 
 </div>
 </div>
@@ -306,6 +311,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get information on how this hazard impacted a ship. </p>
 
 </div>
 </div>
@@ -323,6 +329,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Whether the hazard of this weather deals damage or not. </p>
 
 </div>
 </div>
@@ -340,6 +347,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The origin of the hazard. </p>
 
 </div>
 </div>
@@ -357,6 +365,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The period of this weather, dictating how often it deals damage while active. </p>
 
 </div>
 </div>
@@ -374,6 +383,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this object is marked for removal from the game. </p>
 
 </div>
 </div>
@@ -402,6 +412,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Create any environmental effects and decrease the lifetime of this weather. </p>
 
 </div>
 </div>
@@ -425,6 +436,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The current strength and its square root are calculated at the beginning of each frame for weather that deviates to avoid needing to calculate it multiple times. </p>
 
 </div>
 </div>
@@ -535,6 +547,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Record when this object is marked for removal from the game. </p>
 
 </div>
 </div>

@@ -230,7 +230,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a453eb16e12b97dba53e05c868fc1aee6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d71/classCommand.html#a453eb16e12b97dba53e05c868fc1aee6">turn</a> = 0.</td></tr>
 <tr class="separator:a453eb16e12b97dba53e05c868fc1aee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class mapping key presses to specific commands / actions. The player can change the mappings for most of these keys in the preferences panel. A single <a class="el" href="../../d9/d71/classCommand.html">Command</a> object can represent multiple individual commands, e.g. everything the <a class="el" href="../../da/df5/classAI.html">AI</a> wants a ship to do, or all keys the player is holding down. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac3717e409ad40cc49776e4b2f5d8d3db" name="ac3717e409ad40cc49776e4b2f5d8d3db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3717e409ad40cc49776e4b2f5d8d3db">&#9670;&nbsp;</a></span>Command() <span class="overload">[1/4]</span></h2>
 
@@ -279,6 +281,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Create a command representing whatever command is mapped to the given keycode (if any).</p>
+<p >Create a command representing whatever is mapped to the given key code. </p>
 
 </div>
 </div>
@@ -305,6 +309,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Private constructor. </p>
 
 </div>
 </div>
@@ -360,6 +365,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the commands that are set in this and in the given command. </p>
 
 </div>
 </div>
@@ -378,6 +384,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the commands that are set in this and not in the given command. </p>
 
 </div>
 </div>
@@ -395,6 +402,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reset this to an empty command. </p>
 
 </div>
 </div>
@@ -413,6 +421,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear, set, or check the given bits. This ignores the turn field.</p>
+<p >Clear any commands that are set in the given command. </p>
 
 </div>
 </div>
@@ -430,6 +440,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the description or keycode name for this command. If this command is a combination of more than one command, an empty string is returned.</p>
+<p >Get the description of this command. If this command is a combination of more than one command, an empty string is returned. </p>
 
 </div>
 </div>
@@ -448,6 +460,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if any of the given command's bits that are set, are also set here. </p>
 
 </div>
 </div>
@@ -465,6 +478,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the key has no binding. </p>
 
 </div>
 </div>
@@ -482,6 +496,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether this is the only command mapped to the key it is mapped to. </p>
 
 </div>
 </div>
@@ -499,6 +514,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of the key that is mapped to this command. If this command is a combination of more than one command, an empty string is returned. </p>
 
 </div>
 </div>
@@ -517,6 +533,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load this command from an input file (for testing or scripted missions). </p>
 
 </div>
 </div>
@@ -543,6 +560,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Load or save the keyboard preferences.</p>
+<p >Load the keyboard preferences. </p>
 
 </div>
 </div>
@@ -568,6 +587,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if any bits are set in this command (including a nonzero turn). </p>
 
 </div>
 </div>
@@ -585,6 +605,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether this command is entirely empty. </p>
 
 </div>
 </div>
@@ -603,6 +624,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This operator is just provided to allow commands to be used in a map.</p>
+<p >For sorting commands (e.g. so a command can be the key in a map): </p>
 
 </div>
 </div>
@@ -621,6 +644,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the commands that are set in either of these commands. </p>
 
 </div>
 </div>
@@ -639,6 +663,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Combine everything in the given command with this command. If the given command has a nonzero turn set, it overrides this command's turn value. </p>
 
 </div>
 </div>
@@ -656,6 +681,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Read the current keyboard state and set this object to reflect it.</p>
+<p >Read the current keyboard state. </p>
 
 </div>
 </div>
@@ -682,6 +709,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >In the given text, replace any instances of command names (in angle brackets) with key names (in quotes). </p>
 
 </div>
 </div>
@@ -708,6 +736,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Save the keyboard preferences. </p>
 
 </div>
 </div>
@@ -726,6 +755,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> any commands that are set in the given command. </p>
 
 </div>
 </div>
@@ -762,6 +792,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the key that is mapped to the given command. </p>
 
 </div>
 </div>
@@ -780,6 +811,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or set the turn amount. The amount must be between -1 and 1, but it can be a fractional value to allow finer control.</p>
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the turn direction and amount to a value between -1 and 1. </p>
 
 </div>
 </div>
@@ -797,6 +830,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the turn amount. </p>
 
 </div>
 </div>
@@ -996,6 +1030,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Escort commands: </p>
 
 </div>
 </div>
@@ -1040,6 +1075,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d2/d32/classShip.html">Ship</a> controls: </p>
 
 </div>
 </div>
@@ -1282,6 +1318,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d9/dcf/classUI.html">UI</a> controls: </p>
 
 </div>
 </div>
@@ -1304,6 +1341,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Main menu: </p>
 
 </div>
 </div>
@@ -1414,6 +1452,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Empty command:</p>
+<p ><a class="el" href="../../d9/d71/classCommand.html">Command</a> enumeration, including the descriptive strings that are used for the commands both in the preferences panel and in the saved key settings. </p>
 
 </div>
 </div>
@@ -1546,6 +1586,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Modifier command, usually triggered by shift-key. Changes behavior of other commands like NEAREST, TARGET, HAIL and BOARD. </p>
 
 </div>
 </div>
@@ -1568,6 +1609,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The key commands are stored in a single bitmask with 64 bits for key commands. </p>
 
 </div>
 </div>
@@ -1590,6 +1632,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This command from the <a class="el" href="../../da/df5/classAI.html">AI</a> tells a ship that if possible, it should apply less than its full thrust in order to come to a complete stop. </p>
 
 </div>
 </div>
@@ -1634,6 +1677,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Turning amount is stored as a separate double to allow fractional values. </p>
 
 </div>
 </div>
@@ -1656,6 +1700,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This command is given in combination with JUMP or LAND and tells a ship not to jump or land yet even if it is in position to do so. It can be given from the <a class="el" href="../../da/df5/classAI.html">AI</a> when a ship is waiting for its parent. It can also be given from the player/input engine when the player is preparing his/her fleet for jumping or to indicate that the player is switching landing targets. (There is no explicit key mapped to this command.) </p>
 
 </div>
 </div>

@@ -115,7 +115,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a882f8efdab40bfeef67fc8107b0f4293"><td class="memItemLeft" align="right" valign="top">std::map&lt; const <a class="el" href="../../d1/d6d/classSprite.html">Sprite</a> *, std::vector&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df1/classBatchDrawList.html#a882f8efdab40bfeef67fc8107b0f4293">data</a></td></tr>
 <tr class="separator:a882f8efdab40bfeef67fc8107b0f4293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class collects a set of <a class="el" href="../../dd/d30/classOpenGL.html">OpenGL</a> draw commands to issue and groups them by sprite, so all instances of each sprite can be drawn with a single command. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a87d62e5ba4de6d6f8828bdb8de0a6c0a" name="a87d62e5ba4de6d6f8828bdb8de0a6c0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87d62e5ba4de6d6f8828bdb8de0a6c0a">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/2]</span></h2>
 
@@ -141,6 +143,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add an unswizzled object based on the <a class="el" href="../../d7/d80/classBody.html">Body</a> class. </p>
 
 </div>
 </div>
@@ -183,6 +186,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add the given body at the given position. </p>
 
 </div>
 </div>
@@ -201,6 +205,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >TODO: Once we have sprite reference positions, this method will not be needed. </p>
 
 </div>
 </div>
@@ -229,6 +234,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear the list, also setting the global time step for animation. </p>
 
 </div>
 </div>
@@ -265,6 +271,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine if the given body should be drawn at all. </p>
 
 </div>
 </div>
@@ -282,6 +289,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw all the items in this list. </p>
 
 </div>
 </div>
@@ -345,6 +353,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Each sprite consists of six vertices (four vertices to form a quad and two dummy vertices to mark the break in between them). Each of those vertices has six attributes: (x, y) position in pixels, (s, t) texture coordinates, the index of the sprite frame, and the alpha value. </p>
 
 </div>
 </div>

@@ -131,7 +131,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ab2e2d2f4c5b4ada033aea81c640d7bf7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d77/classDamageProfile.html#ab2e2d2f4c5b4ada033aea81c640d7bf7">rSquared</a> = 0.</td></tr>
 <tr class="separator:ab2e2d2f4c5b4ada033aea81c640d7bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A class that calculates how much damage a ship should take given the ship's attributes and the weapon it was hit by for each damage type. Bundles the results of these calculations into a <a class="el" href="../../d6/d89/classDamageDealt.html">DamageDealt</a> object. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a72f1689280ec1b9bd1231ef5352351f5" name="a72f1689280ec1b9bd1231ef5352351f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72f1689280ec1b9bd1231ef5352351f5">&#9670;&nbsp;</a></span>DamageProfile() <span class="overload">[1/2]</span></h2>
 
@@ -155,6 +157,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Constructor for damage taken from a weapon projectile. </p>
 
 </div>
 </div>
@@ -181,6 +184,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Constructor for damage taken from a hazard. </p>
 
 </div>
 </div>
@@ -207,6 +211,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Calculate the shared k and rSquared variables for any ship hit by a blast.</p>
+<p >Calculate the value of certain variables necessary for determining the impact of an explosion that are shared across all ships that this hazard could impact. </p>
 
 </div>
 </div>
@@ -235,6 +241,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the damage dealt to the given ship. </p>
 
 </div>
 </div>
@@ -271,6 +278,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Populate the given <a class="el" href="../../d6/d89/classDamageDealt.html">DamageDealt</a> object with values. </p>
 
 </div>
 </div>
@@ -313,6 +321,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine the damage scale for the given ship. </p>
 
 </div>
 </div>
@@ -336,6 +345,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The scaling as received before calculating damage. </p>
 
 </div>
 </div>
@@ -358,6 +368,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether damage is applied as a blast. </p>
 
 </div>
 </div>
@@ -380,6 +391,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether damage is applied from a hazard. </p>
 
 </div>
 </div>
@@ -402,6 +414,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Fields for caching blast radius calculation values that are shared by all ships that this profile could impact. </p>
 
 </div>
 </div>
@@ -424,6 +437,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The position of the projectile or hazard. </p>
 
 </div>
 </div>
@@ -468,6 +482,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The weapon that the dealt damage. </p>
 
 </div>
 </div>

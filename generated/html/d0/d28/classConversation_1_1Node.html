@@ -105,7 +105,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acf93fe663d1273af5050998b60193eef"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d1/d6d/classSprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d28/classConversation_1_1Node.html#acf93fe663d1273af5050998b60193eef">scene</a> = nullptr</td></tr>
 <tr class="separator:acf93fe663d1273af5050998b60193eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The conversation is a network of "nodes" that you travel between by making choices (or by automatic branches that depend on the condition variable values for the current player). </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a744cd0f0cf30ee89b44bd237d180c0b8" name="a744cd0f0cf30ee89b44bd237d180c0b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a744cd0f0cf30ee89b44bd237d180c0b8">&#9670;&nbsp;</a></span>Node()</h2>
 
@@ -129,6 +131,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Construct a new node. Each paragraph of conversation that involves no choice can be merged into what came before it, to simplify things. </p>
 
 </div>
 </div>
@@ -144,6 +147,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Tasks performed when this node is reached. </p>
 
 </div>
 </div>
@@ -158,6 +162,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Keep track of whether it's possible to merge future nodes onto this. </p>
 
 </div>
 </div>
@@ -172,6 +177,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The condition expressions that determine the next node to load, or whether to display. </p>
 
 </div>
 </div>
@@ -186,6 +192,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >See <a class="el" href="../../df/d76/classConversation_1_1Element.html">Element</a>'s comment above for what this actually entails. </p>
 
 </div>
 </div>
@@ -200,6 +207,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This distinguishes "choice" nodes from "branch" or text nodes. If this value is false, a one-element node is considered text, and a node with more than one element is considered a "branch". </p>
 
 </div>
 </div>
@@ -214,6 +222,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Image that should be shown along with this text. </p>
 
 </div>
 </div>

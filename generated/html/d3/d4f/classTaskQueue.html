@@ -122,7 +122,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7f3bc144a4bb584bb59b413af8ef59d8"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4f/classTaskQueue.html#a7f3bc144a4bb584bb59b413af8ef59d8">syncMutex</a></td></tr>
 <tr class="separator:a7f3bc144a4bb584bb59b413af8ef59d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class for queuing up tasks that are to be executed in parallel by using every thread available on the executing CPU. The queue is also responsible to execute follow-up tasks that need to executed after the async task, for example uploading a loaded to the GPU (which needs to happen on the main thread on <a class="el" href="../../dd/d30/classOpenGL.html">OpenGL</a>). </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeb6ea8419212f79ab437a0775b9e5ee2" name="aeb6ea8419212f79ab437a0775b9e5ee2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb6ea8419212f79ab437a0775b9e5ee2">&#9670;&nbsp;</a></span>TaskQueue() <span class="overload">[1/2]</span></h2>
 
@@ -145,6 +147,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Initialize the threads used to execute the tasks. </p>
 
 </div>
 </div>
@@ -214,6 +217,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether there are any outstanding async tasks left in this queue. </p>
 
 </div>
 </div>
@@ -257,6 +261,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Process any tasks to be scheduled to be executed on the main thread. </p>
 
 </div>
 </div>
@@ -285,6 +290,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Queue a function to execute in parallel, with an another optional function that will get executed on the main thread after the first function finishes. Returns a future representing the future result of the async call. Ignores any main thread task that still need to be executed! </p>
 
 </div>
 </div>
@@ -310,6 +316,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Thread entry point. </p>
 
 </div>
 </div>
@@ -327,6 +334,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Waits for all of this queue's task to finish. Ignores any sync tasks to be processed. </p>
 
 </div>
 </div>
@@ -372,6 +380,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The maximum amount of sync tasks to execute in one go. </p>
 
 </div>
 </div>
@@ -416,6 +425,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Tasks from ths queue that need to be executed on the main thread. </p>
 
 </div>
 </div>

@@ -186,7 +186,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a79cf0d02cd1efa37615c8a509eb871b8 inherit pro_static_attribs_classItemInfoDisplay"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classItemInfoDisplay.html#a79cf0d02cd1efa37615c8a509eb871b8">WIDTH</a> = 250</td></tr>
 <tr class="separator:a79cf0d02cd1efa37615c8a509eb871b8 inherit pro_static_attribs_classItemInfoDisplay"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing three panels of information about a given outfit. One shows the outfit's description, one shows the required space and cost to install it, and one shows other attributes of the outfit. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a532995ace8e3f3e8356a98836f5f52c8" name="a532995ace8e3f3e8356a98836f5f52c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a532995ace8e3f3e8356a98836f5f52c8">&#9670;&nbsp;</a></span>OutfitInfoDisplay() <span class="overload">[1/2]</span></h2>
 
@@ -286,6 +288,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Any attribute with a negative value is considered a requirement. Any exceptions to that rule would require in-game code to handle their unique properties, so when code is added to handle a new attribute, this code also should also be updated. </p>
 
 </div>
 </div>
@@ -304,6 +307,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Provided by <a class="el" href="../../d6/df7/classItemInfoDisplay.html">ItemInfoDisplay</a>: void <a class="el" href="../../d6/df7/classItemInfoDisplay.html#a223eb71337a97c84e9123ddbfa1e3d28">DrawDescription(const Point &amp;topLeft) const</a>; void <a class="el" href="../../d6/df7/classItemInfoDisplay.html#a8ed7bdf5aa82d90d4e6c00cb76d97425">DrawAttributes(const Point &amp;topLeft) const</a>; </p>
 
 </div>
 </div>
@@ -321,6 +325,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Provided by <a class="el" href="../../d6/df7/classItemInfoDisplay.html">ItemInfoDisplay</a>: int <a class="el" href="../../d6/df7/classItemInfoDisplay.html#a520727375c4e08a964cc7b9461a9fc94">PanelWidth()</a>; int <a class="el" href="../../d6/df7/classItemInfoDisplay.html#a94af744df2f55e7f627a20cff3f25add">MaximumHeight() const</a>; int <a class="el" href="../../d6/df7/classItemInfoDisplay.html#a323307135fc9d4fc52f027338ac94d3f">DescriptionHeight() const</a>; int <a class="el" href="../../d6/df7/classItemInfoDisplay.html#a47016c141d798bb9dd4680f299575042">AttributesHeight() const</a>; </p>
 
 </div>
 </div>
@@ -361,6 +366,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Call this every time the ship changes. </p>
 
 </div>
 </div>

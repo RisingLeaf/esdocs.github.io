@@ -156,6 +156,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Give the player credits (or pass negative number to subtract). If subtracting, the calling function needs to check that this will not result in negative credits. </p>
 
 </div>
 </div>
@@ -174,6 +175,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a "fine" with a high, fixed interest rate and a short term. </p>
 
 </div>
 </div>
@@ -192,6 +194,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a new mortgage for the given amount, with an interest rate determined by your credit score. </p>
 
 </div>
 </div>
@@ -209,7 +212,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Get or change the player's credits. </p>
+<p >Get or change the player's credits.</p>
+<p >How much the player currently has in the bank. </p>
 
 </div>
 </div>
@@ -274,7 +278,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Load or save account data. </p>
+<p >Load or save account data.</p>
+<p >Load account information from a data file (saved game or starting conditions). </p>
 
 </div>
 </div>
@@ -310,7 +315,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Liabilities: </p>
+<p >Liabilities:</p>
+<p >Access the list of mortgages. </p>
 
 </div>
 </div>
@@ -328,7 +334,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Assets: </p>
+<p >Assets:</p>
+<p >Get the player's total net worth (counting all ships and all debts). </p>
 
 </div>
 </div>
@@ -357,6 +364,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Pay down extra principal on a mortgage. </p>
 
 </div>
 </div>
@@ -410,6 +418,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check how big a mortgage the player can afford to pay at their current income. </p>
 
 </div>
 </div>
@@ -463,6 +472,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Write account information to a saved game file. </p>
 
 </div>
 </div>
@@ -570,6 +580,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Extrapolate from the player's current net worth history to determine how much their net worth is expected to change over the course of the next year. </p>
 
 </div>
 </div>
@@ -615,6 +626,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Your credit score determines the interest rate on your mortgages. </p>
 
 </div>
 </div>
@@ -637,6 +649,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If back salaries and maintenance cannot be paid, they pile up rather than being ignored. </p>
 
 </div>
 </div>
@@ -659,6 +672,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >History of the player's net worth. This is used to calculate your average daily income, which is used to calculate how big a mortgage you can afford. </p>
 
 </div>
 </div>
@@ -725,6 +739,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Regular income from salaries paid to the player. </p>
 
 </div>
 </div>

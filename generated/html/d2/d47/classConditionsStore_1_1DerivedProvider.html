@@ -108,7 +108,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ab13f74718da866fea270b9cc2a5a5536"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d47/classConditionsStore_1_1DerivedProvider.html#ab13f74718da866fea270b9cc2a5a5536">eraseFunction</a> = [](const std::string &amp;<a class="el" href="../../d2/d47/classConditionsStore_1_1DerivedProvider.html#a4927bc8a9ac556ec8d28a94cb506ec8d">name</a>) { return false; }</td></tr>
 <tr class="separator:ab13f74718da866fea270b9cc2a5a5536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class for DerivedProviders, the (lambda) functions that provide access to the derived conditions are registered in this class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a075f3bf65eeea7b6cee8452751765e8f" name="a075f3bf65eeea7b6cee8452751765e8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a075f3bf65eeea7b6cee8452751765e8f">&#9670;&nbsp;</a></span>DerivedProvider()</h2>
 
@@ -134,6 +136,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This is intended as a private constructor, only to be called from within <a class="el" href="../../de/d08/classConditionsStore.html">ConditionsStore</a>. But we need to keep it public because of how the DerivedProviders are emplaced in the providers-map-variable.</p>
+<p >Default constructor </p>
 
 </div>
 </div>
@@ -171,6 +175,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Functions to set the lambda functions for accessing the conditions. </p>
 
 </div>
 </div>
@@ -296,6 +301,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Lambda functions for accessing the derived conditions, with some sensible default implementations; </p>
 
 </div>
 </div>
@@ -386,7 +392,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [](<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="../../d2/d47/classConditionsStore_1_1DerivedProvider.html#a4927bc8a9ac556ec8d28a94cb506ec8d">name</a>, int64_t value) {</div>
 <div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="ttc" id="aclassConditionsStore_1_1DerivedProvider_html_a4927bc8a9ac556ec8d28a94cb506ec8d"><div class="ttname"><a href="../../d2/d47/classConditionsStore_1_1DerivedProvider.html#a4927bc8a9ac556ec8d28a94cb506ec8d">ConditionsStore::DerivedProvider::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> ConditionsStore.h:66</div></div>
+<div class="ttc" id="aclassConditionsStore_1_1DerivedProvider_html_a4927bc8a9ac556ec8d28a94cb506ec8d"><div class="ttname"><a href="../../d2/d47/classConditionsStore_1_1DerivedProvider.html#a4927bc8a9ac556ec8d28a94cb506ec8d">ConditionsStore::DerivedProvider::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> ConditionsStore.h:76</div></div>
 </div><!-- fragment -->
 </div>
 </div>

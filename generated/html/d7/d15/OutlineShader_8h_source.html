@@ -94,26 +94,24 @@ $(function() {
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Functions for drawing the &quot;outline&quot; of a sprite, i.e. a Sobel filter of its</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// alpha channel.</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d5/d14/classOutlineShader.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d14/classOutlineShader.html">OutlineShader</a> {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d14/classOutlineShader.html#a0ad69ed6a5ef8f5a2ac33e45d8c8274f">Init</a>();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d14/classOutlineShader.html#a712fefc4436e9a597eeb4ba5482d30c2">Draw</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d6d/classSprite.html">Sprite</a> *sprite, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a> &amp;pos, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a> &amp;size,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">const</span> <a class="code hl_class" href="../../d2/d37/classColor.html">Color</a> &amp;color, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a> &amp;unit = <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a>(0., -1.), <span class="keywordtype">float</span> frame = 0.f);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d5/d14/classOutlineShader.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d14/classOutlineShader.html">OutlineShader</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d14/classOutlineShader.html#a0ad69ed6a5ef8f5a2ac33e45d8c8274f">Init</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d14/classOutlineShader.html#a712fefc4436e9a597eeb4ba5482d30c2">Draw</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d6d/classSprite.html">Sprite</a> *sprite, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a> &amp;pos, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a> &amp;size,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">const</span> <a class="code hl_class" href="../../d2/d37/classColor.html">Color</a> &amp;color, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a> &amp;unit = <a class="code hl_class" href="../../dc/d4f/classPoint.html">Point</a>(0., -1.), <span class="keywordtype">float</span> frame = 0.f);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aPoint_8h_html"><div class="ttname"><a href="../../d4/de5/Point_8h.html">Point.h</a></div></div>
-<div class="ttc" id="aclassColor_html"><div class="ttname"><a href="../../d2/d37/classColor.html">Color</a></div><div class="ttdef"><b>Definition:</b> Color.h:26</div></div>
-<div class="ttc" id="aclassOutlineShader_html"><div class="ttname"><a href="../../d5/d14/classOutlineShader.html">OutlineShader</a></div><div class="ttdef"><b>Definition:</b> OutlineShader.h:28</div></div>
+<div class="ttc" id="aclassColor_html"><div class="ttname"><a href="../../d2/d37/classColor.html">Color</a></div><div class="ttdef"><b>Definition:</b> Color.h:28</div></div>
+<div class="ttc" id="aclassOutlineShader_html"><div class="ttname"><a href="../../d5/d14/classOutlineShader.html">OutlineShader</a></div><div class="ttdef"><b>Definition:</b> OutlineShader.h:30</div></div>
 <div class="ttc" id="aclassOutlineShader_html_a0ad69ed6a5ef8f5a2ac33e45d8c8274f"><div class="ttname"><a href="../../d5/d14/classOutlineShader.html#a0ad69ed6a5ef8f5a2ac33e45d8c8274f">OutlineShader::Init</a></div><div class="ttdeci">static void Init()</div><div class="ttdef"><b>Definition:</b> OutlineShader.cpp:42</div></div>
 <div class="ttc" id="aclassOutlineShader_html_a712fefc4436e9a597eeb4ba5482d30c2"><div class="ttname"><a href="../../d5/d14/classOutlineShader.html#a712fefc4436e9a597eeb4ba5482d30c2">OutlineShader::Draw</a></div><div class="ttdeci">static void Draw(const Sprite *sprite, const Point &amp;pos, const Point &amp;size, const Color &amp;color, const Point &amp;unit=Point(0., -1.), float frame=0.f)</div><div class="ttdef"><b>Definition:</b> OutlineShader.cpp:161</div></div>
-<div class="ttc" id="aclassPoint_html"><div class="ttname"><a href="../../dc/d4f/classPoint.html">Point</a></div><div class="ttdef"><b>Definition:</b> Point.h:31</div></div>
-<div class="ttc" id="aclassSprite_html"><div class="ttname"><a href="../../d1/d6d/classSprite.html">Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.h:32</div></div>
+<div class="ttc" id="aclassPoint_html"><div class="ttname"><a href="../../dc/d4f/classPoint.html">Point</a></div><div class="ttdef"><b>Definition:</b> Point.h:33</div></div>
+<div class="ttc" id="aclassSprite_html"><div class="ttname"><a href="../../d1/d6d/classSprite.html">Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

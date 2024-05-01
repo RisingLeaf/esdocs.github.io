@@ -116,7 +116,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a932c071ee856f034b1c6a4a23a76f8d7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d82/classFormat.html#a932c071ee856f034b1c6a4a23a76f8d7">Search</a> (const std::string &amp;str, const std::string &amp;sub)</td></tr>
 <tr class="separator:a932c071ee856f034b1c6a4a23a76f8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Collection of functions for formatting strings for display. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad4db7568737228f14a7747ba842c31e2" name="ad4db7568737228f14a7747ba842c31e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4db7568737228f14a7747ba842c31e2">&#9670;&nbsp;</a></span>ConditionGetter</h2>
 
@@ -128,6 +130,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Function to retrieve a condition's value. Receives a string that contains the condition name, and the start &amp; size of the substring with the condition name. </p>
 
 </div>
 </div>
@@ -155,6 +158,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert a string to title caps or to lower case. </p>
 
 </div>
 </div>
@@ -191,6 +195,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Creates a string similar to '&lt;amount&gt; tons of &lt;cargo&gt;'. </p>
 
 </div>
 </div>
@@ -227,6 +232,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Conditionally convert numbers to word forms, based on the Chicago Manual of Style.</p>
+<p >Chicago manual of style </p>
 
 </div>
 </div>
@@ -253,6 +260,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert the given number into abbreviated format with a suffix like "M" for million, "B" for billion, or "T" for trillion. Any number above 1 quadrillion is instead shown in scientific notation. </p>
 
 </div>
 </div>
@@ -279,6 +287,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert the given number into abbreviated format as described in <a class="el" href="../../dc/d82/classFormat.html#a813c774e13daaa005b910300fbccc63e">Format::Credits</a>, then attach the ' credit' or ' credits' suffix to it. </p>
 
 </div>
 </div>
@@ -315,6 +324,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../dc/d82/classFormat.html">Format</a> the given value as a number with exactly the given number of decimal places (even if they are all 0). </p>
 
 </div>
 </div>
@@ -351,6 +361,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Finds &amp;[condition] and &amp;[format@condition] in strings and expands them </p>
 
 </div>
 </div>
@@ -403,6 +414,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Writes the given number into a string, then attach the ' ton' or ' tons' suffix to it. </p>
 
 </div>
 </div>
@@ -439,6 +451,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Conditionally convert numbers to word forms, based on the MLA Style guide.</p>
+<p >MLA Handbook style </p>
 
 </div>
 </div>
@@ -465,6 +479,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert the given number to a string, with at most one decimal place. This is primarily for displaying ship and outfit attributes.</p>
+<p >Convert the given number to a string, with a reasonable number of decimal places. (This is primarily for displaying ship and outfit attributes.) </p>
 
 </div>
 </div>
@@ -491,6 +507,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert a string into a number. As with the output of <a class="el" href="../../dc/d82/classFormat.html#a51b75b8cdcb2a77c5f183bcc86201767">Number()</a>, the string can have suffixes like "M", "B", etc.</p>
+<p >Convert a string into a number. As with the output of <a class="el" href="../../dc/d82/classFormat.html#a51b75b8cdcb2a77c5f183bcc86201767">Number()</a>, the string can have suffixes like "M", "B", etc. It can also contain spaces or "," as separators like 1,000 or 1 000. Does not support parsing NaN or infinite values. </p>
 
 </div>
 </div>
@@ -517,6 +535,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert a time in seconds to years/days/hours/minutes/seconds </p>
 
 </div>
 </div>
@@ -553,6 +572,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Replace a set of "keys," which must be strings in the form "&lt;name&gt;", with a new set of strings, and return the result. </p>
 
 </div>
 </div>
@@ -595,6 +615,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Replace all occurrences of "target" with "replacement" in-place. </p>
 
 </div>
 </div>
@@ -631,6 +652,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Function for the "find" dialogs: </p>
 
 </div>
 </div>
@@ -667,6 +689,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Split a single string into substrings with the given separator. </p>
 
 </div>
 </div>
@@ -703,6 +726,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Convert numbers to word forms. Capitalize the first letter if at the start of a sentence. </p>
 
 </div>
 </div>

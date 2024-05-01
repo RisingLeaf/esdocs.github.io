@@ -222,7 +222,9 @@ Friends</h2></td></tr>
 <tr class="memitem:ad147287f1ed879273e7bad0367e1b490"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/classUniverseObjects.html#ad147287f1ed879273e7bad0367e1b490">TestData</a></td></tr>
 <tr class="separator:ad147287f1ed879273e7bad0367e1b490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class contains all active game objects, representing the current state of the Endless Sky universe. All pointers to game objects must refer to the same <a class="el" href="../../df/d69/classUniverseObjects.html">UniverseObjects</a> instance. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab8bfb236c0c4d8150e73107a01f6b22d" name="ab8bfb236c0c4d8150e73107a01f6b22d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8bfb236c0c4d8150e73107a01f6b22d">&#9670;&nbsp;</a></span>Change()</h2>
 
@@ -238,6 +240,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Apply the given change to the universe. </p>
 
 </div>
 </div>
@@ -255,6 +258,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check for objects that are referred to but never defined.</p>
+<p >Check for objects that are referred to but never defined. Some elements, like fleets, don't need to be given a name if undefined. Others (like outfits and planets) are written to the player's save and need a name to prevent data loss. </p>
 
 </div>
 </div>
@@ -273,6 +278,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draws the current menu background. Unlike accessing the menu background through <a class="el" href="../../d8/ddf/classGameData.html">GameData</a>, this function is thread-safe. </p>
 
 </div>
 </div>
@@ -290,6 +296,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Resolve every game object dependency. </p>
 
 </div>
 </div>
@@ -307,6 +314,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine the fraction of data files read from disk. </p>
 
 </div>
 </div>
@@ -341,6 +349,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load game objects from the given directories of definitions. </p>
 
 </div>
 </div>
@@ -394,6 +403,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Update the neighbor lists and other information for all the systems. (This must be done any time a <a class="el" href="../../dd/dbd/classGameEvent.html">GameEvent</a> creates or moves a system.) </p>
 
 </div>
 </div>
@@ -417,6 +427,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d8/ddf/classGameData.html">GameData</a> currently is the orchestrating controller for all game definitions. </p>
 
 </div>
 </div>
@@ -814,6 +825,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A local cache of the menu background interface for thread-safe access. </p>
 
 </div>
 </div>
@@ -1034,6 +1046,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A value in [0, 1] representing how many source files have been processed for content. </p>
 
 </div>
 </div>

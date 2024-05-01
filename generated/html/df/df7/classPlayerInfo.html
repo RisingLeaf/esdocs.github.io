@@ -608,7 +608,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad5311ea50be326c256d607a6891a5873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dfc/classDataWriter.html">DataWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df7/classPlayerInfo.html#ad5311ea50be326c256d607a6891a5873">transactionSnapshot</a> = nullptr</td></tr>
 <tr class="separator:ad5311ea50be326c256d607a6891a5873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class holding information about a "player" - their name, their finances, what ship(s) they own and with what outfits, what systems they have visited, etc. This class also handles saving the player's info to disk so it can be read back in exactly the same state later. This includes what changes the player has made to the universe, what jobs are being offered to them right now, and what their current travel plan is, if any. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aefd8a53182d979b52f84c70554612df9" name="aefd8a53182d979b52f84c70554612df9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefd8a53182d979b52f84c70554612df9">&#9670;&nbsp;</a></span>SortType</h2>
 
@@ -678,6 +680,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Don't allow copying this class. </p>
 
 </div>
 </div>
@@ -758,6 +761,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Accept the given job. </p>
 
 </div>
 </div>
@@ -775,6 +779,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the player's account information (and allow modifying it). </p>
 
 </div>
 </div>
@@ -792,6 +797,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the player's accounting information.</p>
+<p >Access the player's account information. </p>
 
 </div>
 </div>
@@ -809,6 +816,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Return a pointer to the mission that was most recently accepted while in-flight. </p>
 
 </div>
 </div>
@@ -827,6 +835,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Apply the given changes and store them in the player's saved game file.</p>
+<p >Apply the given set of changes to the game data. </p>
 
 </div>
 </div>
@@ -855,6 +865,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add an event that will happen at the given date. </p>
 
 </div>
 </div>
@@ -873,6 +884,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access to the licenses the player owns. </p>
 
 </div>
 </div>
@@ -927,6 +939,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a captured ship to your fleet. </p>
 
 </div>
 </div>
@@ -989,6 +1002,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Transfer outfits from the player to the planet or vice versa. </p>
 
 </div>
 </div>
@@ -1025,6 +1039,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Instantiate the given model and add it to the player's fleet. </p>
 
 </div>
 </div>
@@ -1053,6 +1068,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get cost basis for commodities.</p>
+<p >Adjust the cost basis for the given commodity. </p>
 
 </div>
 </div>
@@ -1078,6 +1095,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Apply any "changes" saved in this player info to the global game state. </p>
 
 </div>
 </div>
@@ -1120,6 +1138,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of ordinary jobs that are available on the job board. </p>
 
 </div>
 </div>
@@ -1138,6 +1157,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Basic callback for handling forced departure from a planet.</p>
+<p >Basic callback, allowing conversations to force the player to depart from a planet without requiring a mission to offer. </p>
 
 </div>
 </div>
@@ -1156,6 +1177,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if any of the game's missions can be offered from this ship, given its relationship with the player. If none offer, return nullptr. </p>
 
 </div>
 </div>
@@ -1184,6 +1206,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Buy, receive or sell a ship. In the case of a gift, return a pointer to the newly instantiated ship.</p>
+<p >Adds a ship of the given model with the given name to the player's fleet. </p>
 
 </div>
 </div>
@@ -1209,6 +1233,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check that this player's current state can be saved. </p>
 
 </div>
 </div>
@@ -1227,6 +1252,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the player can view the contents of the given system. </p>
 
 </div>
 </div>
@@ -1245,6 +1271,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Return true if the given ship is capturable only because it's the source of a boarding mission which allows it to be. </p>
 
 </div>
 </div>
@@ -1262,6 +1289,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get cargo information. </p>
 
 </div>
 </div>
@@ -1279,6 +1307,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get cargo information. </p>
 
 </div>
 </div>
@@ -1296,6 +1325,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reset the player to an "empty" state, i.e. no player is loaded.</p>
+<p >Completely clear all loaded information, to prepare for loading a file or creating a new pilot. </p>
 
 </div>
 </div>
@@ -1313,6 +1344,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/db6/classEngine.html">Engine</a> calls this after placing the boarding mission's NPCs. </p>
 
 </div>
 </div>
@@ -1331,6 +1363,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the set of collapsed categories for the named panel. </p>
 
 </div>
 </div>
@@ -1348,6 +1381,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the "condition" flags for this player.</p>
+<p >Get mutable access to the player's list of conditions. </p>
 
 </div>
 </div>
@@ -1365,6 +1400,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the player's list of conditions. </p>
 
 </div>
 </div>
@@ -1390,6 +1426,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >New missions are generated each time you land on a planet. </p>
 
 </div>
 </div>
@@ -1435,6 +1472,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark the player as dead, or check if they have died.</p>
+<p >Mark this player as dead, and handle the changes to the player's fleet. </p>
 
 </div>
 </div>
@@ -1470,6 +1509,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Should help dialogs relating to carriers be displayed? </p>
 
 </div>
 </div>
@@ -1487,6 +1527,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Distribute cargo to local ships. Returns a reference to the player's cargo. </p>
 
 </div>
 </div>
@@ -1505,6 +1546,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark a mission as failed, but do not remove it from the mission list yet. </p>
 
 </div>
 </div>
@@ -1531,6 +1573,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check for and apply any punitive actions from planetary security.</p>
+<p >Check (and perform) any fines incurred by planetary security. If the player has dominated the planet, or was given clearance to this planet by a mission, planetary security is avoided. Infiltrating implies evasion of security. </p>
 
 </div>
 </div>
@@ -1548,6 +1592,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Complete the transaction. </p>
 
 </div>
 </div>
@@ -1565,6 +1610,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or set the player's name.</p>
+<p >Get the player's first name. </p>
 
 </div>
 </div>
@@ -1582,6 +1629,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a pointer to the ship that the player controls. This is usually the first ship in the list. </p>
 
 </div>
 </div>
@@ -1599,6 +1647,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the flagship (the first ship in the list). This returns null if the player does not have any ships that can be a flagship.</p>
+<p >Get a pointer to the ship that the player controls. This is usually the first ship in the list. </p>
 
 </div>
 </div>
@@ -1616,6 +1666,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine which ship is the flagship and return the shared pointer to it. </p>
 
 </div>
 </div>
@@ -1633,6 +1684,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get depreciation information. </p>
 
 </div>
 </div>
@@ -1650,6 +1702,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Inspect the flightworthiness of the player's active fleet as a whole to determine which ships cannot travel with the group.</p>
+<p >Inspect the flightworthiness of the player's active fleet, individually and as a whole, to determine which ships cannot travel with the group. Returns a mapping of ships to the reason their flight check failed. </p>
 
 </div>
 </div>
@@ -1686,6 +1740,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >When we remove a ship, forget it's stored Uuid.</p>
+<p >When we remove a ship, forget its stored ID. </p>
 
 </div>
 </div>
@@ -1731,6 +1787,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the cost basis for some number of tons of the given commodity. Each ton of the commodity that you own is assumed to have the same basis. </p>
 
 </div>
 </div>
@@ -1748,6 +1805,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or change the current date.</p>
+<p >Get the current date (game world, not real world). </p>
 
 </div>
 </div>
@@ -1765,6 +1824,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or set the travel destination for selected escorts via the map. </p>
 
 </div>
 </div>
@@ -1800,6 +1860,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the planet the player is landed on. </p>
 
 </div>
 </div>
@@ -1825,6 +1886,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get or add to pilot's playtime. </p>
 
 </div>
 </div>
@@ -1859,6 +1921,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If the player is landed, return the stellar object they are on.</p>
+<p >If the player is landed, return the stellar object they are on. Some planets (e.g. ringworlds) may include multiple stellar objects in the same system. </p>
 
 </div>
 </div>
@@ -1876,6 +1940,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Keep track of any outfits that you have sold since landing. These will be available to buy back until you take off. </p>
 
 </div>
 </div>
@@ -1910,6 +1975,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the player's current star system. </p>
 
 </div>
 </div>
@@ -1944,6 +2010,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a list of all tribute that the player receives. </p>
 
 </div>
 </div>
@@ -1961,6 +2028,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the total sum of the tribute the player receives. </p>
 
 </div>
 </div>
@@ -1978,6 +2046,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Maps defined names for gifted ships to UUIDs for the ship instances.</p>
+<p >Uuid for the gifted ships, with the ship class follow by the names they had when they were gifted to the player. </p>
 
 </div>
 </div>
@@ -2012,6 +2082,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Because this ship is being gifted, it costs nothing and starts fully depreciated. </p>
 
 </div>
 </div>
@@ -2040,6 +2111,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If one of your missions cannot be offered because you do not have enough space for it, and it specifies a message to be shown in that situation, show that message. </p>
 
 </div>
 </div>
@@ -2068,6 +2140,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Update mission status based on an event. </p>
 
 </div>
 </div>
@@ -2086,6 +2159,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Keep track of what materials you have mined in each system. </p>
 
 </div>
 </div>
@@ -2120,6 +2194,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if a system and nonzero position were specified. </p>
 
 </div>
 </div>
@@ -2173,6 +2248,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether the player has visited the &lt;mapSize&gt; systems around the current one. </p>
 
 </div>
 </div>
@@ -2191,6 +2267,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check what the player knows about the given system or planet.</p>
+<p >Check if the player knows the location of the given system (whether or not they have actually visited it). </p>
 
 </div>
 </div>
@@ -2208,6 +2286,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the player's travel plan.</p>
+<p >Check if the player has a hyperspace route set. </p>
 
 </div>
 </div>
@@ -2226,6 +2306,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the player has visited the given planet. </p>
 
 </div>
 </div>
@@ -2244,6 +2325,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the player has visited the given system. </p>
 
 </div>
 </div>
@@ -2261,6 +2343,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the root filename used for this player's saved game files. (If there are multiple pilots with the same name it may have a digit appended.)</p>
+<p >Get the base file name for the player, without the ".txt" extension. This will usually be "&lt;first&gt; &lt;last&gt;", but may be different if multiple players exist with the same name, in which case a number is appended. </p>
 
 </div>
 </div>
@@ -2278,6 +2362,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the date to the next day, and perform all daily actions. </p>
 
 </div>
 </div>
@@ -2295,6 +2380,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Query whether this player is dead. </p>
 
 </div>
 </div>
@@ -2312,6 +2398,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if any player's information is loaded.</p>
+<p >Check if a player has been loaded. </p>
 
 </div>
 </div>
@@ -2330,6 +2418,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the player knows the name of a system, either from visiting there or because a job or active mission includes the name of that system. </p>
 
 </div>
 </div>
@@ -2348,6 +2437,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Switch cargo from being stored in ships to being stored here.</p>
+<p >Switch cargo from being stored in ships to being stored here. Also recharge ships, check for mission completion, and apply fines for contraband. </p>
 
 </div>
 </div>
@@ -2365,6 +2456,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the player's last name. </p>
 
 </div>
 </div>
@@ -2400,6 +2492,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load an existing player.</p>
+<p >Load player information from a saved game file. </p>
 
 </div>
 </div>
@@ -2417,6 +2511,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load the most recently saved player. If no save could be loaded, returns false.</p>
+<p >Load the most recently saved player (if any). Returns false when no save was loaded. </p>
 
 </div>
 </div>
@@ -2434,6 +2530,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the player's logbook. </p>
 
 </div>
 </div>
@@ -2451,6 +2548,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the daily maintenance cost and generated income for all ships and in cargo outfits. </p>
 
 </div>
 </div>
@@ -2469,6 +2567,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark a whole map of systems as visited. </p>
 
 </div>
 </div>
@@ -2486,6 +2585,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or set what coloring is currently selected in the map.</p>
+<p >Get what coloring is currently selected in the map. </p>
 
 </div>
 </div>
@@ -2503,6 +2604,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or set the map zoom level.</p>
+<p >Get the map zoom level. </p>
 
 </div>
 </div>
@@ -2521,6 +2624,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Callback for accepting or declining whatever mission has been offered.</p>
+<p >Callback for accepting or declining whatever mission has been offered. Responses which would kill the player are handled before the on offer conversation ended. </p>
 
 </div>
 </div>
@@ -2538,6 +2643,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get mission information.</p>
+<p >Get the list of active missions. </p>
 
 </div>
 </div>
@@ -2556,6 +2663,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check to see if there is any mission to offer right now.</p>
+<p >Look at the list of available missions and see if any of them can be offered right now, in the given location (landing or spaceport). If there are no missions that can be accepted, return a null pointer. </p>
 
 </div>
 </div>
@@ -2574,6 +2683,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Make a new player. </p>
 
 </div>
 </div>
@@ -2671,6 +2781,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Park or unpark the given ship. A parked ship remains on a planet instead of flying with the player, and requires no daily crew payments. </p>
 
 </div>
 </div>
@@ -2688,6 +2799,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get items stored on all planets (for map display).</p>
+<p >Get planetary storage information for all planets (for map and overviews). </p>
 
 </div>
 </div>
@@ -2705,6 +2818,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Pool cargo from local ships. </p>
 
 </div>
 </div>
@@ -2722,6 +2836,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Remove the first or last system from the travel plan.</p>
+<p >This is called when the player enters the system that is their current hyperspace target. </p>
 
 </div>
 </div>
@@ -2767,6 +2883,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the attraction factors of the player's fleet to raid fleets.</p>
+<p >Find out how attractive the player's fleet is to pirates. Aside from a heavy freighter, no single ship should attract extra pirate attention. </p>
 
 </div>
 </div>
@@ -2792,6 +2910,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Helper to register derived conditions. </p>
 
 </div>
 </div>
@@ -2844,6 +2963,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Complete or fail a mission.</p>
+<p >Mark a mission for removal, either because it was completed, or it failed, or because the player aborted it. </p>
 
 </div>
 </div>
@@ -2872,6 +2993,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Rename the given ship. </p>
 
 </div>
 </div>
@@ -2900,6 +3022,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Change the order of the given ship in the list. </p>
 
 </div>
 </div>
@@ -2917,6 +3040,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the daily salaries for crew, not counting crew on "parked" ships.</p>
+<p >Calculate how much the player pays in daily salaries. </p>
 
 </div>
 </div>
@@ -2934,6 +3059,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Save this player (using the <a class="el" href="../../df/df7/classPlayerInfo.html#a78688f93ba8fb49060c700a0ca8a3449">Identifier()</a> as the file name).</p>
+<p >Save this player. The file name is based on the player's name. </p>
 
 </div>
 </div>
@@ -3003,6 +3130,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Toggle which secondary weapon the player has selected.</p>
+<p >Check which secondary weapons the player has selected. </p>
 
 </div>
 </div>
@@ -3020,6 +3149,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Escorts currently selected for giving orders. </p>
 
 </div>
 </div>
@@ -3065,6 +3195,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Cycle through all available secondary weapons. </p>
 
 </div>
 </div>
@@ -3129,6 +3260,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Helper function to update the ship selection. </p>
 
 </div>
 </div>
@@ -3157,6 +3289,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Select any player ships in the given box or list. Return true if any were selected.</p>
+<p >Select any player ships in the given box or list. Return true if any were selected, so we know not to search further for a match. </p>
 
 </div>
 </div>
@@ -3213,6 +3347,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sell the given ship (if it belongs to the player). </p>
 
 </div>
 </div>
@@ -3241,6 +3376,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> (or clear) the stored escort travel destination. </p>
 
 </div>
 </div>
@@ -3267,6 +3403,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the flagship (on departure or during flight). </p>
 
 </div>
 </div>
@@ -3313,6 +3450,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> what the map is being colored by. </p>
 
 </div>
 </div>
@@ -3331,6 +3469,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the map zoom level. </p>
 
 </div>
 </div>
@@ -3359,6 +3498,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the player's name. This will also set the saved game file name. </p>
 
 </div>
 </div>
@@ -3377,6 +3517,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> what planet the player is on (or nullptr, if taking off).</p>
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the planet the player is landed on. </p>
 
 </div>
 </div>
@@ -3413,6 +3555,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the system the player is in. This must be stored here so that even if the player sells all their ships, we still know where the player is. This also marks the given system as visited.</p>
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the player's current start system, and mark that system as visited. </p>
 
 </div>
 </div>
@@ -3431,6 +3575,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Sets the means the player used to enter the system. </p>
 
 </div>
 </div>
@@ -3449,6 +3594,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the planet to land on at the end of the travel path. </p>
 
 </div>
 </div>
@@ -3477,6 +3623,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get and set the "tribute" that the player receives from dominated planets. </p>
 
 </div>
 </div>
@@ -3522,6 +3669,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the full list of ships the player owns.</p>
+<p >Access the full list of ships that the player owns. </p>
 
 </div>
 </div>
@@ -3539,6 +3688,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether a mission conversation has raised a flag that the player must leave the planet immediately (without time to do anything else).</p>
+<p >Check if the player must take off immediately. </p>
 
 </div>
 </div>
@@ -3649,6 +3800,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get basic data about the player's starting scenario. </p>
 
 </div>
 </div>
@@ -3666,6 +3818,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Start a transaction. This stores the current state, and any <a class="el" href="../../df/df7/classPlayerInfo.html#a5a2574dc343049416345c59817b19f5f">Save()</a> calls during the transaction will store this saved state. </p>
 
 </div>
 </div>
@@ -3692,6 +3845,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Updates each mission upon landing, to perform landing actions (Stopover, Visit, Complete, Fail), and remove now-complete or now-failed missions. </p>
 
 </div>
 </div>
@@ -3744,6 +3898,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get items stored on the player's current planet. </p>
 
 </div>
 </div>
@@ -3772,6 +3927,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Make ships ready for take off. This may require selling excess cargo.</p>
+<p >Load the cargo back into your ships. This may require selling excess, in which case a message will be returned. </p>
 
 </div>
 </div>
@@ -3806,6 +3963,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Take the ship from the player, if a model is specified this will permanently remove outfits in said model, instead of allowing the player to buy them back by putting them in the stock. </p>
 
 </div>
 </div>
@@ -3892,6 +4050,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get or set the planet to land on at the end of the travel path.</p>
+<p >Get the planet to land on at the end of the travel path. </p>
 
 </div>
 </div>
@@ -3926,6 +4086,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the player's travel plan. </p>
 
 </div>
 </div>
@@ -3962,6 +4123,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark a system and its planets as unvisited, even if visited previously.</p>
+<p >Mark a system as unvisited, even if visited previously. </p>
 
 </div>
 </div>
@@ -3979,6 +4142,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Call this when leaving the outfitter, shipyard, or hiring panel.</p>
+<p >Call this after missions update, or if leaving the outfitter, shipyard, or hiring panel. Updates the information on how much space is available. </p>
 
 </div>
 </div>
@@ -3996,6 +4161,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Update mission NPCs with the player's current conditions. </p>
 
 </div>
 </div>
@@ -4021,6 +4187,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >After loading &amp; applying changes, make sure the player &amp; ship locations are sensible.</p>
+<p >Make change's to the player's planet, system, &amp; ship locations as needed, to ensure the player and their ships are in valid locations, even if the player did something drastic, such as remove a mod. </p>
 
 </div>
 </div>
@@ -4039,6 +4207,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark the given planet as visited. </p>
 
 </div>
 </div>
@@ -4057,6 +4226,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Marking a system as visited also "sees" its neighbors.</p>
+<p >Mark the given system as visited, and mark all its neighbors as seen. </p>
 
 </div>
 </div>
@@ -4102,6 +4273,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This pointer to the most recently accepted boarding mission enables its NPCs to be placed before the player lands, and is then cleared. </p>
 
 </div>
 </div>
@@ -4124,6 +4296,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These lists are populated when you land on a planet, and saved so that they will not change if you reload the game. </p>
 
 </div>
 </div>
@@ -4168,6 +4341,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >How to sort availableJobs </p>
 
 </div>
 </div>
@@ -4256,6 +4430,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Currently collapsed categories for various panels. </p>
 
 </div>
 </div>
@@ -4410,6 +4585,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Persons that have been killed in this player's universe: </p>
 
 </div>
 </div>
@@ -4454,6 +4630,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Missions that are failed or aborted, but not yet deleted, and any missions offered while in-flight are not saved. </p>
 
 </div>
 </div>
@@ -4608,6 +4785,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Events that are going to happen some time in the future: </p>
 
 </div>
 </div>
@@ -4696,6 +4874,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If any mission component is not fully defined, the mission is deactivated until its components are fully evaluable (i.e. needed plugins are reinstalled). </p>
 
 </div>
 </div>
@@ -4718,6 +4897,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The system and position therein to which the "orbits" system <a class="el" href="../../d9/dcf/classUI.html">UI</a> issued a move order. </p>
 
 </div>
 </div>
@@ -4784,6 +4964,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The licenses that the player owns. </p>
 
 </div>
 </div>
@@ -4828,6 +5009,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Currently selected coloring, in the map panel (defaults to reputation): </p>
 
 </div>
 </div>
@@ -4872,6 +5054,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A list of the player's active, accepted missions. </p>
 
 </div>
 </div>
@@ -4938,6 +5121,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The amount of in-game time played, in seconds. </p>
 
 </div>
 </div>
@@ -4982,6 +5166,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Changes that this <a class="el" href="../../df/df7/classPlayerInfo.html">PlayerInfo</a> wants to make to the global galaxy state: </p>
 
 </div>
 </div>
@@ -5180,6 +5365,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Basic information about the player's starting scenario. </p>
 
 </div>
 </div>

@@ -97,7 +97,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4b49270cbd1de6f970ee60d95161f032"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dc7/classConditionSet.html">ConditionSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/classConversation_1_1Element.html#a4b49270cbd1de6f970ee60d95161f032">conditions</a></td></tr>
 <tr class="separator:a4b49270cbd1de6f970ee60d95161f032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This serves multiple purposes:</p><ul>
+<li>In a regular text node, there's exactly one of these. It contains the text data, the index of the next node to unconditionally visit, and, optionally, a condition set which, if not met, prevents the text from being displayed (without affecting which node is processed next).</li>
+<li>In a choice node, there's one of these for each possible choice, containing the text to display, the node the choice leads to, and, optionally, the conditions under which to offer the choice.</li>
+<li>In a branch node, there's two of these. The first one contains the condition for the branch. If the condition is met, the "next" member of the first element is followed. If it's not met, it's the second element whose "next" member is followed. </li>
+</ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7b0f0eccee3b16f3dee607719ff82f39" name="a7b0f0eccee3b16f3dee607719ff82f39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b0f0eccee3b16f3dee607719ff82f39">&#9670;&nbsp;</a></span>Element()</h2>
 
@@ -146,6 +152,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Conditions for displaying the text: </p>
 
 </div>
 </div>
@@ -160,6 +167,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The next node to visit: </p>
 
 </div>
 </div>
@@ -174,6 +182,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The text to display: </p>
 
 </div>
 </div>

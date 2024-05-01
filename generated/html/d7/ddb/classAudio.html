@@ -98,7 +98,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2b2d2417c2bff3e7a10ec351ece2a79"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddb/classAudio.html#ac2b2d2417c2bff3e7a10ec351ece2a79">Quit</a> ()</td></tr>
 <tr class="separator:ac2b2d2417c2bff3e7a10ec351ece2a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class is a collection of global functions for handling audio. A sound can be played from any point in the code, and from any thread, just by specifying the name of the sound to play. Most sounds will come from a "source" at a certain position, and their volume and left / right balance is adjusted based on how far they are from the observer. Sounds that are not marked as looping will play once, then stop; looping sounds continue until their source stops calling the "play" function for them. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a017ca75e5c0c44f1bd7ec1aefa7dec37" name="a017ca75e5c0c44f1bd7ec1aefa7dec37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a017ca75e5c0c44f1bd7ec1aefa7dec37">&#9670;&nbsp;</a></span>CheckReferences()</h2>
 
@@ -147,6 +149,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a pointer to the named sound. The name is the path relative to the "sound/" folder, and without ~ if it's on the end, or the extension. Do not call this function until Progress() is 100%.</p>
+<p >Get a pointer to the named sound. The name is the path relative to the "sound/" folder, and without ~ if it's on the end, or the extension. </p>
 
 </div>
 </div>
@@ -172,6 +176,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Report the progress of loading sounds. </p>
 
 </div>
 </div>
@@ -198,6 +203,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Begin loading sounds (in a separate thread). </p>
 
 </div>
 </div>
@@ -224,6 +230,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Play the given sound, at full volume. </p>
 
 </div>
 </div>
@@ -260,6 +267,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Play the given sound, as if it is at the given distance from the "listener". This will make it softer and change the left / right balance. </p>
 
 </div>
 </div>
@@ -286,6 +294,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Play the given music. An empty string means to play nothing. </p>
 
 </div>
 </div>
@@ -311,6 +320,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Shut down the audio system (because we're about to quit). </p>
 
 </div>
 </div>
@@ -337,6 +347,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the volume (to a value between 0 and 1). </p>
 
 </div>
 </div>
@@ -362,6 +373,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Begin playing all the sounds that have been added since the last time this function was called. </p>
 
 </div>
 </div>
@@ -388,6 +400,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the listener's position, and also update any sounds that have been added but deferred because they were added from a thread other than the main one (the one that called <a class="el" href="../../d7/ddb/classAudio.html#a1f551134fff7d2d052948a55fd70c677">Init()</a>). </p>
 
 </div>
 </div>
@@ -413,6 +426,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get or set the volume (between 0 and 1).</p>
+<p >Get the volume. </p>
 
 </div>
 </div>

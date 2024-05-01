@@ -84,7 +84,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a823b0d169c533604ae8e0b598d59df63"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dbe/classByGivenOrder.html#a823b0d169c533604ae8e0b598d59df63">order</a></td></tr>
 <tr class="separator:a823b0d169c533604ae8e0b598d59df63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
+class ByGivenOrder&lt; T &gt;</div><p >Compare Ts according to the order specified at construction time. Unknown Ts are considered larger than any known one. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a029c11fe171d33e75005c0ee12fdd07e" name="a029c11fe171d33e75005c0ee12fdd07e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a029c11fe171d33e75005c0ee12fdd07e">&#9670;&nbsp;</a></span>ByGivenOrder()</h2>
 
@@ -149,6 +152,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Neither a nor b is a known value. Fall back to default comparison.</p>
+<p >Whichever is first in the array is considered smaller.</p>
 
 </div>
 </div>

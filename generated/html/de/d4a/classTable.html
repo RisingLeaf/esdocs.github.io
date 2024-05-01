@@ -176,7 +176,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aaa6893b4007de31b79f3aed70a80d1e5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/de3/classTable_1_1Column.html">Column</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/classTable.html#aaa6893b4007de31b79f3aed70a80d1e5">columns</a></td></tr>
 <tr class="separator:aaa6893b4007de31b79f3aed70a80d1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Helper class for drawing text formatted in a table, where each column of the table is aligned left, right, or centered. This also handles spacing in between table rows, underlines, selection highlights, etc. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a049f2e06391781ae255c6698869c4ad1" name="a049f2e06391781ae255c6698869c4ad1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a049f2e06391781ae255c6698869c4ad1">&#9670;&nbsp;</a></span>Table()</h2>
 
@@ -238,6 +240,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Advance to the next field without drawing anything. </p>
 
 </div>
 </div>
@@ -255,6 +258,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the column positions. If no columns are set, the <a class="el" href="../../de/d4a/classTable.html">Table</a> will draw a list (one column of text, left aligned). </p>
 
 </div>
 </div>
@@ -273,6 +277,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw a single text field, and move on to the next one. </p>
 
 </div>
 </div>
@@ -301,6 +306,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If a color is given, this field is drawn using that color, but the previously set color will be used for future fields. </p>
 
 </div>
 </div>
@@ -453,6 +459,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Begin drawing at the given position. Each time text is drawn, it fills a new column until all columns have been filled. Then, the Y position is increased based on the row height, and a new row begins. </p>
 
 </div>
 </div>
@@ -471,6 +478,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Use the width &amp; alignment associated with the text (instead of the column's). </p>
 
 </div>
 </div>
@@ -517,6 +525,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Shift the draw position down by the given amount. This usually should not be called in the middle of a row, or the fields will not line up. </p>
 
 </div>
 </div>
@@ -534,6 +543,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Highlight the current row. </p>
 
 </div>
 </div>
@@ -604,6 +614,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw two columns as a pair with opposite alignments. If needed, truncate the given column based on the width of the non-truncated column's value. </p>
 
 </div>
 </div>
@@ -621,6 +632,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw an underline under the text for the current row. </p>
 
 </div>
 </div>
@@ -656,6 +668,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the center and size of the current row. This can be used to define what screen region constitutes a mouse click on this particular row. </p>
 
 </div>
 </div>
@@ -673,6 +686,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the point that should be passed to <a class="el" href="../../de/d4a/classTable.html#a95e512c26786520f15cadc5557d2b145">DrawAt()</a> to start the next row at the given location. </p>
 
 </div>
 </div>
@@ -725,6 +739,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the color for drawing text and underlines. </p>
 
 </div>
 </div>
@@ -743,6 +758,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the font size. Default is 14 pixels. </p>
 
 </div>
 </div>
@@ -779,6 +795,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the width of the highlight area. If the underline has not been set, this will also set the width of the underline. </p>
 
 </div>
 </div>
@@ -805,6 +822,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the row height. Default is 20 pixels. </p>
 
 </div>
 </div>
@@ -841,6 +859,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the X range of the underline. If the highlight has not been set, this will also set the width of the highlight. </p>
 
 </div>
 </div>
@@ -886,6 +905,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The color to use on the next draw call. </p>
 
 </div>
 </div>
@@ -952,6 +972,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The column being drawn. </p>
 
 </div>
 </div>
@@ -1018,6 +1039,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The current draw position. </p>
 
 </div>
 </div>

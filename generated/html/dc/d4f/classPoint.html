@@ -157,7 +157,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a912c3cc0285e33849b959a3690bc31fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d4f/classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/classPoint.html#a912c3cc0285e33849b959a3690bc31fc">max</a> (const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;p, const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;q)</td></tr>
 <tr class="separator:a912c3cc0285e33849b959a3690bc31fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a 2D point with functions for a variety of vector operations. A <a class="el" href="../../dc/d4f/classPoint.html">Point</a> can represent either a location or a vector (e.g. a velocity, or a distance between two points, or a unit vector representing a direction). All basic mathematical operations that make sense for vectors are supported. Internally the coordinates are stored in a SSE vector and the processor's vector extensions are used to optimize all operations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a993a4137041b40f037cda23afb470c6f" name="a993a4137041b40f037cda23afb470c6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a993a4137041b40f037cda23afb470c6f">&#9670;&nbsp;</a></span>Point() <span class="overload">[1/2]</span></h2>
 
@@ -289,6 +291,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Operations that treat this point as a vector from (0, 0): </p>
 
 </div>
 </div>
@@ -348,6 +351,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if the point is anything but (0, 0). </p>
 
 </div>
 </div>
@@ -391,6 +395,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Multiply the respective components of each <a class="el" href="../../dc/d4f/classPoint.html">Point</a>. </p>
 
 </div>
 </div>
@@ -463,6 +468,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >No comparison operators are provided because I never expect to use them and because comparisons with doubles are inherently unsafe due to the possibility of rounding errors and imprecision. </p>
 
 </div>
 </div>
@@ -640,6 +646,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Inline accessor functions, for speed: </p>
 
 </div>
 </div>
@@ -742,6 +749,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Take the absolute value of both coordinates.</p>
+<p >Absolute value of both coordinates. </p>
 
 </div>
 </div>
@@ -778,6 +787,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Use the max of each x and each y coordinates.</p>
+<p >Take the max of the x and y coordinates. </p>
 
 </div>
 </div>
@@ -814,6 +825,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Use the min of each x and each y coordinates.</p>
+<p >Take the min of the x and y coordinates. </p>
 
 </div>
 </div>

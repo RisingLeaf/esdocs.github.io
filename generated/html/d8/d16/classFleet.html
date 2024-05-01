@@ -156,7 +156,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae0f2077566b8f45be82d32a15a74cadc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d24/classPersonality.html">Personality</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d16/classFleet.html#ae0f2077566b8f45be82d32a15a74cadc">fighterPersonality</a></td></tr>
 <tr class="separator:ae0f2077566b8f45be82d32a15a74cadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A fleet represents a collection of ships that may enter a system or be used as NPCs in a mission. Each fleet contains one or more "variants," each of which can occur with a different probability, and each of those variants lists one or more ships. All the ships in a fleet share a certain government, <a class="el" href="../../da/df5/classAI.html">AI</a> personality, and set of friendly and hostile "hail" messages, and the ship names are chosen based on a given random "phrase" generator. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2b7a72a2956cac90407430e54c568909" name="a2b7a72a2956cac90407430e54c568909"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b7a72a2956cac90407430e54c568909">&#9670;&nbsp;</a></span>Fleet() <span class="overload">[1/2]</span></h2>
 
@@ -197,6 +199,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../d8/d16/classFleet.html#aa2194e902bef5c963cd4fea68baac724">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -224,6 +227,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Obtain a positional reference and the radius of the object at that position (e.g. a planet). Spaceport status can be modified during normal gameplay, so this information is not cached. </p>
 
 </div>
 </div>
@@ -266,6 +270,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Do the randomization to make a ship enter or be in the given system. Return the system that was chosen for the ship to enter from.</p>
+<p >Do the randomization to make a ship enter or be in the given system. </p>
 
 </div>
 </div>
@@ -300,6 +306,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Choose a fleet to be created during flight, and have it enter the system via jump or planetary departure. </p>
 
 </div>
 </div>
@@ -317,6 +324,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the government of this fleet. </p>
 
 </div>
 </div>
@@ -361,6 +369,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if this fleet template uses well-defined data. </p>
 
 </div>
 </div>
@@ -455,6 +464,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Place a fleet in the given system, already "in action." If the carried flag is set, only uncarried ships will be added to the list (as any carriables will be stored in bays). </p>
 
 </div>
 </div>
@@ -508,6 +518,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Ensure any variant selected during gameplay will have at least one ship to spawn. </p>
 
 </div>
 </div>
@@ -548,6 +559,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The cargo ships in this fleet will carry. </p>
 
 </div>
 </div>

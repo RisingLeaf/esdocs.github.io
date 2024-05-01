@@ -283,7 +283,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d54/classPanel.html#a54beaf51714a909c0731a3f11c3bf35b">Modifier</a> ()</td></tr>
 <tr class="separator:a54beaf51714a909c0731a3f11c3bf35b inherit pro_static_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing the main panel (i.e. the view of your ship moving around). The goal is that the <a class="el" href="../../d1/db6/classEngine.html">Engine</a> class will not need to know about displaying panels or handling key presses; it instead focuses just on the calculations needed to move the ships around and to figure out where they should be drawn. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a280b107998f1fbb355416344400db256" name="a280b107998f1fbb355416344400db256"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a280b107998f1fbb355416344400db256">&#9670;&nbsp;</a></span>MainPanel()</h2>
 
@@ -333,6 +335,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The main panel allows fast-forward. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#ab1bfa8579b2a025e70b77b833da90755">Panel</a>.</p>
 
@@ -442,6 +445,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Implements <a class="el" href="../../d8/d54/classPanel.html#ac567662a50d5e8995a123f6a3154c013">Panel</a>.</p>
 
@@ -461,6 +465,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the underlying game engine used by the game. </p>
 
 </div>
 </div>
@@ -509,6 +514,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Only override the ones you need; the default action is to return false. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#af7f4af41d7bb3d5e13556e394f0678df">Panel</a>.</p>
 
@@ -529,6 +535,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The hail panel calls this when it closes. </p>
 
 </div>
 </div>
@@ -546,6 +553,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The planet panel calls this when it closes. </p>
 
 </div>
 </div>
@@ -762,6 +770,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move the state of this panel forward one game step. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#abe42f22d508c1cfd1a2f8ecad31d6762">Panel</a>.</p>
 
@@ -790,6 +799,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle ShipEvents from this and previous <a class="el" href="../../d1/db6/classEngine.html#ab6a99f62ca0472804897027739935ab0">Engine::Step</a> calls. Start with the oldest and then process events until any create a new <a class="el" href="../../d9/dcf/classUI.html">UI</a> element. </p>
 
 </div>
 </div>
@@ -923,6 +933,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These are the pending ShipEvents that have yet to be processed. </p>
 
 </div>
 </div>
@@ -1033,6 +1044,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >For displaying the GPU load. </p>
 
 </div>
 </div>
@@ -1121,6 +1133,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Keep track of how long a starting player has spent drifting in deep space. </p>
 
 </div>
 </div>

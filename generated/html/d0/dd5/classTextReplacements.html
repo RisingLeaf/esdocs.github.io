@@ -86,7 +86,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa86335c12a377b59111b840a58a6ee2e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::pair&lt; <a class="el" href="../../d8/dc7/classConditionSet.html">ConditionSet</a>, std::string &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd5/classTextReplacements.html#aa86335c12a377b59111b840a58a6ee2e">substitutions</a></td></tr>
 <tr class="separator:aa86335c12a377b59111b840a58a6ee2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A class containing a list of text replacements. Text replacements consist of a key to search for and the text to replace it with. One key can have multiple potential replacement texts, with the specific text chosen being defined by whichever replacement is the last valid replacement for that key, with replacement validity being defined by a <a class="el" href="../../d8/dc7/classConditionSet.html">ConditionSet</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a291d28fd35af0ac171d249b188353f4a" name="a291d28fd35af0ac171d249b188353f4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a291d28fd35af0ac171d249b188353f4a">&#9670;&nbsp;</a></span>Load()</h2>
 
@@ -102,6 +104,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load a substitutions node. </p>
 
 </div>
 </div>
@@ -120,6 +123,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear this TextReplacement's substitutions and insert the substitutions of other. </p>
 
 </div>
 </div>
@@ -148,6 +152,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add new text replacements to the given map after evaluating all possible replacements. This <a class="el" href="../../d0/dd5/classTextReplacements.html">TextReplacements</a> will overwrite the value of any existing keys in the given map if the map and this <a class="el" href="../../d0/dd5/classTextReplacements.html">TextReplacements</a> share a key.</p>
+<p >Add new text replacements to the given map after evaluating all possible replacements. This text replacement will overwrite the value of any existing keys in the given map if the map and this <a class="el" href="../../d0/dd5/classTextReplacements.html">TextReplacements</a> share a key. </p>
 
 </div>
 </div>
@@ -171,6 +177,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Vector with "string to be replaced", "condition when to replace", and "replacement text". </p>
 
 </div>
 </div>

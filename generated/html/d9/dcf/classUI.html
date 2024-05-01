@@ -132,7 +132,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2b1bf698187845bed5b25ab7d277ad1d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="../../d8/d54/classPanel.html">Panel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dcf/classUI.html#a2b1bf698187845bed5b25ab7d277ad1d">toPop</a></td></tr>
 <tr class="separator:a2b1bf698187845bed5b25ab7d277ad1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a <a class="el" href="../../d9/dcf/classUI.html">UI</a> (i.e. a series of Panels stacked on top of each other, with Panels added or removed in response to user events). This handles events and passing them on to whatever panel is on top, and drawing of the panels starting with whichever one is on the bottom. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1c6d6fe7afbdbf1af8a38593d74c2fc6" name="a1c6d6fe7afbdbf1af8a38593d74c2fc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c6d6fe7afbdbf1af8a38593d74c2fc6">&#9670;&nbsp;</a></span>CanSave() <span class="overload">[1/2]</span></h2>
 
@@ -165,6 +167,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If the player enters the game, enable saving the loaded file. </p>
 
 </div>
 </div>
@@ -182,6 +185,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw all the panels. </p>
 
 </div>
 </div>
@@ -207,6 +211,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the current mouse position. </p>
 
 </div>
 </div>
@@ -225,6 +230,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Handle an event. The event is handed to each panel on the stack until one of them handles it. If none do, this returns false. </p>
 
 </div>
 </div>
@@ -242,6 +248,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if it is time to quit. </p>
 
 </div>
 </div>
@@ -259,6 +266,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if there are no panels left.</p>
+<p >Check if there are no panels left. No panels left on the gamePanels- stack usually means that it is time for the game to quit, while no panels left on the menuPanels-stack is a normal state for a running game. </p>
 
 </div>
 </div>
@@ -277,6 +286,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check whether the given panel is on top, i.e. is the active one, out of all panels that are already drawn on this step.</p>
+<p >Check whether the given panel is on top of the existing panels, i.e. is the active one, on this Step. Any panels that have been pushed this Step are not considered. </p>
 
 </div>
 </div>
@@ -295,6 +306,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Remove the given panel from the stack (if it is in it). The panel will be deleted at the start of the next time Step() is called, so it is safe for a panel to <a class="el" href="../../d9/dcf/classUI.html#ab2c884074b361e28c112fb1394e96ad6">Pop()</a> itself. </p>
 
 </div>
 </div>
@@ -313,6 +325,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Remove the given panel and every panel that is higher in the stack. </p>
 
 </div>
 </div>
@@ -349,6 +362,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add the given panel to the stack. If you do not want a panel to be deleted when it is popped, save a copy of its shared pointer elsewhere.</p>
+<p >Add the given panel to the stack. <a class="el" href="../../d9/dcf/classUI.html">UI</a> is responsible for deleting it. </p>
 
 </div>
 </div>
@@ -374,6 +389,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If a push or pop is queued, apply it. </p>
 
 </div>
 </div>
@@ -391,6 +407,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Tell the <a class="el" href="../../d9/dcf/classUI.html">UI</a> to quit. </p>
 
 </div>
 </div>
@@ -408,6 +425,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Delete all the panels and clear the "done" flag. </p>
 
 </div>
 </div>
@@ -425,6 +443,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the lower-most panel. </p>
 
 </div>
 </div>
@@ -442,6 +461,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Step all the panels forward (advance animations, move objects, etc.). </p>
 
 </div>
 </div>
@@ -459,6 +479,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the top panel, out of all possible panels, including ones not yet drawn.</p>
+<p >Get the absolute top panel, even if it is not yet drawn (i.e. was pushed on this Step). </p>
 
 </div>
 </div>
@@ -482,6 +504,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether the player has taken actions that enable us to save the game. </p>
 
 </div>
 </div>
@@ -504,6 +527,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether the player has requested the game to shut down. </p>
 
 </div>
 </div>

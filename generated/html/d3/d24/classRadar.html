@@ -147,7 +147,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa384dfcda35933d8f04b51d825ab126c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d6/da9/classRadar_1_1Line.html">Line</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d24/classRadar.html#aa384dfcda35933d8f04b51d825ab126c">lines</a></td></tr>
 <tr class="separator:aa384dfcda35933d8f04b51d825ab126c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing all objects which should show up on radar. Each object is either a ring (planets) or a dot (ships) and has a color representing its status (owned by player, friendly, unfriendly, hostile, inactive, or special). </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab5845664559f7a0269f62eafd48bd773" name="ab5845664559f7a0269f62eafd48bd773"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5845664559f7a0269f62eafd48bd773">&#9670;&nbsp;</a></span>Add()</h2>
 
@@ -185,6 +187,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add an object. If "inner" is 0 it is a dot; otherwise, it is a ring. The given position should be in world units (not shrunk to radar units). </p>
 
 </div>
 </div>
@@ -213,6 +216,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a pointer, pointing in the direction of the given vector. </p>
 
 </div>
 </div>
@@ -231,6 +235,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a viewport vertex indicating the extent of what can be seen on screen.</p>
+<p >Create a "corner" from a vertical and horizontal leg. </p>
 
 </div>
 </div>
@@ -288,6 +294,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw the radar display at the given coordinates. </p>
 
 </div>
 </div>
@@ -314,6 +321,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the color for the given status. </p>
 
 </div>
 </div>

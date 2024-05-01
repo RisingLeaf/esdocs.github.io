@@ -109,7 +109,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad28cad754e5427990f5f12592051a801"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d25/classDataNode.html">DataNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d29/classDataFile.html#ad28cad754e5427990f5f12592051a801">root</a></td></tr>
 <tr class="separator:ad28cad754e5427990f5f12592051a801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A class which represents a hierarchical data file. Each line of the file that is not empty or a comment is a "node," and the relationship between the nodes is determined by indentation: if a node is more indented than the node before it, it is a "child" of that node. Otherwise, it is a "sibling." Each node is just a collection of one or more tokens that can be interpreted either as strings or as floating point values; see <a class="el" href="../../d7/d25/classDataNode.html">DataNode</a> for more information. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad77befe66af7eb04d6ab1059b16af5b5" name="ad77befe66af7eb04d6ab1059b16af5b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad77befe66af7eb04d6ab1059b16af5b5">&#9670;&nbsp;</a></span>DataFile() <span class="overload">[1/3]</span></h2>
 
@@ -132,6 +134,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A <a class="el" href="../../d9/d29/classDataFile.html">DataFile</a> can be loaded either from a file path or an istream. </p>
 
 </div>
 </div>
@@ -202,6 +205,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Functions for iterating through all DataNodes in this file.</p>
+<p >Get an iterator to the start of the list of nodes in this file. </p>
 
 </div>
 </div>
@@ -219,6 +224,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get an iterator to the end of the list of nodes in this file. </p>
 
 </div>
 </div>
@@ -281,6 +287,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Parse the given text. </p>
 
 </div>
 </div>
@@ -304,6 +311,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This is the container for all DataNodes in this file. </p>
 
 </div>
 </div>

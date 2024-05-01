@@ -128,7 +128,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0687c219b572fba46cb878b617c2f0dc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/classDate.html#a0687c219b572fba46cb878b617c2f0dc">str</a></td></tr>
 <tr class="separator:a0687c219b572fba46cb878b617c2f0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a date (day, month, and year). Built-in date structures combined dates with time within the day, which can lead to accumulated errors when trying to increment dates in whole-day steps. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a19cb325d7fc9e143f9095e7eadc8a1a4" name="a19cb325d7fc9e143f9095e7eadc8a1a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19cb325d7fc9e143f9095e7eadc8a1a4">&#9670;&nbsp;</a></span>Date() <span class="overload">[1/2]</span></h2>
 
@@ -185,6 +187,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Since converting a date to a string is the most common operation, store the date in a way that allows easy extraction of the day, month, and year. Allow 5 bits for the day and 4 for the month. This also allows easy comparison. </p>
 
 </div>
 </div>
@@ -203,6 +206,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the date as numbers.</p>
+<p >Get the current day of the month. </p>
 
 </div>
 </div>
@@ -220,6 +225,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the number of days that have elapsed since the "epoch" and the start of this year.</p>
+<p >Get the number of days that have elapsed since the "epoch". This is used only for finding the number of days in between two dates. </p>
 
 </div>
 </div>
@@ -271,6 +278,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a string in the form "the DDth of Month", suitable to include in conversation text.</p>
+<p >Convert a date to the format in which it would be stated in conversation. </p>
 
 </div>
 </div>
@@ -288,6 +297,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the current month (January = 1, rather than being zero-indexed). </p>
 
 </div>
 </div>
@@ -313,6 +323,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if this date has been initialized. </p>
 
 </div>
 </div>
@@ -330,6 +341,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this date has not been initialized. </p>
 
 </div>
 </div>
@@ -366,6 +378,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the date this number of days in the future.</p>
+<p >Add the given number of days to this date. </p>
 
 </div>
 </div>
@@ -383,6 +397,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Move the date forward one day.</p>
+<p >Increment this date (prefix). </p>
 
 </div>
 </div>
@@ -401,6 +417,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Increment this date (postfix). </p>
 
 </div>
 </div>
@@ -419,6 +436,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the number of days between two dates.</p>
+<p >Get the number of days between the two given dates. </p>
 
 </div>
 </div>
@@ -437,6 +456,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Comparison operators.</p>
+<p ><a class="el" href="../../de/d4a/classDate.html">Date</a> comparison. </p>
 
 </div>
 </div>
@@ -526,6 +547,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this date as a string, in the form "Day, DD Mon Year".</p>
+<p >Convert a date to a string. </p>
 
 </div>
 </div>
@@ -543,6 +566,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the current year. </p>
 
 </div>
 </div>
@@ -566,6 +590,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The date is compressed into a single integer value to make it easy to compare dates. </p>
 
 </div>
 </div>
@@ -588,6 +613,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Cached values of complex operations. </p>
 
 </div>
 </div>

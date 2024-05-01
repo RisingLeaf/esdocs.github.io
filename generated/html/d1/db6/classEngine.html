@@ -363,7 +363,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a34c896c01c2aa3dcaef32aa82cf7a546"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/classEngine.html#a34c896c01c2aa3dcaef32aa82cf7a546">loadSum</a> = 0.</td></tr>
 <tr class="separator:a34c896c01c2aa3dcaef32aa82cf7a546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing the game engine: its job is to track all of the objects in the game, and to move them, step by step. All the motion and collision calculations are handled in a separate thread so that the graphics thread is free to just work on drawing things; this means that the drawn state of the game is always one step (1/60 second) behind what is being calculated. This lag is too small to be detectable and means that the game can better handle situations where there are many objects on screen at once. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a20e94309d2b3751939f657a720777ba5" name="a20e94309d2b3751939f657a720777ba5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20e94309d2b3751939f657a720777ba5">&#9670;&nbsp;</a></span>Engine()</h2>
 
@@ -423,6 +425,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Break targeting on all projectiles between the player and the given government; gov projectiles stop targeting the player and player's projectiles stop targeting gov. </p>
 
 </div>
 </div>
@@ -488,6 +491,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Select the object the player clicked on. </p>
 
 </div>
 </div>
@@ -539,6 +543,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if any ship collected the given flotsam. </p>
 
 </div>
 </div>
@@ -565,6 +570,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Perform collision detection. Note that unlike the preceding functions, this one adds any visuals that are created directly to the main visuals list. If this is multi-threaded in the future, that will need to change. </p>
 
 </div>
 </div>
@@ -601,6 +607,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If a ship just damaged another ship, update information on who has asked the player for assistance (and ask for assistance if appropriate). </p>
 
 </div>
 </div>
@@ -627,6 +634,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Scanning can't happen in the same loop as ship movement because it relies on all the ships already being in their final position for this step. </p>
 
 </div>
 </div>
@@ -653,6 +661,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determine whether any active weather events have impacted the ships within the system. As with DoCollisions, this function adds visuals directly to the main visuals list. </p>
 
 </div>
 </div>
@@ -670,6 +679,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Draw a frame. </p>
 
 </div>
 </div>
@@ -696,6 +706,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Each ship is drawn as an entire stack of sprites, including hardpoint sprites and engine flares and any fighters it is carrying externally. </p>
 
 </div>
 </div>
@@ -780,6 +791,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get any special events that happened in this step. <a class="el" href="../../d5/dcc/classMainPanel.html#a9915cfca77287e7ebfc6ec160f1a913c">MainPanel::Step</a> will clear this list.</p>
+<p >Pass the list of game events to <a class="el" href="../../d5/dcc/classMainPanel.html">MainPanel</a> for handling by the player, and any <a class="el" href="../../d9/dcf/classUI.html">UI</a> element generation. </p>
 
 </div>
 </div>
@@ -805,6 +818,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Populate the ship collision detection set for projectile &amp; flotsam computations. </p>
 
 </div>
 </div>
@@ -830,6 +844,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Fill in all the objects in the radar display. </p>
 
 </div>
 </div>
@@ -855,6 +870,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Generate weather from the current system's hazards. </p>
 
 </div>
 </div>
@@ -873,6 +889,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Give a command on behalf of the player, used for integration tests. </p>
 
 </div>
 </div>
@@ -890,6 +907,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Begin the next step of calculations. </p>
 
 </div>
 </div>
@@ -915,6 +933,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle any keyboard inputs for the engine. This is done in the main thread after all calculation threads are paused to avoid race conditions. </p>
 
 </div>
 </div>
@@ -940,6 +959,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle any mouse clicks. This is done in the calculation thread rather than in the main <a class="el" href="../../d9/dcf/classUI.html">UI</a> thread to avoid race conditions. </p>
 
 </div>
 </div>
@@ -966,6 +986,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Determines alternate mouse turning, setting player mouse angle, and right-click firing weapons. </p>
 
 </div>
 </div>
@@ -992,6 +1013,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move a ship. Also determine if the ship should generate hyperspace sounds or boarding events, fire weapons, and launch fighters. </p>
 
 </div>
 </div>
@@ -1009,6 +1031,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Place all the player's ships, and "enter" the system the player is in. </p>
 
 </div>
 </div>
@@ -1037,6 +1060,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Place NPCs spawned by a mission that offers when the player is not landed. </p>
 
 </div>
 </div>
@@ -1114,6 +1138,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >At random intervals, have one of the ships in the game send you a hail. </p>
 
 </div>
 </div>
@@ -1139,6 +1164,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Spawn <a class="el" href="../../de/d71/classNPC.html">NPC</a> (both mission and "regular") ships into the player's universe. Non- mission NPCs are only spawned in or adjacent to the player's system. </p>
 
 </div>
 </div>
@@ -1164,6 +1190,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >At random intervals, create new special "persons" who enter the current system. </p>
 
 </div>
 </div>
@@ -1182,6 +1209,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Perform all the work that can only be done while the calculation thread is paused (for thread safety reasons).</p>
+<p >Begin the next step of calculations. </p>
 
 </div>
 </div>
@@ -1199,6 +1228,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Wait for the previous calculations (if any) to be done. </p>
 
 </div>
 </div>
@@ -1222,6 +1252,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Commands that are currently active (and not yet handled). This is a combination of keyboard and mouse commands (and any other available input device). </p>
 
 </div>
 </div>
@@ -1376,6 +1407,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> of asteroids scanned in the current system. </p>
 
 </div>
 </div>
@@ -1420,6 +1452,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Viewport position and velocity. </p>
 
 </div>
 </div>
@@ -1508,6 +1541,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >ES uses a technique called double buffering to calculate the next frame and render the current one simultaneously. To facilitate this, it uses two buffers for each list of things to draw - one for the next frame's calculations and one for rendering the current frame. A little synchronization is required to prevent mutable references to the currently rendering buffer. </p>
 
 </div>
 </div>
@@ -1574,6 +1608,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Inputs received from a mouse or other pointer device. </p>
 
 </div>
 </div>
@@ -1816,6 +1851,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Keep track of who has asked for help in fighting whom. </p>
 
 </div>
 </div>
@@ -1882,6 +1918,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Track which ships currently have anti-missiles or tractor beams ready to fire. </p>
 
 </div>
 </div>
@@ -2036,6 +2073,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Other information to display. </p>
 
 </div>
 </div>
@@ -2212,6 +2250,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Keyboard commands that were active in the previous step. </p>
 
 </div>
 </div>
@@ -2234,6 +2273,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Pressing "land" or "board" rapidly toggles targets; pressing it once re-engages landing or boarding. </p>
 
 </div>
 </div>
@@ -2410,6 +2450,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >New objects created within the latest step: </p>
 
 </div>
 </div>
@@ -2454,6 +2495,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Tracks the next zoom change so that objects aren't drawn at different zooms in a single frame. </p>
 
 </div>
 </div>

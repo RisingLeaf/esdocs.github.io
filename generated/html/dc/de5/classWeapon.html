@@ -552,7 +552,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a615360ebfdc86a2c97629f93f6e3b80c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de5/classWeapon.html#a615360ebfdc86a2c97629f93f6e3b80c">RELATIVE_ENERGY_DAMAGE</a> = 22</td></tr>
 <tr class="separator:a615360ebfdc86a2c97629f93f6e3b80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing all the characteristics of a weapon, including sprites and effects, sounds, icons, ammo, submunitions, and other attributes. Storing these parameters in a separate class keeps each <a class="el" href="../../d9/d4b/classProjectile.html">Projectile</a> from needing a copy of them, and storing them as class variables instead of in a map of string to double significantly reduces access time. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0c187d3ea83bd6865b86a03de7e86641" name="a0c187d3ea83bd6865b86a03de7e86641"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c187d3ea83bd6865b86a03de7e86641">&#9670;&nbsp;</a></span>Acceleration()</h2>
 
@@ -809,6 +811,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Whether projectiles from this weapon can directly collide with objects. </p>
 
 </div>
 </div>
@@ -852,6 +855,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the percent damage that this weapon deals given the distance that the projectile traveled if it has a damage dropoff range.</p>
+<p >Calculate the fraction of full damage that this weapon deals given the distance that the projectile traveled if it has a damage dropoff range. </p>
 
 </div>
 </div>
@@ -969,6 +974,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if this weapon does damage. If not, attacking a ship with this weapon is not a provocation (even if you push or pull it). </p>
 
 </div>
 </div>
@@ -1011,6 +1017,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Return the ranges at which the weapon's damage dropoff begins and ends. </p>
 
 </div>
 </div>
@@ -1078,6 +1085,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Effects to be created at the start or end of the weapon's lifetime. </p>
 
 </div>
 </div>
@@ -1203,6 +1211,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Normal damage sustained on firing ship when weapon fired. </p>
 
 </div>
 </div>
@@ -1520,6 +1529,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if this weapon has a damage dropoff range. </p>
 
 </div>
 </div>
@@ -1738,6 +1748,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Status effects: </p>
 
 </div>
 </div>
@@ -1763,6 +1774,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Blast radius weapons will scale damage and hit force based on distance, unless the "no damage scaling" keyphrase is used in the weapon definition. </p>
 
 </div>
 </div>
@@ -1788,6 +1800,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >True if this projectile should create an explosion at the end of its lifetime instead of simply disappearing or only creating a die effect. Blast radius weapons will cause a blast at the end of their lifetime. </p>
 
 </div>
 </div>
@@ -1813,6 +1826,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Gravitational weapons deal the same amount of hit force to a ship regardless of its mass. </p>
 
 </div>
 </div>
@@ -1880,6 +1894,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A "safe" weapon hits only hostile ships (even if it has a blast radius). A "phasing" weapon hits only its intended target; it passes through everything else, including asteroids. </p>
 
 </div>
 </div>
@@ -1905,6 +1920,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Weapons of the same type will alternate firing (streaming) rather than firing all at once (clustering) if the weapon is not an anti-missile and is not vulnerable to anti-missile, or has the "stream" attribute. </p>
 
 </div>
 </div>
@@ -1972,6 +1988,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accessor functions for various attributes.</p>
+<p >Inline the accessors because they get called so frequently. </p>
 
 </div>
 </div>
@@ -2007,6 +2025,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load from a "weapon" node, either in an outfit, a ship (explosion), or a hazard.</p>
+<p >Load from a "weapon" node, either in an outfit or in a ship (explosion). </p>
 
 </div>
 </div>
@@ -2024,6 +2044,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Return the weapon's damage dropoff at maximum range. </p>
 
 </div>
 </div>
@@ -2341,6 +2362,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Relative damage sustained on firing ship when weapon fired. </p>
 
 </div>
 </div>
@@ -2566,6 +2588,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Relative damage types: </p>
 
 </div>
 </div>
@@ -2667,6 +2690,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Legacy support: allow turret outfits with no turn rate to specify a default turnrate. </p>
 
 </div>
 </div>
@@ -2692,6 +2716,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >These values include all submunitions: Normal damage types: </p>
 
 </div>
 </div>
@@ -3003,6 +3028,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get assets used by this weapon. </p>
 
 </div>
 </div>
@@ -3073,6 +3099,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A pair representing the outfit that is consumed as ammo and the number of that outfit consumed upon fire. </p>
 
 </div>
 </div>
@@ -3205,6 +3232,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Cache the calculation of these values, for faster access. </p>
 
 </div>
 </div>
@@ -3579,6 +3607,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Fire, die and hit effects. </p>
 
 </div>
 </div>
@@ -4151,6 +4180,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A pair representing the distribution type of this weapon's inaccuracy and whether it is inverted </p>
 
 </div>
 </div>
@@ -4195,6 +4225,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Status effects: </p>
 
 </div>
 </div>
@@ -4283,6 +4314,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Guns and missiles are by default aimed a converged point at the maximum weapons range in front of the ship. When either the installed weapon or the gun-port (or both) have the isParallel attribute set to true, then this convergence will not be used and the weapon will be aimed directly in the gunport angle/direction. </p>
 
 </div>
 </div>
@@ -4371,6 +4403,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This stores whether or not the weapon has been loaded. </p>
 
 </div>
 </div>
@@ -4415,6 +4448,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Attributes. </p>
 
 </div>
 </div>
@@ -4525,6 +4559,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Use of an unsigned integer allows explicit penetration count values of 0 to result in a projectile that will hit 65k targets before being destroyed (which is effectively infinite under any reasonable balance). </p>
 
 </div>
 </div>
@@ -4811,6 +4846,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Relative damage types: </p>
 
 </div>
 </div>
@@ -4987,6 +5023,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Normal damage types: </p>
 
 </div>
 </div>
@@ -5075,6 +5112,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Sprites and sounds. </p>
 
 </div>
 </div>

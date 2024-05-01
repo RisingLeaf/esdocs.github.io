@@ -134,7 +134,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abd995090f30710111420f144ab3e018f"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="../../d2/d47/classConditionsStore_1_1DerivedProvider.html">DerivedProvider</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d08/classConditionsStore.html#abd995090f30710111420f144ab3e018f">providers</a></td></tr>
 <tr class="separator:abd995090f30710111420f144ab3e018f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class that contains storage for conditions. Those conditions can be set directly in internal storage of this class (primary conditions) and those conditions can also be provided from other locations in the code (derived conditions).</p>
+<p >The derived conditions are typically provided "on demand" from outside this storage class. Some of those derived conditions could be read-only and in a number of cases the conditions might be converted from other data types than int64_t (for example double, float or even complex formulae). </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a22bf7f8cadc5cf8566fc3e5b2dcaceed" name="a22bf7f8cadc5cf8566fc3e5b2dcaceed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22bf7f8cadc5cf8566fc3e5b2dcaceed">&#9670;&nbsp;</a></span>ConditionsStore() <span class="overload">[1/4]</span></h2>
 
@@ -157,6 +160,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Constructors to initialize this class. </p>
 
 </div>
 </div>
@@ -183,6 +187,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Constructor with loading primary conditions from datanode. </p>
 
 </div>
 </div>
@@ -264,6 +269,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a value to a condition, set a value for a condition or erase a condition completely. Returns true on success, false on failure.</p>
+<p >Add a value to a condition. Returns true on success, false on failure. </p>
 
 </div>
 </div>
@@ -281,6 +288,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Helper to completely remove all data and linked condition-providers from the store. </p>
 
 </div>
 </div>
@@ -299,6 +307,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Erase a condition completely, either the local value or by performing an erase on the provider. </p>
 
 </div>
 </div>
@@ -317,6 +326,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Retrieve a "condition" flag from this store (directly or from the connected provider).</p>
+<p >Get a condition from the Conditions-Store. Retrieves both conditions that were directly set (primary conditions) as well as conditions derived from other data-structures (derived conditions). </p>
 
 </div>
 </div>
@@ -343,6 +354,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Retrieve a condition entry based on a condition name, the entry doesn't get created if it doesn't exist yet (the <a class="el" href="../../d1/d5f/classSet.html">Set</a> function will handle creation if required). </p>
 
 </div>
 </div>
@@ -387,6 +399,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Build a provider for the condition identified by the given name. </p>
 
 </div>
 </div>
@@ -405,6 +418,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Builds providers for derived conditions based on prefix and name.</p>
+<p >Build a provider for a given prefix. </p>
 
 </div>
 </div>
@@ -441,6 +456,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns a pair where the boolean indicates if the game has this condition set, and an int64_t which contains the value if the condition was set. </p>
 
 </div>
 </div>
@@ -459,6 +475,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Serialization support for this class. </p>
 
 </div>
 </div>
@@ -477,6 +494,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Direct access to a specific condition (using the <a class="el" href="../../d6/dda/classConditionsStore_1_1ConditionEntry.html">ConditionEntry</a> as proxy). </p>
 
 </div>
 </div>
@@ -494,6 +512,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Helper for testing; check how many primary conditions are registered. </p>
 
 </div>
 </div>
@@ -540,6 +559,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> a value for a condition, either for the local value, or by performing a set on the provider. </p>
 
 </div>
 </div>
@@ -576,6 +596,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Helper function to check if we can safely add a provider with the given name. </p>
 
 </div>
 </div>
@@ -621,6 +642,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Storage for both the primary conditions as well as the providers. </p>
 
 </div>
 </div>

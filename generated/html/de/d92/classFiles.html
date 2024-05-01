@@ -128,7 +128,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d6daf4d5f5c6c02ea0b55dfd6cf2952"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d92/classFiles.html#a9d6daf4d5f5c6c02ea0b55dfd6cf2952">LogErrorToFile</a> (const std::string &amp;message)</td></tr>
 <tr class="separator:a9d6daf4d5f5c6c02ea0b55dfd6cf2952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p ><a class="el" href="../../db/d30/classFile.html">File</a> paths and file handling are different on each operating system. This class stores the path, on each operating system, to the game's resources - images, data files, etc. - and also to the "configuration" directory where saved games and other user-specific information can be stored. It also provides an interface for file operations so that the rest of the code can be completely platform-agnostic. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adb79fe3d8627481a45ccda1d23e795d5" name="adb79fe3d8627481a45ccda1d23e795d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb79fe3d8627481a45ccda1d23e795d5">&#9670;&nbsp;</a></span>Config()</h2>
 
@@ -151,6 +153,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The user-specific configuration directory, or whichever directory was passed on the command line via <code>--config</code> </p>
 
 </div>
 </div>
@@ -367,6 +370,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a list of all regular files in the given directory. </p>
 
 </div>
 </div>
@@ -393,6 +397,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a list of any directories in the given directory. </p>
 
 </div>
 </div>
@@ -419,6 +424,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Logging to the error-log. Actual calls should be done through <a class="el" href="../../db/d67/classLogger.html">Logger</a> and not directly here to ensure that other logging actions also happen (and to ensure thread safety on the logging). </p>
 
 </div>
 </div>
@@ -481,6 +487,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the filename from a path. </p>
 
 </div>
 </div>
@@ -517,6 +524,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../db/d30/classFile.html">File</a> IO. </p>
 
 </div>
 </div>
@@ -542,6 +550,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Open this user's plugins directory in their native file explorer. </p>
 
 </div>
 </div>
@@ -567,6 +576,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Open this user's save file directory in their native file explorer. </p>
 
 </div>
 </div>
@@ -645,6 +655,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get a list of all regular files in the given directory or any directory that it contains, recursively. </p>
 
 </div>
 </div>
@@ -706,6 +717,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The game's installation directory, or whichever directory was passed on the command line via <code>--resources</code> </p>
 
 </div>
 </div>

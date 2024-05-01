@@ -91,38 +91,34 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Class representing a shader, i.e. a compiled GLSL program that the GPU uses</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// in order to draw something. In modern GPL, everything is drawn with shaders.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// In general, rather than using this class directly, drawing code will use one</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// of the classes representing a particular shader.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d9/d69/classShader.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d69/classShader.html">Shader</a> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d9/d69/classShader.html#abde0183b819a53347dcc737f15af06f9">   29</a></span>    <a class="code hl_function" href="../../d9/d69/classShader.html#abde0183b819a53347dcc737f15af06f9">Shader</a>() noexcept = default;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="../../d9/d69/classShader.html">Shader</a>(const <span class="keywordtype">char</span> *vertex, const <span class="keywordtype">char</span> *fragment);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    GLuint <a class="code hl_function" href="../../d9/d69/classShader.html#a3e8e5396092499faa302a96cc5e03c83">Object</a>() const noexcept;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    GLint <a class="code hl_function" href="../../d9/d69/classShader.html#a36e33b01bf331039ffe3d3e9adebc694">Attrib</a>(const <span class="keywordtype">char</span> *name) const;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    GLint <a class="code hl_function" href="../../d9/d69/classShader.html#aa8933c4ddc79b0bd57b3045113b8c92d">Uniform</a>(const <span class="keywordtype">char</span> *name) const;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>private:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    GLuint <a class="code hl_function" href="../../d9/d69/classShader.html#a4d39fbc4443fbc0c2534c7cdb3cd4499">Compile</a>(const <span class="keywordtype">char</span> *str, GLenum type);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>private:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d9/d69/classShader.html#af036f983d35fe0f8f31dedc009b3645e">   42</a></span>    GLuint <a class="code hl_variable" href="../../d9/d69/classShader.html#af036f983d35fe0f8f31dedc009b3645e">program</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d9/d69/classShader.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d69/classShader.html">Shader</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d9/d69/classShader.html#abde0183b819a53347dcc737f15af06f9">   31</a></span>    <a class="code hl_function" href="../../d9/d69/classShader.html#abde0183b819a53347dcc737f15af06f9">Shader</a>() noexcept = default;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="../../d9/d69/classShader.html">Shader</a>(const <span class="keywordtype">char</span> *vertex, const <span class="keywordtype">char</span> *fragment);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    GLuint <a class="code hl_function" href="../../d9/d69/classShader.html#a3e8e5396092499faa302a96cc5e03c83">Object</a>() const noexcept;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    GLint <a class="code hl_function" href="../../d9/d69/classShader.html#a36e33b01bf331039ffe3d3e9adebc694">Attrib</a>(const <span class="keywordtype">char</span> *name) const;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    GLint <a class="code hl_function" href="../../d9/d69/classShader.html#aa8933c4ddc79b0bd57b3045113b8c92d">Uniform</a>(const <span class="keywordtype">char</span> *name) const;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>private:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    GLuint <a class="code hl_function" href="../../d9/d69/classShader.html#a4d39fbc4443fbc0c2534c7cdb3cd4499">Compile</a>(const <span class="keywordtype">char</span> *str, GLenum type);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>private:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d9/d69/classShader.html#af036f983d35fe0f8f31dedc009b3645e">   44</a></span>    GLuint <a class="code hl_variable" href="../../d9/d69/classShader.html#af036f983d35fe0f8f31dedc009b3645e">program</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdef"><b>Definition:</b> Shader.h:27</div></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdef"><b>Definition:</b> Shader.h:29</div></div>
 <div class="ttc" id="aclassShader_html_a36e33b01bf331039ffe3d3e9adebc694"><div class="ttname"><a href="../../d9/d69/classShader.html#a36e33b01bf331039ffe3d3e9adebc694">Shader::Attrib</a></div><div class="ttdeci">GLint Attrib(const char *name) const</div><div class="ttdef"><b>Definition:</b> Shader.cpp:71</div></div>
 <div class="ttc" id="aclassShader_html_a3e8e5396092499faa302a96cc5e03c83"><div class="ttname"><a href="../../d9/d69/classShader.html#a3e8e5396092499faa302a96cc5e03c83">Shader::Object</a></div><div class="ttdeci">GLuint Object() const noexcept</div><div class="ttdef"><b>Definition:</b> Shader.cpp:64</div></div>
 <div class="ttc" id="aclassShader_html_a4d39fbc4443fbc0c2534c7cdb3cd4499"><div class="ttname"><a href="../../d9/d69/classShader.html#a4d39fbc4443fbc0c2534c7cdb3cd4499">Shader::Compile</a></div><div class="ttdeci">GLuint Compile(const char *str, GLenum type)</div><div class="ttdef"><b>Definition:</b> Shader.cpp:93</div></div>
 <div class="ttc" id="aclassShader_html_aa8933c4ddc79b0bd57b3045113b8c92d"><div class="ttname"><a href="../../d9/d69/classShader.html#aa8933c4ddc79b0bd57b3045113b8c92d">Shader::Uniform</a></div><div class="ttdeci">GLint Uniform(const char *name) const</div><div class="ttdef"><b>Definition:</b> Shader.cpp:82</div></div>
 <div class="ttc" id="aclassShader_html_abde0183b819a53347dcc737f15af06f9"><div class="ttname"><a href="../../d9/d69/classShader.html#abde0183b819a53347dcc737f15af06f9">Shader::Shader</a></div><div class="ttdeci">Shader() noexcept=default</div></div>
-<div class="ttc" id="aclassShader_html_af036f983d35fe0f8f31dedc009b3645e"><div class="ttname"><a href="../../d9/d69/classShader.html#af036f983d35fe0f8f31dedc009b3645e">Shader::program</a></div><div class="ttdeci">GLuint program</div><div class="ttdef"><b>Definition:</b> Shader.h:42</div></div>
+<div class="ttc" id="aclassShader_html_af036f983d35fe0f8f31dedc009b3645e"><div class="ttname"><a href="../../d9/d69/classShader.html#af036f983d35fe0f8f31dedc009b3645e">Shader::program</a></div><div class="ttdeci">GLuint program</div><div class="ttdef"><b>Definition:</b> Shader.h:44</div></div>
 <div class="ttc" id="aopengl_8h_html"><div class="ttname"><a href="../../d5/d2a/opengl_8h.html">opengl.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

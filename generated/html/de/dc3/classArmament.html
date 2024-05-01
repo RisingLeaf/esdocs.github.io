@@ -120,7 +120,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a6804b95ceee192ae7d6974fd89086a5a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/dc1/classHardpoint.html">Hardpoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc3/classArmament.html#a6804b95ceee192ae7d6974fd89086a5a">hardpoints</a></td></tr>
 <tr class="separator:a6804b95ceee192ae7d6974fd89086a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class handles the logic for a ship's set of weapons. All weapons of the same type coordinate their fire with each other, either firing in clusters (if the projectiles are vulnerable to anti-missile) or in a "stream" where the guns take turns firing. Instead of firing straight, guns (that is, non- turreted weapons) fire aimed slightly inward in a convergence pattern so that even if the guns are spaced out horizontally on the ship, their projectiles will nearly meet at the end of their range. This class also handles turrets, which aim automatically and take into account the target's distance away and velocity relative to the ship that is firing. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5757b7e90214f0baf926bdd5b007bc5b" name="a5757b7e90214f0baf926bdd5b007bc5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5757b7e90214f0baf926bdd5b007bc5b">&#9670;&nbsp;</a></span>Add()</h2>
 
@@ -146,6 +148,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This must be called after all the outfit data is loaded. If you add more of a given weapon than there are slots for it, the extras will not fire. But, the "gun ports" attribute should keep that from happening. To remove a weapon, just pass a negative value here.</p>
+<p >This must be called after all the outfit data is loaded. If you add more of a given weapon than there are slots for it, the extras will not fire. But, the "gun ports" attribute should keep that from happening. </p>
 
 </div>
 </div>
@@ -192,6 +196,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a gun or turret hard-point.</p>
+<p >Add a gun hardpoint (fixed-direction weapon). </p>
 
 </div>
 </div>
@@ -226,6 +232,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add a turret hardpoint (omnidirectional weapon). </p>
 
 </div>
 </div>
@@ -244,6 +251,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Adjust the aim of the turrets. </p>
 
 </div>
 </div>
@@ -280,6 +288,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Check if the given hardpoint index is valid. Jam the hardpoint if it needs jammed. Returns false if the index is invalid or the hardpoint jammed. </p>
 
 </div>
 </div>
@@ -297,6 +306,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Call this once all the outfits have been loaded to make sure they are all set up properly (even the ones that were pre-assigned to a hardpoint). </p>
 
 </div>
 </div>
@@ -343,6 +353,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire the given weapon, if it is ready. If it did not fire because it is not ready, return false. </p>
 
 </div>
 </div>
@@ -389,6 +400,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire the given anti-missile system. </p>
 
 </div>
 </div>
@@ -435,6 +447,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire the given tractor beam. </p>
 
 </div>
 </div>
@@ -452,6 +465,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the array of weapon hardpoints. </p>
 
 </div>
 </div>
@@ -469,6 +483,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine how many fixed gun hardpoints are on this ship. </p>
 
 </div>
 </div>
@@ -486,6 +501,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Reload all weapons (because a day passed in-game). </p>
 
 </div>
 </div>
@@ -503,6 +519,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine the ammunition used by this armament that can be resupplied (i.e. is not self-uninstalling).</p>
+<p >Determine the installed weaponry's reusable ammunition. That is, all ammo outfits that are not also weapons (as then they would be installed on hardpoints, like the "Nuclear Missile" and other one-shots). </p>
 
 </div>
 </div>
@@ -521,6 +539,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Update the reload counters. </p>
 
 </div>
 </div>
@@ -549,6 +568,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Swap the weapons in the given two hardpoints. </p>
 
 </div>
 </div>
@@ -566,6 +586,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine how many turret hardpoints are on this ship. </p>
 
 </div>
 </div>
@@ -583,6 +604,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Uninstall all weapons (because the weapon outfits have potentially changed). </p>
 
 </div>
 </div>
@@ -628,6 +650,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Note: the <a class="el" href="../../de/dc3/classArmament.html">Armament</a> must be copied when an instance of a <a class="el" href="../../d2/d32/classShip.html">Ship</a> is made, so it should not hold any pointers specific to one ship (including to elements of this <a class="el" href="../../de/dc3/classArmament.html">Armament</a> itself). </p>
 
 </div>
 </div>

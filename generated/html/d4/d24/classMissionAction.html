@@ -143,7 +143,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a542b42c12d35b43e3874165e74667ed8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dcc/classGameAction.html">GameAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classMissionAction.html#a542b42c12d35b43e3874165e74667ed8">action</a></td></tr>
 <tr class="separator:a542b42c12d35b43e3874165e74667ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A <a class="el" href="../../d4/d24/classMissionAction.html">MissionAction</a> represents what happens when a <a class="el" href="../../da/d97/classMission.html">Mission</a> reaches a certain milestone, including offered, accepted, declined, completed, or failed. In addition to performing a <a class="el" href="../../dc/dcc/classGameAction.html">GameAction</a>, a <a class="el" href="../../d4/d24/classMissionAction.html">MissionAction</a> can gate the task on the ownership of specific outfits and also display dialogs or conversations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a77411f982a531818f3d480f6bb283977" name="a77411f982a531818f3d480f6bb283977"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77411f982a531818f3d480f6bb283977">&#9670;&nbsp;</a></span>MissionAction() <span class="overload">[1/2]</span></h2>
 
@@ -184,6 +186,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../d4/d24/classMissionAction.html#acdd8e26962ea07238eeb340632b2d7d4">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -213,6 +216,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this action can be completed right now. It cannot be completed if it takes away money or outfits that the player does not have, or should take place in a system that does not match the specified <a class="el" href="../../d8/da4/classLocationFilter.html">LocationFilter</a>.</p>
+<p >Check if this action can be completed right now. It cannot be completed if it takes away money or outfits that the player does not have. </p>
 
 </div>
 </div>
@@ -282,6 +287,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Perform this action. If a conversation is shown, the given destination will be highlighted in the map if you bring it up. </p>
 
 </div>
 </div>
@@ -322,6 +328,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >"Instantiate" this action by filling in the wildcard text for the actual destination, payment, cargo, etc.</p>
+<p >Convert this validated template into a populated action. </p>
 
 </div>
 </div>
@@ -401,6 +409,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this action requires this ship to exist in order to ever be completed. </p>
 
 </div>
 </div>
@@ -419,6 +428,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Note: the <a class="el" href="../../d4/d24/classMissionAction.html#afba81d7ca120987c571dc992a5ca9125">Save()</a> function can assume this is an instantiated mission, not a template, so it only has to save a subset of the data. </p>
 
 </div>
 </div>
@@ -454,6 +464,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Determine if this <a class="el" href="../../d4/d24/classMissionAction.html">MissionAction</a> references content that is not fully defined.</p>
+<p >Check this template or instantiated <a class="el" href="../../d4/d24/classMissionAction.html">MissionAction</a> to see if any used content is not fully defined (e.g. plugin removal, typos in names, etc.). </p>
 
 </div>
 </div>
@@ -477,6 +489,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Tasks this mission action performs, such as modifying accounts, inventory, or conditions. </p>
 
 </div>
 </div>
@@ -565,6 +578,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Outfits that are required to be owned (or not) for this action to be performable. </p>
 
 </div>
 </div>

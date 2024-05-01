@@ -841,7 +841,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d80/classBody.html#ab5d1367968ab9eb36708eef8155f3133">government</a> = nullptr</td></tr>
 <tr class="separator:ab5d1367968ab9eb36708eef8155f3133 inherit pro_attribs_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class representing a ship (either a model for sale or an instance of it). A ship's information can be saved to a file, so that it can later be read back in exactly the same state. The same class is used for the player's ship as for all other ships, so their capabilities are exactly the same within the limits of what the <a class="el" href="../../da/df5/classAI.html">AI</a> knows how to command them to do. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aec153efb16d1b68f20cc290d90e3fb69" name="aec153efb16d1b68f20cc290d90e3fb69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec153efb16d1b68f20cc290d90e3fb69">&#9670;&nbsp;</a></span>Ship() <span class="overload">[1/2]</span></h2>
 
@@ -864,6 +866,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Functions provided by the <a class="el" href="../../d7/d80/classBody.html">Body</a> base class: bool <a class="el" href="../../d7/d80/classBody.html#a753d9c8e0195a45ddf41fdbf1aa70a8f">HasSprite() const</a>; const <a class="el" href="../../d1/d6d/classSprite.html">Sprite</a> *GetSprite() const; int <a class="el" href="../../d7/d80/classBody.html#a01ca0ff7407a175a8f2de3af8a27eb1f">Width() const</a>; int <a class="el" href="../../d7/d80/classBody.html#ab2f10e7b45679ffcf38830ec45783450">Height() const</a>; int <a class="el" href="../../d7/d80/classBody.html#ac90d633e8d9d2547fbb1b7eaae84f5c7">GetSwizzle() const</a>; Frame GetFrame(int step = -1) const; const <a class="el" href="../../d9/de9/classMask.html">Mask</a> &amp;GetMask(int step = -1) const; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#aaef9972906c8b24360cc578d05fb1dfa">Position() const</a>; const <a class="el" href="../../dc/d4f/classPoint.html">Point</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a1a877a4915f3ecf19df065536b06532d">Velocity() const</a>; const <a class="el" href="../../d9/d80/classAngle.html">Angle</a> &amp;<a class="el" href="../../d7/d80/classBody.html#a637115748ef7a544e7b4574f955e42e5">Facing() const</a>; <a class="el" href="../../dc/d4f/classPoint.html">Point</a> <a class="el" href="../../d7/d80/classBody.html#aa59695adb1600a5fa35b4e8da023de51">Unit() const</a>; double <a class="el" href="../../d7/d80/classBody.html#a78716498ff21e1694faf1ec217aa4f0b">Zoom() const</a>; const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *GetGovernment() const; </p>
 
 </div>
 </div>
@@ -882,6 +885,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Construct and <a class="el" href="../../d2/d32/classShip.html#a2564eb1ecd15ee3c68c438c4f1e2883b">Load()</a> at the same time. </p>
 
 </div>
 </div>
@@ -944,6 +948,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add or remove a ship from this ship's list of escorts.</p>
+<p >Add escorts to this ship. Escorts look to the parent ship for movement cues and try to stay with it when it lands or goes into hyperspace. </p>
 
 </div>
 </div>
@@ -972,6 +978,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Add or remove outfits. (To remove, pass a negative number.) </p>
 
 </div>
 </div>
@@ -1000,6 +1007,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Apply a force to this ship, accelerating it. This might be from a weapon impact, or from firing a weapon, for example. </p>
 
 </div>
 </div>
@@ -1017,6 +1025,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the attraction and deterrence of this ship, for pirate raids. This is only useful for the player's ships. </p>
 
 </div>
 </div>
@@ -1034,6 +1043,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the current attributes of this ship. </p>
 
 </div>
 </div>
@@ -1051,6 +1061,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the attributes of this ship chassis before any outfits were added. </p>
 
 </div>
 </div>
@@ -1068,6 +1079,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a list of any ships this ship is carrying. </p>
 
 </div>
 </div>
@@ -1086,6 +1098,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check how many bays are not occupied at present. This does not check whether one of your escorts plans to use that bay. </p>
 
 </div>
 </div>
@@ -1104,6 +1117,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check how many bays this ship has of a given category. </p>
 
 </div>
 </div>
@@ -1132,6 +1146,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is boarding another ship. If it is, it either plunders it or, if this is a player ship, returns the ship it is plundering so a plunder dialog can be displayed.</p>
+<p >Check if this ship is boarding another ship. </p>
 
 </div>
 </div>
@@ -1157,6 +1173,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Calculate the attraction and deterrence of this ship, for pirate raids. This is only useful for the player's ships. </p>
 
 </div>
 </div>
@@ -1199,6 +1216,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this is a ship of a type that can be carried. </p>
 
 </div>
 </div>
@@ -1216,6 +1234,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this is a ship that can be used as a flagship. </p>
 
 </div>
 </div>
@@ -1234,6 +1253,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship has a bay free for the given other ship, and the bay is not reserved for one of its existing escorts.</p>
+<p >Check if this ship has a bay free for the given ship, and the bay is not reserved for one of its existing escorts. </p>
 
 </div>
 </div>
@@ -1252,6 +1273,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if we are able to fire the given weapon (i.e. there is enough energy, ammo, and fuel to fire it). </p>
 
 </div>
 </div>
@@ -1269,6 +1291,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is currently able to begin landing on its target. </p>
 
 </div>
 </div>
@@ -1286,6 +1309,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if some condition is keeping this ship from acting. (That is, it is landing, hyperspacing, cloaking, disabled, or under-crewed.) </p>
 
 </div>
 </div>
@@ -1322,6 +1346,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is able to give the given ship enough fuel to jump. </p>
 
 </div>
 </div>
@@ -1367,6 +1392,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get cargo information. </p>
 
 </div>
 </div>
@@ -1401,6 +1427,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out what fraction of the scan is complete. </p>
 
 </div>
 </div>
@@ -1419,6 +1446,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Move the given ship into one of the bays, if possible. </p>
 
 </div>
 </div>
@@ -1436,6 +1464,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the cost of this ship's chassis, with no outfits installed. </p>
 
 </div>
 </div>
@@ -1453,6 +1482,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Clear all orders and targets this ship has (after capture or transfer of control). </p>
 
 </div>
 </div>
@@ -1470,6 +1500,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the degree to which this ship is cloaked. 1 means invisible and impossible to hit or target; 0 means fully visible. </p>
 
 </div>
 </div>
@@ -1504,6 +1535,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the multiplier for cooling efficiency. </p>
 
 </div>
 </div>
@@ -1521,6 +1553,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this ship's cost. </p>
 
 </div>
 </div>
@@ -1557,6 +1590,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Create one of this ship's explosions, within its mask. The explosions can either stay over the ship, or spread out if this is the final explosion. </p>
 
 </div>
 </div>
@@ -1641,6 +1675,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Place a "spark" effect, like ionization or disruption. </p>
 
 </div>
 </div>
@@ -1658,6 +1693,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access how many crew members this ship has or needs. </p>
 
 </div>
 </div>
@@ -1675,6 +1711,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the reputational value of this ship's crew, which depends on its crew size and "crew equivalent" attribute. </p>
 
 </div>
 </div>
@@ -1692,6 +1729,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this ship's custom swizzle. </p>
 
 </div>
 </div>
@@ -1709,6 +1747,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Returns the remaining damage timer, for the damage overlay. </p>
 
 </div>
 </div>
@@ -1726,6 +1765,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this ship's description. </p>
 
 </div>
 </div>
@@ -1743,6 +1783,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark a ship as destroyed. </p>
 
 </div>
 </div>
@@ -1777,6 +1818,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Make a ship disabled or destroyed, or bring back a destroyed ship.</p>
+<p >Reduce a ship's hull to low enough to disable it. This is so a ship can be created as a derelict. </p>
 
 </div>
 </div>
@@ -1794,6 +1837,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the hull fraction at which this ship is disabled. </p>
 
 </div>
 </div>
@@ -1828,6 +1872,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get how disrupted this ship's shields are. </p>
 
 </div>
 </div>
@@ -1889,6 +1934,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Finally, move the ship and create any movement visuals. </p>
 
 </div>
 </div>
@@ -1914,6 +1960,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Generate energy, heat, etc. (This is called by <a class="el" href="../../d2/d32/classShip.html#ab2f949c602673f7c2a243fe500ecd372">Move()</a>.) </p>
 
 </div>
 </div>
@@ -1940,6 +1987,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Step hyperspace enter/exit logic. Returns true if ship is hyperspacing in or out. </p>
 
 </div>
 </div>
@@ -2016,6 +2064,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Step landing logic. Returns true if the ship is landing or departing. </p>
 
 </div>
 </div>
@@ -2042,6 +2091,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This ship is not landing or entering hyperspace. So, move it. If it is disabled, all it can do is slow down to a stop. </p>
 
 </div>
 </div>
@@ -2095,6 +2145,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the drag on this ship. The drag can be no greater than the mass. </p>
 
 </div>
 </div>
@@ -2112,6 +2163,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Calculate the drag force that this ship experiences. The drag force is the drag divided by the mass, up to a value of 1. </p>
 
 </div>
 </div>
@@ -2146,6 +2198,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the points from which engine flares should be drawn. </p>
 
 </div>
 </div>
@@ -2164,6 +2217,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire the given weapon (i.e. deduct whatever energy, ammo, or fuel it uses and add whatever heat it generates). Assume that <a class="el" href="../../d2/d32/classShip.html#acd757bcf77c1b37061dacc960aa3faa5">CanFire()</a> is true.</p>
+<p >Fire the given weapon (i.e. deduct whatever energy, ammo, hull, shields or fuel it uses and add whatever heat it generates). Assume that <a class="el" href="../../d2/d32/classShip.html#acd757bcf77c1b37061dacc960aa3faa5">CanFire()</a> is true. </p>
 
 </div>
 </div>
@@ -2182,6 +2237,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >When loading a ship, some of the outfits it lists may not have been loaded yet. So, wait until everything has been loaded, then call this. </p>
 
 </div>
 </div>
@@ -2210,6 +2266,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire any primary or secondary weapons that are ready to fire. Determines if any special weapons (e.g. anti-missile, tractor beam) are ready to fire. The firing of special weapons is handled separately. </p>
 
 </div>
 </div>
@@ -2238,6 +2295,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire an anti-missile at the given missile. Returns true if the missile was killed.</p>
+<p >Fire an anti-missile. </p>
 
 </div>
 </div>
@@ -2266,6 +2325,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Fire tractor beams at the given flotsam. Returns a <a class="el" href="../../dc/d4f/classPoint.html">Point</a> representing the net pull on the flotsam from this ship's tractor beams. </p>
 
 </div>
 </div>
@@ -2308,6 +2368,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is configured in such a way that it would be difficult or impossible to fly. </p>
 
 </div>
 </div>
@@ -2342,6 +2403,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the system this ship is in. If being carried, gets the parent's system. </p>
 
 </div>
 </div>
@@ -2359,6 +2421,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the ship's <a class="el" href="../../da/df5/classAI.html">AI</a> cache, containing the range and expected <a class="el" href="../../da/df5/classAI.html">AI</a> behavior for this ship. </p>
 
 </div>
 </div>
@@ -2376,6 +2439,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of weapons. </p>
 
 </div>
 </div>
@@ -2428,6 +2492,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get a random hail message, or set the object used to generate them. If no object is given the government's default will be used. </p>
 
 </div>
 </div>
@@ -2462,6 +2527,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >How many <a class="el" href="../../da/df5/classAI.html">AI</a> steps has this ship been lingering? </p>
 
 </div>
 </div>
@@ -2496,6 +2562,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Access the ship's personality, which affects how the <a class="el" href="../../da/df5/classAI.html">AI</a> behaves. </p>
 
 </div>
 </div>
@@ -2513,6 +2580,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If the ship is landed, get the planet it has landed on. </p>
 
 </div>
 </div>
@@ -2547,6 +2615,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the system this ship is in. <a class="el" href="../../d1/d5f/classSet.html">Set</a> to nullptr if the ship is being carried. </p>
 
 </div>
 </div>
@@ -2564,6 +2633,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mining target. </p>
 
 </div>
 </div>
@@ -2598,6 +2668,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Each ship can have a target system (to travel to), a target planet (to land on) and a target ship (to move to, and attack if hostile). </p>
 
 </div>
 </div>
@@ -2632,6 +2703,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get ship's target system (it should always be one jump / wormhole pass away). </p>
 
 </div>
 </div>
@@ -2666,6 +2738,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Return true if any anti-missile or tractor beam systems are ready to fire. </p>
 
 </div>
 </div>
@@ -2683,6 +2756,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship has bays to carry other ships. </p>
 
 </div>
 </div>
@@ -2734,6 +2808,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the ship's "health," where &lt;=0 is disabled and 1 means full health. </p>
 
 </div>
 </div>
@@ -2751,6 +2826,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >A ship's heat is generally between 0 and 1, but if it receives heat damage the value can increase above 1.</p>
+<p >Allow returning a heat value greater than 1 (i.e. conveying how overheated this ship has become). </p>
 
 </div>
 </div>
@@ -2768,6 +2845,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the heat dissipation, in heat units per heat unit per frame. </p>
 
 </div>
 </div>
@@ -2802,6 +2880,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the (absolute) amount of hull that needs to be damaged until the ship becomes disabled. Returns 0 if the ships hull is already below the disabled threshold. </p>
 
 </div>
 </div>
@@ -2819,6 +2898,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the heat level at idle. </p>
 
 </div>
 </div>
@@ -2836,6 +2916,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d7/d10/classAccount.html">Account</a> for inertia reduction, which affects movement but has no effect on the ship's heat capacity. </p>
 
 </div>
 </div>
@@ -2870,6 +2951,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check the status of this ship. </p>
 
 </div>
 </div>
@@ -2904,6 +2986,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship has been destroyed. </p>
 
 </div>
 </div>
@@ -2938,6 +3021,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is entering (rather than leaving) hyperspace. </p>
 
 </div>
 </div>
@@ -2972,6 +3056,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is entering or leaving hyperspace. </p>
 
 </div>
 </div>
@@ -3041,6 +3126,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is currently able to enter hyperspace to it target.</p>
+<p >Check if this ship is currently able to enter hyperspace to its target. </p>
 
 </div>
 </div>
@@ -3059,6 +3146,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is allowed to land on this planet, accounting for its personality. </p>
 
 </div>
 </div>
@@ -3077,6 +3165,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is allowed to enter this system, accounting for its personality. </p>
 
 </div>
 </div>
@@ -3162,6 +3251,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if the ship is thrusting. If so, the engine sound should be played. </p>
 
 </div>
 </div>
@@ -3179,6 +3269,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check if this ship is hyperspacing, specifically via a jump drive. </p>
 
 </div>
 </div>
@@ -3196,6 +3287,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Check that this ship model and all its outfits have been loaded.</p>
+<p >Check if this ship (model) and its outfits have been defined. </p>
 
 </div>
 </div>
@@ -3281,6 +3374,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Display box effects from jettisoning this much cargo. </p>
 
 </div>
 </div>
@@ -3298,6 +3392,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the amount of fuel missing for the next jump (smart refueling) </p>
 
 </div>
 </div>
@@ -3315,6 +3410,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this ship's jump navigation, which contains information about how much it costs for this ship to jump, how far it can jump, and its possible jump methods. </p>
 
 </div>
 </div>
@@ -3333,6 +3429,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the number of jumps this ship can make before running out of fuel. This depends on how much fuel it has and what sort of hyperdrive it uses. This does not show accurate number of jumps remaining beyond 1. If followParent is false, this ship will not follow the parent. </p>
 
 </div>
 </div>
@@ -3361,6 +3458,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Launch any ships that are ready to launch. </p>
 
 </div>
 </div>
@@ -3378,6 +3476,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The <a class="el" href="../../da/df5/classAI.html">AI</a> wants the ship to linger for one <a class="el" href="../../da/df5/classAI.html">AI</a> step. </p>
 
 </div>
 </div>
@@ -3396,6 +3495,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Load data for a type of ship: </p>
 
 </div>
 </div>
@@ -3413,6 +3513,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get this ship's movement characteristics. </p>
 
 </div>
 </div>
@@ -3447,6 +3548,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the maximum heat level, in heat units (not temperature). </p>
 
 </div>
 </div>
@@ -3481,6 +3583,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the maximum shield and hull values of the ship, accounting for multipliers. </p>
 
 </div>
 </div>
@@ -3523,6 +3626,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get the hull amount at which this ship is disabled. </p>
 
 </div>
 </div>
@@ -3551,6 +3655,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Move this ship. A ship may create effects as it moves, in particular if it is in the process of blowing up.</p>
+<p >Move this ship. A ship may create effects as it moves, in particular if it is in the process of blowing up. If this returns false, the ship should be deleted. </p>
 
 </div>
 </div>
@@ -3568,6 +3674,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of this particular ship. </p>
 
 </div>
 </div>
@@ -3603,6 +3710,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the generic noun (e.g. "ship") to be used when describing this ship. </p>
 
 </div>
 </div>
@@ -3621,6 +3729,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Find out how many outfits of the given type this ship contains. </p>
 
 </div>
 </div>
@@ -3638,6 +3747,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the list of all outfits installed in this ship.</p>
+<p >Get outfit information. </p>
 
 </div>
 </div>
@@ -3695,6 +3806,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >When creating a new ship, you must set the following:</p>
+<p >Instantiate a newly-created ship in-flight. </p>
 
 </div>
 </div>
@@ -3729,6 +3842,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Adjust the positions and velocities of any visible carried fighters or drones. If any are visible, return true. </p>
 
 </div>
 </div>
@@ -3757,6 +3871,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Recharge and repair this ship (e.g. because it has landed). </p>
 
 </div>
 </div>
@@ -3869,6 +3984,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Save a full description of this ship, as currently configured. </p>
 
 </div>
 </div>
@@ -3887,6 +4003,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Scan the target, if able and commanded to. Return a <a class="el" href="../../dd/d37/classShipEvent.html">ShipEvent</a> bitmask giving the types of scan that succeeded. </p>
 
 </div>
 </div>
@@ -3904,6 +4021,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Trigger the death of this ship. </p>
 
 </div>
 </div>
@@ -3922,6 +4040,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the commands for this ship to follow this timestep. </p>
 
 </div>
 </div>
@@ -3958,6 +4077,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The player can selectively deploy their carried ships, rather than just all / none. </p>
 
 </div>
 </div>
@@ -3976,6 +4096,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark this ship as fleeing. </p>
 
 </div>
 </div>
@@ -4030,6 +4151,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >A parked ship stays on a planet and requires no daily salary payments. </p>
 
 </div>
 </div>
@@ -4066,6 +4188,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >If a ship belongs to the player, the player can give it commands. </p>
 
 </div>
 </div>
@@ -4084,6 +4207,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the name of this particular ship. </p>
 
 </div>
 </div>
@@ -4102,6 +4226,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Manage escorts. When you set this ship's parent, it will automatically register itself as an escort of that ship, and unregister itself from any previous parent it had. </p>
 
 </div>
 </div>
@@ -4192,6 +4317,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> which system this ship is in. </p>
 
 </div>
 </div>
@@ -4210,6 +4336,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mining target. </p>
 
 </div>
 </div>
@@ -4246,6 +4373,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> this ship's targets. </p>
 
 </div>
 </div>
@@ -4282,6 +4410,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> ship's target system (it should always be one jump / wormhole pass away). </p>
 
 </div>
 </div>
@@ -4300,6 +4429,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> / Get the name of this model of ship.</p>
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> / Get the name of this class of ships, e.g. "Marauder Raven." </p>
 
 </div>
 </div>
@@ -4318,6 +4449,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Explicitly set this ship's ID. </p>
 
 </div>
 </div>
@@ -4335,6 +4467,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the actual shield level of the ship. </p>
 
 </div>
 </div>
@@ -4352,6 +4485,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get characteristics of this ship, as a fraction between 0 and 1. </p>
 
 </div>
 </div>
@@ -4369,6 +4503,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The direction that the ship is steering. If positive, the ship is steering right. If negative, the ship is steering left. </p>
 
 </div>
 </div>
@@ -4422,6 +4557,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Step ship destruction logic. Returns 1 if the ship has been destroyed, -1 if it is being destroyed, or 0 otherwise. </p>
 
 </div>
 </div>
@@ -4447,6 +4583,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Various steps of <a class="el" href="../../d2/d32/classShip.html#ab2f949c602673f7c2a243fe500ecd372">Ship::Move</a>: Check if this ship has been in a different system from the player for so long that it should be "forgotten." Also eliminate ships that have no system set because they just entered a fighter bay. Clear the hyperspace targets of ships that can't enter hyperspace.</p>
+<p >Check if this ship has been in a different system from the player for so long that it should be "forgotten." Also eliminate ships that have no system set because they just entered a fighter bay. Clear the hyperspace targets of ships that can't enter hyperspace. </p>
 
 </div>
 </div>
@@ -4548,6 +4686,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This ship just got hit by a weapon. Take damage according to the <a class="el" href="../../d6/d89/classDamageDealt.html">DamageDealt</a> from that weapon. The return value is a <a class="el" href="../../dd/d37/classShipEvent.html">ShipEvent</a> type, which may be a combination of PROVOKED, DISABLED, and DESTROYED. Create any target effects as sparks. </p>
 
 </div>
 </div>
@@ -4565,6 +4704,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the shipyard thumbnail for this ship. </p>
 
 </div>
 </div>
@@ -4593,6 +4733,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Give the other ship enough fuel for it to jump. </p>
 
 </div>
 </div>
@@ -4644,6 +4785,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Empty the bays. If the carried ships are not special ships that are saved in the player data, they will be deleted. Otherwise, they become visible as ships landed on the same planet as their parent. </p>
 
 </div>
 </div>
@@ -4703,6 +4845,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Get the name of this ship as a variant. </p>
 
 </div>
 </div>
@@ -4721,6 +4864,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Mark this ship as property of the given ship. Returns the number of crew transferred from the capturer.</p>
+<p >Convert this ship from one government to another, as a result of boarding actions (if the player is capturing) or player death (poor decision-making). Returns the number of crew transferred from the capturer. </p>
 
 </div>
 </div>
@@ -4761,6 +4906,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Acceleration can be created by engines, firing weapons, or weapon impacts. </p>
 
 </div>
 </div>
@@ -4849,6 +4995,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Cached values for figuring out when anti-missiles or tractor beams are in range. </p>
 
 </div>
 </div>
@@ -4915,6 +5062,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Installed outfits, cargo, etc.: </p>
 
 </div>
 </div>
@@ -5003,6 +5151,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "burn damage" that will affect this ship's heat over time. </p>
 
 </div>
 </div>
@@ -5069,6 +5218,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Cargo and outfit scanning takes time. </p>
 
 </div>
 </div>
@@ -5091,6 +5241,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Cache the mass of carried ships to avoid repeatedly recomputing it. </p>
 
 </div>
 </div>
@@ -5179,6 +5330,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "corrosion damage" that will affect this ship's hull over time. </p>
 
 </div>
 </div>
@@ -5223,6 +5375,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Current status of this particular ship: </p>
 
 </div>
 </div>
@@ -5267,6 +5420,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Number of frames the damage overlay should be displayed, if any. </p>
 
 </div>
 </div>
@@ -5333,6 +5487,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "discharge damage" that will affect this ship's shields over time. </p>
 
 </div>
 </div>
@@ -5377,6 +5532,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "disruption damage" that will affect this ship's shield effectiveness over time. </p>
 
 </div>
 </div>
@@ -5443,6 +5599,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Links between escorts and parents. </p>
 
 </div>
 </div>
@@ -5487,6 +5644,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Explosions that happen when the ship is dying: </p>
 
 </div>
 </div>
@@ -5861,6 +6019,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "ion damage" that will affect this ship's energy over time. </p>
 
 </div>
 </div>
@@ -5927,6 +6086,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Protected member variables of the <a class="el" href="../../d7/d80/classBody.html">Body</a> class: <a class="el" href="../../dc/d4f/classPoint.html">Point</a> position; <a class="el" href="../../dc/d4f/classPoint.html">Point</a> velocity; <a class="el" href="../../d9/d80/classAngle.html">Angle</a> angle; double zoom; int swizzle; const <a class="el" href="../../d4/dad/classGovernment.html">Government</a> *government; Characteristics of the chassis: </p>
 
 </div>
 </div>
@@ -6103,6 +6263,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >"Special" ships cannot be forgotten, and if they land on a planet, they continue to exist and refuel instead of being deleted. </p>
 
 </div>
 </div>
@@ -6235,6 +6396,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >A <a class="el" href="../../d2/d32/classShip.html">Ship</a> can be locked into one of three special states: landing, hyperspacing, and exploding. Each one must track some special counters: </p>
 
 </div>
 </div>
@@ -6257,6 +6419,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "leak damage" that will affect this ship's fuel over time. </p>
 
 </div>
 </div>
@@ -6301,6 +6464,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Number of <a class="el" href="../../da/df5/classAI.html">AI</a> steps this ship has spent lingering </p>
 
 </div>
 </div>
@@ -6609,6 +6773,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "scrambling damage" that will affect this ship's weaponry over time. </p>
 
 </div>
 </div>
@@ -6631,6 +6796,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Delays for shield generation and hull repair. </p>
 
 </div>
 </div>
@@ -6653,6 +6819,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Various energy levels: </p>
 
 </div>
 </div>
@@ -6719,6 +6886,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Accrued "slowing damage" that will affect this ship's movement over time. </p>
 
 </div>
 </div>
@@ -6851,6 +7019,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Target ships, planets, systems, etc. </p>
 
 </div>
 </div>
@@ -6983,6 +7152,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Characteristics of this particular ship: </p>
 
 </div>
 </div>

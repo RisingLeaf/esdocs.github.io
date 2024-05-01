@@ -116,7 +116,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ab7686117f7a6701d633451b59c7ac80e"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7f/classImageBuffer.html#ab7686117f7a6701d633451b59c7ac80e">pixels</a></td></tr>
 <tr class="separator:ab7686117f7a6701d633451b59c7ac80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This class stores the raw pixel data from an image, and handles reading that image from disk (so that multiple images can be read and decoded at the same time in different threads). It also handles converting images to premultiplied alpha or additive or half-additive color mixing mode depending on the file name, so that content creators do not have to save the images in some sort of special format. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a544a935ef035475f6c30c957403fb627" name="a544a935ef035475f6c30c957403fb627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a544a935ef035475f6c30c957403fb627">&#9670;&nbsp;</a></span>ImageBuffer() <span class="overload">[1/2]</span></h2>
 
@@ -132,6 +134,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >When initializing a buffer, we know the number of frames but not the size of them. So, it must be <a class="el" href="../../d0/d7f/classImageBuffer.html#a3fb91a4c65970282e1b2b935245d786a">Allocate()</a>d later. </p>
 
 </div>
 </div>
@@ -204,6 +207,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Allocate the internal buffer. This must only be called once for each image buffer; subsequent calls will be ignored. </p>
 
 </div>
 </div>
@@ -278,6 +282,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the number of frames. This must be called before allocating. </p>
 
 </div>
 </div>
@@ -400,6 +405,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Read a single frame. Return false if an error is encountered - either the image is the wrong size, or it is not a supported image format. </p>
 
 </div>
 </div>

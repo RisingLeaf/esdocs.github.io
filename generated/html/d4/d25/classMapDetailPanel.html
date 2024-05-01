@@ -400,7 +400,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6e4fb141eb1fda665fad1517f3259ee1 inherit pro_attribs_classMapPanel"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dab/classMapPanel.html#a6e4fb141eb1fda665fad1517f3259ee1">selectedSystemOffset</a> = 0</td></tr>
 <tr class="separator:a6e4fb141eb1fda665fad1517f3259ee1 inherit pro_attribs_classMapPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A panel that displays the galaxy star map, with options for color-coding the stars based on attitude towards the player, government, or commodity price. This panel also lets you view what planets are in each system, and you can click on a planet to view its description. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af8e60fea3bb7043e2a3f40eedcc186cc" name="af8e60fea3bb7043e2a3f40eedcc186cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8e60fea3bb7043e2a3f40eedcc186cc">&#9670;&nbsp;</a></span>MapDetailPanel() <span class="overload">[1/2]</span></h2>
 
@@ -503,6 +505,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle single &amp; double-clicks on commodities, planet information, or objects in the "orbits" display. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#aa2afd0333f6edce9bc3b0f16a41b919e">MapPanel</a>.</p>
 
@@ -568,6 +571,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw this panel. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#a2b02d0c0b96d247bc0040d2e43c7d988">MapPanel</a>.</p>
 
@@ -595,6 +599,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw the various information displays: system name &amp; government, planetary details, trade prices, and details about the selected object. </p>
 
 </div>
 </div>
@@ -620,6 +625,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw the legend, correlating between a system's color and the value of the selected "commodity," which may be reputation level, outfitter size, etc. </p>
 
 </div>
 </div>
@@ -645,6 +651,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Draw the planet orbits in the currently selected system, on the current day. </p>
 
 </div>
 </div>
@@ -732,6 +739,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >If the mouse has moved near a known system that contains escorts, track the dwell time. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#a66a5c469eb546c9450dee83903b6b0f2">MapPanel</a>.</p>
 
@@ -782,6 +790,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Only override the ones you need; the default action is to return false. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#a7107fe2866dbc8361717d5f2986b4239">MapPanel</a>.</p>
 
@@ -845,6 +854,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Handle right-clicks within the "orbits" display. </p>
 
 <p>Reimplemented from <a class="el" href="../../d8/d54/classPanel.html#a607b17b92dda6b8a3c40af438fb12b6d">Panel</a>.</p>
 
@@ -883,6 +893,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Navigates through the shown planets panel, and drags them around. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#a4d935204fe2a1c6e07376fd7a5bcd520">MapPanel</a>.</p>
 
@@ -911,6 +922,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the commodity coloring, and update the player info as well. </p>
 
 </div>
 </div>
@@ -937,6 +949,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="../../d1/d5f/classSet.html">Set</a> the scroll, and make sure it does not become a negative value. </p>
 
 </div>
 </div>
@@ -962,6 +975,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Move the state of this panel forward one game step. </p>
 
 <p>Reimplemented from <a class="el" href="../../d3/dab/classMapPanel.html#aaafa66729ad1e3ee9425565921c79708">MapPanel</a>.</p>
 
@@ -1009,6 +1023,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Which panel is being hovered over and should be affected by up and down keys. </p>
 
 </div>
 </div>
@@ -1031,6 +1046,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Maximum scrolling possible with the current amount of planets being displayed. </p>
 
 </div>
 </div>
@@ -1097,6 +1113,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Vector offsets from the center of the "orbits" <a class="el" href="../../d9/dcf/classUI.html">UI</a>. </p>
 
 </div>
 </div>
@@ -1119,6 +1136,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Default display scaling for orbits within the currently displayed system. </p>
 
 </div>
 </div>
@@ -1163,6 +1181,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >The system currently displayed, it should be the same as the system selected at all times. </p>
 
 </div>
 </div>
