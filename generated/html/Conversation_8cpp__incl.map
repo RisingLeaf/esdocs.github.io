@@ -1,0 +1,34 @@
+<map id="source/Conversation.cpp" name="source/Conversation.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="774,5,957,32"/>
+<area shape="rect" id="node2" href="$Conversation_8h.html" title=" " alt="" coords="969,80,1089,107"/>
+<area shape="rect" id="node16" href="$DataNode_8h.html" title=" " alt="" coords="264,229,363,256"/>
+<area shape="rect" id="node18" href="$DataWriter_8h.html" title=" " alt="" coords="1629,229,1733,256"/>
+<area shape="rect" id="node21" href="$Format_8h.html" title=" " alt="" coords="601,229,711,256"/>
+<area shape="rect" id="node22" href="$Phrase_8h.html" title=" " alt="" coords="1339,80,1418,107"/>
+<area shape="rect" id="node30" href="$Sprite_8h.html" title=" " alt="" coords="5,229,77,256"/>
+<area shape="rect" id="node32" href="$SpriteSet_8h.html" title=" " alt="" coords="888,229,981,256"/>
+<area shape="rect" id="node3" href="$ConditionSet_8h.html" title=" " alt="" coords="1005,229,1123,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1185,304,1236,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="771,304,829,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1374,304,1437,331"/>
+<area shape="rect" id="node9" href="$ConditionsStore_8h.html" title=" " alt="" coords="387,229,525,256"/>
+<area shape="rect" id="node12" href="$GameAction_8h.html" title=" " alt="" coords="1103,155,1217,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1545,229,1605,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="213,304,280,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1043,304,1085,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="527,304,614,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="393,304,503,331"/>
+<area shape="rect" id="node13" href="$ShipManager_8h.html" title=" " alt="" coords="1249,229,1367,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1269,304,1347,331"/>
+<area shape="rect" id="node17" title=" " alt="" coords="304,304,347,331"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1587,304,1672,331"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1696,304,1771,331"/>
+<area shape="rect" id="node23" href="$WeightedList_8h.html" title=" " alt="" coords="1841,155,1959,181"/>
+<area shape="rect" id="node24" href="$Random_8h.html" title=" " alt="" coords="152,229,240,256"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2135,229,2206,256"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2230,229,2301,256"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1757,229,1832,256"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1857,229,1943,256"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1967,229,2059,256"/>
+<area shape="rect" id="node31" href="$Point_8h.html" title=" " alt="" coords="8,304,75,331"/>
+</map>

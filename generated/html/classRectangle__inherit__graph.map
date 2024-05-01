@@ -1,0 +1,7 @@
+<map id="Rectangle" name="Rectangle">
+<area shape="rect" id="node1" title=" " alt="" coords="254,5,341,32"/>
+<area shape="rect" id="node2" href="$classClickZone.html" title=" " alt="" coords="5,80,200,107"/>
+<area shape="rect" id="node4" href="$classClickZone.html" title=" " alt="" coords="224,80,371,107"/>
+<area shape="rect" id="node5" href="$classPanel_1_1Zone.html" title=" " alt="" coords="395,80,493,107"/>
+<area shape="rect" id="node3" href="$classShopPanel_1_1Zone.html" title=" " alt="" coords="37,155,168,181"/>
+</map>

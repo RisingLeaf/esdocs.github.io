@@ -1,0 +1,52 @@
+<map id="ShipInfoPanel" name="ShipInfoPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="3191,421,3301,448"/>
+<area shape="rect" id="node2" href="$classPanel.html" title=" " alt="" coords="2981,7,3039,33"/>
+<area shape="rect" id="node3" href="$classUI.html" title=" " alt="" coords="2795,7,2834,33"/>
+<area shape="rect" id="node4" href="$classPlayerInfo.html" title=" " alt="" coords="2771,423,2859,449"/>
+<area shape="rect" id="node50" href="$classInfoPanelState.html" title=" " alt="" coords="2952,395,3068,421"/>
+<area shape="rect" id="node5" href="$classDate.html" title=" " alt="" coords="2185,335,2238,361"/>
+<area shape="rect" id="node25" href="$classMission.html" title=" " alt="" coords="2471,704,2543,731"/>
+<area shape="rect" id="node45" href="$classCoreStartData.html" title=" " alt="" coords="2449,169,2564,196"/>
+<area shape="rect" id="node6" href="$classSystem.html" title=" " alt="" coords="1183,351,1254,377"/>
+<area shape="rect" id="node10" href="$classLocationFilter.html" title=" " alt="" coords="446,619,557,645"/>
+<area shape="rect" id="node29" href="$classShip.html" title=" " alt="" coords="2186,933,2237,960"/>
+<area shape="rect" id="node7" href="$classPoint.html" title=" " alt="" coords="839,809,893,836"/>
+<area shape="rect" id="node30" href="$classBody.html" title=" " alt="" coords="1191,899,1246,925"/>
+<area shape="rect" id="node34" href="$classPersonality.html" title=" " alt="" coords="1365,759,1459,785"/>
+<area shape="rect" id="node37" href="$classWeapon.html" title=" " alt="" coords="1537,1135,1611,1161"/>
+<area shape="rect" id="node48" href="$classItemInfoDisplay.html" title=" " alt="" coords="1155,80,1282,107"/>
+<area shape="rect" id="node8" href="$classGovernment.html" title=" " alt="" coords="815,457,917,484"/>
+<area shape="rect" id="node16" href="$classPlanet.html" title=" " alt="" coords="1864,481,1927,508"/>
+<area shape="rect" id="node9" href="$classExclusiveItem.html" title=" " alt="" coords="412,188,591,215"/>
+<area shape="rect" id="node22" href="$classWormhole.html" title=" " alt="" coords="2167,392,2255,419"/>
+<area shape="rect" id="node11" href="$classDistanceCalculationSettings.html" title=" " alt="" coords="5,1572,211,1599"/>
+<area shape="rect" id="node12" href="$classConversation.html" title=" " alt="" coords="447,457,555,484"/>
+<area shape="rect" id="node13" href="$classPhrase.html" title=" " alt="" coords="468,1237,535,1264"/>
+<area shape="rect" id="node14" href="$classSprite.html" title=" " alt="" coords="836,999,896,1025"/>
+<area shape="rect" id="node36" href="$classOutfit.html" title=" " alt="" coords="1866,1205,1925,1232"/>
+<area shape="rect" id="node15" href="$classWeightedList.html" title=" " alt="" coords="776,292,956,319"/>
+<area shape="rect" id="node17" href="$classPort.html" title=" " alt="" coords="1550,435,1598,461"/>
+<area shape="rect" id="node18" href="$classSale.html" title=" " alt="" coords="1520,485,1628,512"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1129,485,1308,512"/>
+<area shape="rect" id="node20" href="$classSale.html" title=" " alt="" coords="1516,536,1632,563"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1125,613,1312,640"/>
+<area shape="rect" id="node23" href="$classAccount.html" title=" " alt="" coords="2174,284,2249,311"/>
+<area shape="rect" id="node24" href="$classCargoHold.html" title=" " alt="" coords="1850,612,1941,639"/>
+<area shape="rect" id="node26" href="$classEsUuid.html" title=" " alt="" coords="1862,835,1929,861"/>
+<area shape="rect" id="node27" href="$structEsUuid_1_1UuidType.html" title=" " alt="" coords="1507,835,1641,861"/>
+<area shape="rect" id="node28" href="$classConditionSet.html" title=" " alt="" coords="2159,984,2264,1011"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1821,1139,1970,1181"/>
+<area shape="rect" id="node32" href="$classCommand.html" title=" " alt="" coords="1851,1492,1940,1519"/>
+<area shape="rect" id="node33" href="$classFireCommand.html" title=" " alt="" coords="1839,885,1952,912"/>
+<area shape="rect" id="node35" href="$classShipAICache.html" title=" " alt="" coords="1844,1088,1947,1115"/>
+<area shape="rect" id="node38" href="$classSound.html" title=" " alt="" coords="1187,1135,1250,1161"/>
+<area shape="rect" id="node39" href="$classDictionary.html" title=" " alt="" coords="1529,1231,1619,1257"/>
+<area shape="rect" id="node40" title=" " alt="" coords="1120,1249,1317,1290"/>
+<area shape="rect" id="node41" href="$classTextReplacements.html" title=" " alt="" coords="2140,713,2283,740"/>
+<area shape="rect" id="node42" href="$classConditionsStore.html" title=" " alt="" coords="2444,755,2569,781"/>
+<area shape="rect" id="node43" href="$classDepreciation.html" title=" " alt="" coords="2454,283,2559,309"/>
+<area shape="rect" id="node44" href="$classDataNode.html" title=" " alt="" coords="2463,372,2550,399"/>
+<area shape="rect" id="node46" href="$classDataWriter.html" title=" " alt="" coords="2460,423,2553,449"/>
+<area shape="rect" id="node47" href="$classShipInfoDisplay.html" title=" " alt="" coords="1666,60,1790,87"/>
+<area shape="rect" id="node49" href="$classWrappedText.html" title=" " alt="" coords="813,80,919,107"/>
+</map>

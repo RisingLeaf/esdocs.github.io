@@ -1,0 +1,16 @@
+<map id="Collision" name="Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="397,543,475,569"/>
+<area shape="rect" id="node2" href="$classBody.html" title=" " alt="" coords="409,453,463,480"/>
+<area shape="rect" id="node3" href="$classPoint.html" title=" " alt="" coords="229,5,283,32"/>
+<area shape="rect" id="node9" href="$classSystem.html" title=" " alt="" coords="611,95,682,121"/>
+<area shape="rect" id="node4" href="$classAngle.html" title=" " alt="" coords="355,364,413,391"/>
+<area shape="rect" id="node5" href="$classGovernment.html" title=" " alt="" coords="438,364,541,391"/>
+<area shape="rect" id="node6" href="$classExclusiveItem.html" title=" " alt="" coords="120,215,299,241"/>
+<area shape="rect" id="node7" href="$classColor.html" title=" " alt="" coords="181,95,237,121"/>
+<area shape="rect" id="node8" href="$classLocationFilter.html" title=" " alt="" coords="755,215,866,241"/>
+<area shape="rect" id="node10" href="$classSprite.html" title=" " alt="" coords="871,5,931,32"/>
+<area shape="rect" id="node11" href="$classWeightedList.html" title=" " alt="" coords="557,5,737,32"/>
+<area shape="rect" id="node12" href="$classDistanceCalculationSettings.html" title=" " alt="" coords="707,95,912,121"/>
+<area shape="rect" id="node13" href="$classConversation.html" title=" " alt="" coords="323,215,431,241"/>
+<area shape="rect" id="node14" href="$classPhrase.html" title=" " alt="" coords="456,215,523,241"/>
+</map>

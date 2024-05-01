@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['galaxies_0',['galaxies',['../classUniverseObjects.html#ad9117dc51718dbeb7e27f395a56835b0',1,'UniverseObjects']]],
+  ['gameevents_1',['gameEvents',['../classPlayerInfo.html#a2d999ac2b265bef44f275a4c78eb2340',1,'PlayerInfo']]],
+  ['gamepanels_2',['gamePanels',['../classGameLoadingPanel.html#a105a38628ac026173fcbfdb5c79d6a86',1,'GameLoadingPanel::gamePanels()'],['../classLoadPanel.html#aedafc5527684a94536f417649d7e2623',1,'LoadPanel::gamePanels()'],['../classMenuPanel.html#a3d9e57db5e862d2db68a95f8bb49e385',1,'MenuPanel::gamePanels()'],['../classStartConditionsPanel.html#a9e124692b54ae2d5ccd0621bc6c18808',1,'StartConditionsPanel::gamePanels()']]],
+  ['gamerules_3',['gamerules',['../classUniverseObjects.html#afa3f933a32f2536a472f2a211492f60f',1,'UniverseObjects']]],
+  ['gather_4',['GATHER',['../classAI_1_1Orders.html#a3ad2b4d800bc3bacc4a03f5da3ee3497',1,'AI::Orders::GATHER()'],['../classCommand.html#ab394df1bfa8400b7cd5cd7ddc78c73ef',1,'Command::GATHER()']]],
+  ['genericonenter_5',['genericOnEnter',['../classMission.html#a7506c11f4a4e99c259b1cf16ad58a395',1,'Mission']]],
+  ['getfunction_6',['getFunction',['../classConditionsStore_1_1DerivedProvider.html#a4ce2de645caf4386172d07918b2211b9',1,'ConditionsStore::DerivedProvider']]],
+  ['giftedships_7',['giftedShips',['../classPlayerInfo.html#a7b70979136e2f887ad1c0a26e0b8c8c7',1,'PlayerInfo']]],
+  ['giftoutfits_8',['giftOutfits',['../classGameAction.html#adb87d41d320920fbf92d4b4ef8cbdec8',1,'GameAction']]],
+  ['giftships_9',['giftShips',['../classGameAction.html#af6df0b2ea3b562c73be82f7ce5a0cb1f',1,'GameAction']]],
+  ['gimbal_10',['gimbal',['../classShip_1_1EnginePoint.html#a2ce3106927d18cb8667b21a8e40a180b',1,'Ship::EnginePoint']]],
+  ['glyphi_11',['glyphI',['../classFont.html#a3bafd089cccc4ad445ee1aa6b0d942ae',1,'Font']]],
+  ['glyphs_12',['GLYPHS',['../classFont.html#a635a603c04d1dd5cc8234c08c21b1f23',1,'Font']]],
+  ['government_13',['government',['../classSystem.html#aff430e963b7211242e52ca15686115db',1,'System::government()'],['../classFleet.html#a0bd9c3ab784b82fd112bbe7c9c2674a4',1,'Fleet::government()'],['../classPlanetLabel.html#af8d89d75044d0a013e6daebb041cea2a',1,'PlanetLabel::government()'],['../classPlanet.html#adaa684329c04aba0dfb4d682776c79fd',1,'Planet::government()'],['../classPerson.html#acf51af66ec228b2dfba58d728ce01bd6',1,'Person::government()'],['../classNPC.html#a0acaa16a24e3b2bad8f8fb8cf3a5d6cf',1,'NPC::government()'],['../classMapPanel_1_1Node.html#a2a0feb4acf61d86060d6b171492c78b0',1,'MapPanel::Node::government()'],['../classBody.html#ab5d1367968ab9eb36708eef8155f3133',1,'Body::government()']]],
+  ['governmentactions_14',['governmentActions',['../classAI.html#a4daf7fe9a724543bd5a3e9c0ed3eca85',1,'AI']]],
+  ['governmentname_15',['governmentName',['../classMapPlanetCard.html#a57fdb616ec863c142a593e4345e72f71',1,'MapPlanetCard']]],
+  ['governmentoffset_16',['governmentOffset',['../classPlanetLabel.html#ac174e054eeec9dcf3f93ce090cd44a6b',1,'PlanetLabel']]],
+  ['governmentrosters_17',['governmentRosters',['../classAI.html#adb283363465328890df5c5edf3703479',1,'AI']]],
+  ['governments_18',['governments',['../classLocationFilter.html#a3306ee31fc34e8a06b74590675ef3156',1,'LocationFilter::governments()'],['../classUniverseObjects.html#acf10eaf87a31e095132b5982856c011c',1,'UniverseObjects::governments()']]],
+  ['governmenty_19',['governmentY',['../classMapDetailPanel.html#a3e19ed0093d4c8c251869513a98f46fd',1,'MapDetailPanel']]],
+  ['groups_20',['groups',['../classPlayerInfo.html#a5872d841cd025567a56e6c59450aa15d',1,'PlayerInfo']]],
+  ['groupselect_21',['groupSelect',['../classEngine.html#afcd02f8cda0b85d2f18ddc3576158b44',1,'Engine']]],
+  ['grudge_22',['grudge',['../classEngine.html#ac88a9685ca33ffe9f8a20c697c6deca8',1,'Engine']]],
+  ['grudgetime_23',['grudgeTime',['../classEngine.html#a00f68d378c79e9056f3316554da01961',1,'Engine']]]
+];

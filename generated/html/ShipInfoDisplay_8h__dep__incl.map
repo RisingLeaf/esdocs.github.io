@@ -1,0 +1,20 @@
+<map id="source/ShipInfoDisplay.h" name="source/ShipInfoDisplay.h">
+<area shape="rect" id="node1" title=" " alt="" coords="930,5,1111,32"/>
+<area shape="rect" id="node2" href="$MapShipyardPanel_8h.html" title=" " alt="" coords="419,80,620,107"/>
+<area shape="rect" id="node7" href="$ShipInfoDisplay_8cpp.html" title=" " alt="" coords="1021,80,1217,107"/>
+<area shape="rect" id="node8" href="$ShipInfoPanel_8h.html" title=" " alt="" coords="1349,80,1519,107"/>
+<area shape="rect" id="node12" href="$ShopPanel_8h.html" title=" " alt="" coords="849,80,997,107"/>
+<area shape="rect" id="node3" href="$MapDetailPanel_8cpp.html" title=" " alt="" coords="5,155,204,181"/>
+<area shape="rect" id="node4" href="$MapPanel_8cpp.html" title=" " alt="" coords="228,155,387,181"/>
+<area shape="rect" id="node5" href="$MapShipyardPanel_8cpp.html" title=" " alt="" coords="411,155,627,181"/>
+<area shape="rect" id="node6" href="$ShopPanel_8cpp.html" title=" " alt="" coords="651,155,814,181"/>
+<area shape="rect" id="node9" href="$BoardingPanel_8cpp.html" title=" " alt="" coords="1230,155,1419,181"/>
+<area shape="rect" id="node10" href="$PlayerInfoPanel_8cpp.html" title=" " alt="" coords="1443,155,1641,181"/>
+<area shape="rect" id="node11" href="$ShipInfoPanel_8cpp.html" title=" " alt="" coords="1665,155,1849,181"/>
+<area shape="rect" id="node13" href="$OutfitterPanel_8h.html" title=" " alt="" coords="838,155,1009,181"/>
+<area shape="rect" id="node16" href="$ShipyardPanel_8h.html" title=" " alt="" coords="1033,155,1206,181"/>
+<area shape="rect" id="node14" href="$OutfitterPanel_8cpp.html" title=" " alt="" coords="628,229,813,256"/>
+<area shape="rect" id="node15" href="$PlanetPanel_8cpp.html" title=" " alt="" coords="837,229,1009,256"/>
+<area shape="rect" id="node17" href="$ShipyardPanel_8cpp.html" title=" " alt="" coords="1033,229,1221,256"/>
+<area shape="rect" id="node18" href="$StartConditionsPanel_8cpp.html" title=" " alt="" coords="1245,229,1476,256"/>
+</map>

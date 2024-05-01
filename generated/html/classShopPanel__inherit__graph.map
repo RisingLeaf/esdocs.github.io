@@ -1,0 +1,6 @@
+<map id="ShopPanel" name="ShopPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="84,80,173,107"/>
+<area shape="rect" id="node3" href="$classOutfitterPanel.html" title=" " alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$classShipyardPanel.html" title=" " alt="" coords="141,155,255,181"/>
+<area shape="rect" id="node2" href="$classPanel.html" title=" " alt="" coords="100,5,157,32"/>
+</map>

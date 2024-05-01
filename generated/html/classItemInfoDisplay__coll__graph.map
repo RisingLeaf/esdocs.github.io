@@ -1,0 +1,7 @@
+<map id="ItemInfoDisplay" name="ItemInfoDisplay">
+<area shape="rect" id="node1" title=" " alt="" coords="49,288,175,315"/>
+<area shape="rect" id="node2" href="$classWrappedText.html" title=" " alt="" coords="5,184,112,211"/>
+<area shape="rect" id="node3" href="$classFont.html" title=" " alt="" coords="33,95,84,121"/>
+<area shape="rect" id="node4" href="$classShader.html" title=" " alt="" coords="25,5,92,32"/>
+<area shape="rect" id="node5" href="$classPoint.html" title=" " alt="" coords="139,184,194,211"/>
+</map>

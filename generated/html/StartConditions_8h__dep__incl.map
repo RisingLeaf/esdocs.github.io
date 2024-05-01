@@ -1,0 +1,10 @@
+<map id="source/StartConditions.h" name="source/StartConditions.h">
+<area shape="rect" id="node1" title=" " alt="" coords="224,5,406,32"/>
+<area shape="rect" id="node2" href="$GameData_8cpp.html" title=" " alt="" coords="214,155,381,181"/>
+<area shape="rect" id="node3" href="$PlayerInfo_8cpp.html" title=" " alt="" coords="30,80,192,107"/>
+<area shape="rect" id="node4" href="$StartConditions_8cpp.html" title=" " alt="" coords="217,80,413,107"/>
+<area shape="rect" id="node5" href="$StartConditionsPanel_8cpp.html" title=" " alt="" coords="437,80,668,107"/>
+<area shape="rect" id="node6" href="$UniverseObjects_8h.html" title=" " alt="" coords="692,80,880,107"/>
+<area shape="rect" id="node7" href="$TestData_8cpp.html" title=" " alt="" coords="608,155,761,181"/>
+<area shape="rect" id="node8" href="$UniverseObjects_8cpp.html" title=" " alt="" coords="786,155,988,181"/>
+</map>

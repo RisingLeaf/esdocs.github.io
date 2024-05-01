@@ -1,0 +1,7 @@
+<map id="ConversationPanel::Paragraph" name="ConversationPanel::Paragraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,273,156,315"/>
+<area shape="rect" id="node2" href="$classSprite.html" title=" " alt="" coords="15,184,75,211"/>
+<area shape="rect" id="node3" href="$classWrappedText.html" title=" " alt="" coords="99,184,206,211"/>
+<area shape="rect" id="node4" href="$classFont.html" title=" " alt="" coords="127,95,178,121"/>
+<area shape="rect" id="node5" href="$classShader.html" title=" " alt="" coords="119,5,186,32"/>
+</map>

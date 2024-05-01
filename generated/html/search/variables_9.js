@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['jettisoned_0',['jettisoned',['../classShip.html#a963927809c0c68c0b8b77ac865b5ae14',1,'Ship']]],
+  ['jobboard_1',['JobBoard',['../classPort_1_1ServicesType.html#a11af35bf549a000b9224c717900d17ae',1,'Port::ServicesType']]],
+  ['jump_2',['JUMP',['../classCommand.html#aea02721b96678bbe80917773184db37d',1,'Command']]],
+  ['jumpcount_3',['jumpCount',['../classEngine.html#ae5306571f0a39fd5495d742f910583a8',1,'Engine']]],
+  ['jumpdeparturedistance_4',['jumpDepartureDistance',['../classSystem.html#a52811e4d03fa20cd31ec19dcd6b07101',1,'System']]],
+  ['jumpdrivecosts_5',['jumpDriveCosts',['../classShipJumpNavigation.html#a91edd9090426a8771381af0858a1ddff',1,'ShipJumpNavigation']]],
+  ['jumpeffects_6',['jumpEffects',['../classOutfit.html#a82447b5c6b15204de8b75e5d8b20406b',1,'Outfit']]],
+  ['jumpfuel_7',['jumpFuel',['../classDistanceMap.html#a2b5df10f3acecb2a94e983a6edfb48d6',1,'DistanceMap']]],
+  ['jumpinprogress_8',['jumpInProgress',['../classEngine.html#a13760330655094e0425bae7ac06b3fce',1,'Engine']]],
+  ['jumpinsounds_9',['jumpInSounds',['../classOutfit.html#a878402e75d453cbf5ec2f8b1a834a89a',1,'Outfit']]],
+  ['jumponfalsetarget_10',['jumpOnFalseTarget',['../classTest_1_1TestStep.html#a757a2b23d79db77adc94092f340cd08f',1,'Test::TestStep']]],
+  ['jumpontruetarget_11',['jumpOnTrueTarget',['../classTest_1_1TestStep.html#a55559cddabd1479ad25a72e06b0a2469',1,'Test::TestStep']]],
+  ['jumpoutsounds_12',['jumpOutSounds',['../classOutfit.html#a3703028f8fe506763715d8c378396df4',1,'Outfit']]],
+  ['jumprange_13',['jumpRange',['../classDistanceMap.html#a037091651c8cd6711c30e7e2bb6eac61',1,'DistanceMap::jumpRange()'],['../classSystem.html#a661a990be7b6a169f14560d2e08ecd0c',1,'System::jumpRange()']]],
+  ['jumpsounds_14',['jumpSounds',['../classOutfit.html#a11a6566c00f718bbcc2375e15d7c69cc',1,'Outfit']]],
+  ['jumptable_15',['jumpTable',['../classTest.html#abb77117a7111cd1e46a6094de1ee726c',1,'Test']]]
+];
