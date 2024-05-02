@@ -59,8 +59,8 @@ var searchData=
   ['tractorflotsam_56',['tractorFlotsam',['../d2/d32/classShip.html#abe2f3df1455804bf9e7a29dca9107d3b',1,'Ship']]],
   ['trade_57',['trade',['../dd/d2d/classSystem.html#a0c69ad588d93381f22cd703226d7ab1d',1,'System::trade()'],['../df/d69/classUniverseObjects.html#a1b74ae0de05995c962b5ba8f0f99cad1',1,'UniverseObjects::trade()']]],
   ['tradey_58',['tradeY',['../d4/d25/classMapDetailPanel.html#aa7a8bd0a2150bd68d416cda3bcd28ded',1,'MapDetailPanel']]],
-  ['trading_59',['trading',['../d2/d03/classPlanetPanel.html#ac3456cdedcbef6c16032c73c505c0263',1,'PlanetPanel']]],
-  ['trading_60',['Trading',['../de/de1/classPort_1_1ServicesType.html#a5d4be2aa4db493fc77f7f579edbd21df',1,'Port::ServicesType']]],
+  ['trading_59',['Trading',['../de/de1/classPort_1_1ServicesType.html#a5d4be2aa4db493fc77f7f579edbd21df',1,'Port::ServicesType']]],
+  ['trading_60',['trading',['../d2/d03/classPlanetPanel.html#ac3456cdedcbef6c16032c73c505c0263',1,'PlanetPanel']]],
   ['transactionsnapshot_61',['transactionSnapshot',['../df/df7/classPlayerInfo.html#ad5311ea50be326c256d607a6891a5873',1,'PlayerInfo']]],
   ['transform_62',['transform',['../d7/d95/classSpriteShader_1_1Item.html#a19baa9fa2ad03e191467e6eb8e48d060',1,'SpriteShader::Item']]],
   ['translatei_63',['translateI',['../d9/dc7/classStarField.html#ac6cfdf659f1c3bc87c44439ada2cedb7',1,'StarField']]],
@@ -79,6 +79,7 @@ var searchData=
   ['truncate_76',['truncate',['../de/dcc/classLayout.html#afb343daa9603d521bcf5d7dbc0b7e8ad',1,'Layout::truncate()'],['../da/da2/classWrappedText.html#ab8167575fd9deb55d7fda0dd8563962d',1,'WrappedText::truncate()'],['../d6/dbd/classInterface_1_1TextElement.html#adb6b7240d2a5eda658568671b2468c92',1,'Interface::TextElement::truncate()']]],
   ['trusted_77',['trusted',['../d4/dad/classGovernment.html#a2383f209e35ebe3c6e14c1f42e84d0aa',1,'Government']]],
   ['turn_78',['turn',['../d9/d71/classCommand.html#a453eb16e12b97dba53e05c868fc1aee6',1,'Command::turn()'],['../dc/de5/classWeapon.html#a2a8e195c0e1aaf1e357ddec275325d50',1,'Weapon::turn()']]],
-  ['turretturn_79',['turretTurn',['../dc/de5/classWeapon.html#a2e162f4bbde5cc56ca9aa8c26de22b88',1,'Weapon']]],
-  ['type_80',['type',['../d8/d38/classMortgage.html#a6d9f4bf563119d8d30d5d00a3c141c61',1,'Mortgage::type()'],['../dd/d37/classShipEvent.html#aab8e5e659b3457205717a66f87b8d4d4',1,'ShipEvent::type()'],['../d4/de0/classSystem_1_1Asteroid.html#aa639390fb47291ee85f38b3bbfcc22a9',1,'System::Asteroid::type()'],['../d9/dfa/classAI_1_1Orders.html#a9c7860857f8ec82d41a0209abaf51433',1,'AI::Orders::type()'],['../d3/d81/classEngine_1_1Status.html#ad37782a2c6c0412173ab5ee1e1174d7a',1,'Engine::Status::type()']]]
+  ['turret_5ftracking_79',['TURRET_TRACKING',['../d9/d71/classCommand.html#a20750e917d108f1c7acab11699d4b4d0',1,'Command']]],
+  ['turretturn_80',['turretTurn',['../dc/de5/classWeapon.html#a2e162f4bbde5cc56ca9aa8c26de22b88',1,'Weapon']]],
+  ['type_81',['type',['../d3/d81/classEngine_1_1Status.html#ad37782a2c6c0412173ab5ee1e1174d7a',1,'Engine::Status::type()'],['../d8/d38/classMortgage.html#a6d9f4bf563119d8d30d5d00a3c141c61',1,'Mortgage::type()'],['../dd/d37/classShipEvent.html#aab8e5e659b3457205717a66f87b8d4d4',1,'ShipEvent::type()'],['../d4/de0/classSystem_1_1Asteroid.html#aa639390fb47291ee85f38b3bbfcc22a9',1,'System::Asteroid::type()'],['../d9/dfa/classAI_1_1Orders.html#a9c7860857f8ec82d41a0209abaf51433',1,'AI::Orders::type()']]]
 ];

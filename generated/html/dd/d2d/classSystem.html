@@ -104,8 +104,8 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af2aa1a014045d14b51c9fada03ab9962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#af2aa1a014045d14b51c9fada03ab9962">Load</a> (const <a class="el" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;node, <a class="el" href="../../d1/d5f/classSet.html">Set</a>&lt; <a class="el" href="../../d5/dec/classPlanet.html">Planet</a> &gt; &amp;planets)</td></tr>
 <tr class="separator:af2aa1a014045d14b51c9fada03ab9962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9167cc5ca7e741413f047fe73f153cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a9167cc5ca7e741413f047fe73f153cdf">UpdateSystem</a> (const <a class="el" href="../../d1/d5f/classSet.html">Set</a>&lt; <a class="el" href="../../dd/d2d/classSystem.html">System</a> &gt; &amp;systems, const std::set&lt; double &gt; &amp;neighborDistances)</td></tr>
-<tr class="separator:a9167cc5ca7e741413f047fe73f153cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ac39d41a47cc566e42d09a2e03c256"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a29ac39d41a47cc566e42d09a2e03c256">UpdateSystem</a> (const <a class="el" href="../../d1/d5f/classSet.html">Set</a>&lt; <a class="el" href="../../dd/d2d/classSystem.html">System</a> &gt; &amp;systems, const std::set&lt; double &gt; &amp;neighborDistances, const <a class="el" href="../../df/df7/classPlayerInfo.html">PlayerInfo</a> *player)</td></tr>
+<tr class="separator:a29ac39d41a47cc566e42d09a2e03c256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8bad8387331e26ecc85ea50fc10a681"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#aa8bad8387331e26ecc85ea50fc10a681">Link</a> (<a class="el" href="../../dd/d2d/classSystem.html">System</a> *other)</td></tr>
 <tr class="separator:aa8bad8387331e26ecc85ea50fc10a681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaeddc3e0268a210027f151534da48b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#adaeddc3e0268a210027f151534da48b2">Unlink</a> (<a class="el" href="../../dd/d2d/classSystem.html">System</a> *other)</td></tr>
@@ -214,8 +214,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a0d7ed79f79be59b36f1d5d3f63868290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a471fd00929b2c2c354383ae4a0730cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a471fd00929b2c2c354383ae4a0730cce">LoadObjectHelper</a> (const <a class="el" href="../../d7/d25/classDataNode.html">DataNode</a> &amp;node, <a class="el" href="../../d7/d9c/classStellarObject.html">StellarObject</a> &amp;object, bool removing=false)</td></tr>
 <tr class="separator:a471fd00929b2c2c354383ae4a0730cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67ab05ddc11c0e0b9b932ddb5da7272f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a67ab05ddc11c0e0b9b932ddb5da7272f">UpdateNeighbors</a> (const <a class="el" href="../../d1/d5f/classSet.html">Set</a>&lt; <a class="el" href="../../dd/d2d/classSystem.html">System</a> &gt; &amp;systems, double distance)</td></tr>
-<tr class="separator:a67ab05ddc11c0e0b9b932ddb5da7272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e6e94a080c70b5f2151887452ba160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a75e6e94a080c70b5f2151887452ba160">UpdateNeighbors</a> (const <a class="el" href="../../d1/d5f/classSet.html">Set</a>&lt; <a class="el" href="../../dd/d2d/classSystem.html">System</a> &gt; &amp;systems, double distance, const <a class="el" href="../../df/df7/classPlayerInfo.html">PlayerInfo</a> *player)</td></tr>
+<tr class="separator:a75e6e94a080c70b5f2151887452ba160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -231,6 +231,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aff430e963b7211242e52ca15686115db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2bc700ae5ec2c126b06a575b7c784cc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#af2bc700ae5ec2c126b06a575b7c784cc">music</a></td></tr>
 <tr class="separator:af2bc700ae5ec2c126b06a575b7c784cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fef1ae20b16a8b9a0a5788c359904b"><td class="memItemLeft" align="right" valign="top">std::map&lt; const <a class="el" href="../../dd/d2d/classSystem.html">System</a> *, <a class="el" href="../../d8/dc7/classConditionSet.html">ConditionSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a08fef1ae20b16a8b9a0a5788c359904b">conditionLinks</a></td></tr>
+<tr class="separator:a08fef1ae20b16a8b9a0a5788c359904b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a085ecc8754807a18815688c78c64a751"><td class="memItemLeft" align="right" valign="top">std::set&lt; const <a class="el" href="../../dd/d2d/classSystem.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a085ecc8754807a18815688c78c64a751">links</a></td></tr>
 <tr class="separator:a085ecc8754807a18815688c78c64a751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0206507b92256ed70cc461aa1fc677a4"><td class="memItemLeft" align="right" valign="top">std::set&lt; const <a class="el" href="../../dd/d2d/classSystem.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/classSystem.html#a0206507b92256ed70cc461aa1fc677a4">accessibleLinks</a></td></tr>
@@ -1281,8 +1283,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a67ab05ddc11c0e0b9b932ddb5da7272f" name="a67ab05ddc11c0e0b9b932ddb5da7272f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67ab05ddc11c0e0b9b932ddb5da7272f">&#9670;&nbsp;</a></span>UpdateNeighbors()</h2>
+<a id="a75e6e94a080c70b5f2151887452ba160" name="a75e6e94a080c70b5f2151887452ba160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75e6e94a080c70b5f2151887452ba160">&#9670;&nbsp;</a></span>UpdateNeighbors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1300,7 +1302,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>distance</em>&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/df7/classPlayerInfo.html">PlayerInfo</a> *&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1318,8 +1326,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9167cc5ca7e741413f047fe73f153cdf" name="a9167cc5ca7e741413f047fe73f153cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9167cc5ca7e741413f047fe73f153cdf">&#9670;&nbsp;</a></span>UpdateSystem()</h2>
+<a id="a29ac39d41a47cc566e42d09a2e03c256" name="a29ac39d41a47cc566e42d09a2e03c256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29ac39d41a47cc566e42d09a2e03c256">&#9670;&nbsp;</a></span>UpdateSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1334,7 +1342,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::set&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>neighborDistances</em>&#160;</td>
+          <td class="paramname"><em>neighborDistances</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/df7/classPlayerInfo.html">PlayerInfo</a> *&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1454,6 +1468,29 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08fef1ae20b16a8b9a0a5788c359904b" name="a08fef1ae20b16a8b9a0a5788c359904b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08fef1ae20b16a8b9a0a5788c359904b">&#9670;&nbsp;</a></span>conditionLinks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;const <a class="el" href="../../dd/d2d/classSystem.html">System</a> *, <a class="el" href="../../d8/dc7/classConditionSet.html">ConditionSet</a>&gt; System::conditionLinks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Hyperspace links to other systems and their conditions to exist. </p>
 
 </div>
 </div>

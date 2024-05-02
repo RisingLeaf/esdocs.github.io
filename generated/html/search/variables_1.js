@@ -2,8 +2,8 @@ var searchData=
 [
   ['b_0',['b',['../da/de1/classConditionSet_1_1Expression_1_1SubExpression_1_1Operation.html#ab1740892a922963ca8a1655dcb5ebf0f',1,'ConditionSet::Expression::SubExpression::Operation']]],
   ['back_1',['BACK',['../d9/d71/classCommand.html#a38b8f6609d5d2d65f8f48439809026f4',1,'Command']]],
-  ['bank_2',['Bank',['../de/de1/classPort_1_1ServicesType.html#acb4c6ec621cf322447d15861f9b0f9b8',1,'Port::ServicesType']]],
-  ['bank_3',['bank',['../d2/d03/classPlanetPanel.html#a386e1f06fb35dd32f8c4a28b324e1409',1,'PlanetPanel']]],
+  ['bank_2',['bank',['../d2/d03/classPlanetPanel.html#a386e1f06fb35dd32f8c4a28b324e1409',1,'PlanetPanel']]],
+  ['bank_3',['Bank',['../de/de1/classPort_1_1ServicesType.html#acb4c6ec621cf322447d15861f9b0f9b8',1,'Port::ServicesType']]],
   ['bars_4',['bars',['../d8/d9c/classInformation.html#af9359d4eb44f5ae83a0abd5182b7ab2f',1,'Information']]],
   ['barsegments_5',['barSegments',['../d8/d9c/classInformation.html#a189934478a00076005f066451e910358',1,'Information']]],
   ['base_6',['base',['../d7/db8/classEngine_1_1Zoom.html#a7c906e90b00e9c59eae43656a2f33ab5',1,'Engine::Zoom::base()'],['../d6/da9/classRadar_1_1Line.html#a2a05ba06bbc9c9eceaca2d5ac349ed9b',1,'Radar::Line::base()'],['../d2/d32/classShip.html#ab43fddfd33b91a07d0f6d74e663f58c7',1,'Ship::base()'],['../da/de9/classSystem_1_1Price.html#a6d25d5f90431c80479419705a2fda5c8',1,'System::Price::base()']]],
